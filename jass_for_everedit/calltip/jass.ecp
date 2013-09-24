@@ -1,0 +1,1966 @@
+GetEnumDestructable()\ncommon.j 选取的可破坏物
+UnitDamagePointLoc(unit whichUnit, real delay, real radius, location loc, real amount, attacktype whichAttack, damagetype whichDamage)\nblizzard.j 单位 - 伤害区域
+SetPlayerRaceSelectable(player whichPlayer, boolean value)\ncommon.j
+GetTimeOfDayScale()\ncommon.j
+CountPlayersInForceBJ(force f)\nblizzard.j 玩家 - 玩家组中玩家数量
+SetTutorialCleared(boolean cleared)\ncommon.j
+RemoveItemFromStockBJ(integer itemId, unit whichUnit)\nblizzard.j 中立建筑 - 删除物品(指定市场)
+IsUnitDetected(unit whichUnit, player whichPlayer)\ncommon.j 单位 - 被检测到
+DelayedSuspendDecayStopAnimEnum()\nblizzard.j
+InitRescuableBehaviorBJ()\nblizzard.j
+IsQuestRequired(quest whichQuest)\ncommon.j 任务 - 是主要任务
+CreateQuestBJ(integer questType, string title, string description, string iconPath)\nblizzard.j 任务 - 创建任务
+UnitDropItemPointLoc(unit whichUnit, item whichItem, location loc)\nblizzard.j 单位 - 发布丢弃物品命令(指定点)
+RectContainsLoc(rect r, location loc)\nblizzard.j 区域(矩形) - 包含点
+LoadGameBJ(string loadFileName, boolean doScoreScreen)\nblizzard.j 游戏 - 读取进度
+GetRevivingUnit()\ncommon.j 事件响应 - 复活英雄
+RemoveLocation(location whichLocation)\ncommon.j 点 - 清除点 [R]
+SaveHashtableHandleBJ(hashtable whichHashtable, integer key, integer missionKey, hashtable table)\nblizzard.j
+RestoreUnitLocFacingAngleBJ(string key, string missionKey, gamecache cache, player forWhichPlayer, location loc, real facing)\nblizzard.j 游戏缓存 - 读取单位(面向角度)
+UpdateEachStockBuildingEnum()\nblizzard.j
+TriggerSyncStart()\ncommon.j
+CameraSetupApplyForPlayer(boolean doPan, camerasetup whichSetup, player whichPlayer, real duration)\nblizzard.j 镜头 - 应用镜头(指定玩家)(限时)
+SetWidgetLife(widget whichWidget, real newLife)\ncommon.j
+DestroyTimerDialogBJ(timerdialog td)\nblizzard.j 计时器 - 删除计时器窗口
+TriggerRegisterPlayerEvent(trigger whichTrigger, player  whichPlayer, playerevent whichPlayerEvent)\ncommon.j
+ForceEnumAllies(force whichForce, player whichPlayer, boolexpr filter)\ncommon.j
+IssueHauntOrderAtLocBJ(unit whichPeon, location loc)\nblizzard.j
+RemoveRect(rect whichRect)\ncommon.j 区域(矩形) - 删除矩形区域 [R]
+ConvertDamageType(integer i)\ncommon.j
+MeleeExposeAllPlayers()\nblizzard.j
+SetDestAnimationSpeedPercent(destructable d, real percentScale)\nblizzard.j 动画 - 改变可破坏物动画播放速度
+RegisterDestDeathInRegionEnum()\nblizzard.j
+SaveBooleanBJ(boolean value, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存布尔
+GetEventDamageSource()\ncommon.j 事件响应 - 伤害来源
+UnitAddIndicatorBJ(unit whichUnit, real red, real green, real blue, real transparency)\nblizzard.j 电影 - 闪动指示器(对单位)
+GroupRemoveGroupEnum()\nblizzard.j
+SetDNCSoundsDawn()\nblizzard.j
+QuestSetCompleted(quest whichQuest, boolean completed)\ncommon.j
+ResumeMusicBJ()\nblizzard.j 声音 - 恢复背景音乐
+GetEventDetectingPlayer()\ncommon.j
+SetUnitUserData(unit whichUnit, integer data)\ncommon.j 单位 - 设置自定义值
+CinematicFadeBJ(integer fadetype, real duration, string tex, real red, real green, real blue, real trans)\nblizzard.j 电影 - 淡入淡出滤镜
+MeleeDoVictoryEnum()\nblizzard.j
+OneOnOneInitPlayerSlots()\nblizzard.j
+RemoveGuardPosition(unit hUnit)\ncommon.j AI - 忽视指定单位的警戒点
+LeaderboardSetValueColor(leaderboard lb, integer red, integer green, integer blue, integer alpha)\ncommon.j 排行榜 - 设置数值颜色 [R]
+ReducePlayerTechMaxAllowed(player whichPlayer, integer techId, integer limit)\nblizzard.j
+SetBlightPoint(player whichPlayer, real x, real y, boolean addBlight)\ncommon.j
+IssuePointOrderByIdLoc(unit whichUnit, integer order, location whichLocation)\ncommon.j 单位 - 按ID发布命令(指定点) [R]
+GetPlayers()\ncommon.j 游戏 - 玩家数量
+UnitApplyTimedLifeBJ(real duration, integer buffId, unit whichUnit)\nblizzard.j 单位 - 设置生命周期
+GetUnitLoc(unit whichUnit)\ncommon.j 单位 - 单位位置
+SetSpeechVolumeGroupsImmediateBJ()\nblizzard.j
+ChooseRandomCreep(integer level)\ncommon.j
+SyncStoredReal(gamecache cache, string missionKey, string key)\ncommon.j
+SetCineFilterEndUV(real minu, real minv, real maxu, real maxv)\ncommon.j
+SetPlayerHandicapBJ(player whichPlayer, real handicapPercent)\nblizzard.j 玩家 - 设置生命上限
+SetPlayerAllianceStateControlBJ(player sourcePlayer, player otherPlayer, boolean flag)\nblizzard.j
+SetPlayerStateBJ(player whichPlayer, playerstate whichPlayerState, integer value)\nblizzard.j
+LoadItemPoolHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取物品池
+SetUnitTurnSpeed(unit whichUnit, real newTurnSpeed)\ncommon.j
+SetMapMusicRandomBJ(string musicName)\nblizzard.j 声音 - 设置背景音乐列表(随机播放)
+GetAbilityName(integer abilcode)\nblizzard.j 游戏 - 技能名称
+SetSoundConeAnglesBJ(sound soundHandle, real inside, real outside, real outsideVolumePercent)\nblizzard.j
+SetUnitExploded(unit whichUnit, boolean exploded)\ncommon.j
+AsinBJ(real degrees)\nblizzard.j 数学 - 反正弦(角度)
+IsTriggerQueueEmptyBJ()\nblizzard.j 触发器 - 触发队列为空
+IsItemIdPowerup(integer itemId)\ncommon.j
+PingMinimapLocForPlayer(player whichPlayer, location loc, real duration)\nblizzard.j
+QueuedTriggerClearBJ()\nblizzard.j 触发器 - 清空触发队列
+SetPlayerTechMaxAllowedSwap(integer techid, integer maximum, player whichPlayer)\nblizzard.j 玩家 - 设置最大科技等级
+ForceRemovePlayer(force whichForce, player whichPlayer)\ncommon.j 玩家组 - 移除玩家 [R]
+LeaderboardSortItemsByPlayer(leaderboard lb, boolean ascending)\ncommon.j
+SetItemDroppableBJ(item whichItem, boolean flag)\nblizzard.j 物品 - 设置物品可否丢弃
+ConvertGameDifficulty(integer i)\ncommon.j
+CameraSetEQNoiseForPlayer(player whichPlayer, real magnitude)\nblizzard.j 镜头 - 震动镜头(指定玩家)
+ChooseRandomNPBuildingBJ()\nblizzard.j 随机中立建筑类型
+EnableUserControl(boolean b)\ncommon.j 电影 - 启用/禁用玩家控制权(所有玩家) [R]
+UnitDamagePoint(unit whichUnit, real delay, real radius, real x, real y, real amount, boolean attack, boolean ranged, attacktype attackType, damagetype damageType, weapontype weaponType)\ncommon.j 单位 - 伤害区域 [R]
+UnitInventorySize(unit whichUnit)\ncommon.j
+TriggerRegisterPlayerEventDefeat(trigger trig, player whichPlayer)\nblizzard.j 玩家 - 游戏失败
+SaveDyingWidget()\nblizzard.j
+SetUnitAbilityLevelSwapped(integer abilcode, unit whichUnit, integer level)\nblizzard.j 单位 - 设置技能等级
+RegionAddCellAtLoc(region whichRegion, location whichLocation)\ncommon.j 区域(不规则) - 添加单元点(指定点) [R]
+CreateFogModifierRect(player forWhichPlayer, fogstate whichState, rect where, boolean useSharedVision, boolean afterUnits)\ncommon.j 新建可见度修正器(矩形区域) [R]
+SetIntegerGameState(igamestate whichIntegerGameState, integer value)\ncommon.j
+TriggerRegisterDialogButtonEvent(trigger whichTrigger, button whichButton)\ncommon.j 对话框 - 对话框按钮被点击 [R]
+MarkGameStarted()\nblizzard.j
+DestructableAddIndicatorBJ(destructable whichDestructable, real red, real green, real blue, real transparency)\nblizzard.j 电影 - 闪动指示器(对可破坏物)
+GetLightningColorRBJ(lightning whichBolt)\nblizzard.j 闪电效果 - 红颜色值
+GetRectWidthBJ(rect r)\nblizzard.j 区域(矩形) - 宽度
+UnitWakeUp(unit whichUnit)\ncommon.j
+TriggerRegisterTimerEventSingle(trigger trig, real timeout)\nblizzard.j 时间 - 游戏计时(单次)
+SetCinematicScene(integer portraitUnitId, playercolor color, string speakerTitle, string text, real sceneDuration, real voiceoverDuration)\ncommon.j
+GetExpiredTimer()\ncommon.j 事件响应 - 到期的计时器
+OffsetLocation(location loc, real dx, real dy)\nblizzard.j 坐标位移点
+EnableOcclusionBJ(boolean enable, force f)\nblizzard.j 电影 - 允许/禁止闭塞(指定玩家组)
+SetCameraQuickPositionLocForPlayer(player whichPlayer, location loc)\nblizzard.j 镜头 - 设置空格键转向点(指定玩家)
+UnitDropItemTarget(unit whichUnit, item whichItem, widget target)\ncommon.j
+RandomDistAddItem(integer inID, integer inChance)\nblizzard.j
+DialogDestroy(dialog whichDialog)\ncommon.j 对话框 - 删除 [R]
+IsHeroUnitId(integer unitId)\ncommon.j 单位 - 单位类型是英雄单位
+SetStartLocPrio(integer whichStartLoc, integer prioSlotIndex, integer otherStartLocIndex, startlocprio priority)\ncommon.j
+FirstOfGroup(group whichGroup)\ncommon.j 单位组中第一个单位
+DelayedSuspendDecayCreate()\nblizzard.j
+GetLocalizedString(string source)\ncommon.j 转化 - 本地字符串 [R]
+LoadRectHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取区域(矩型)
+UnitRemoveItem(unit whichUnit, item whichItem)\ncommon.j
+GroupPointOrderById(group whichGroup, integer order, real x, real y)\ncommon.j 单位组 - 按ID发布命令(指定坐标) [R]
+GetUnitAbilityLevel(unit whichUnit, integer abilcode)\ncommon.j 单位 - 单位技能等级 [R]
+GetLastCreatedMultiboard()\nblizzard.j Last类 - 最后创建的多面板
+SetAmbientNightSound(string inLabel)\nblizzard.j 声音 - 使用夜晚环境音效
+ForceCinematicSubtitles(boolean flag)\ncommon.j
+VersionGet()\ncommon.j
+SaveTimerDialogHandleBJ(timerdialog whichTimerdialog, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存计时器窗口
+MultiboardAllowDisplayBJ(boolean flag)\nblizzard.j 多面板 - 显示/隐藏多面板模式
+GroupImmediateOrderBJ(group whichGroup, string order)\nblizzard.j
+GetSoundDurationBJ(sound soundHandle)\nblizzard.j 声音 - 音效长度
+GetSellingUnit()\ncommon.j 事件响应 - 贩卖者
+EnumDestructablesInCircleBJFilter()\nblizzard.j
+TriggerWaitForSound(sound s, real offset)\ncommon.j
+GetChangingUnit()\ncommon.j 事件响应 - 被改变所有者的单位
+CustomDefeatLoadBJ()\nblizzard.j
+PauseGame(boolean flag)\ncommon.j 游戏 - 暂停/恢复游戏 [R]
+AddHeroXP(unit whichHero, integer xpToAdd,   boolean showEyeCandy)\ncommon.j 英雄 - 增加经验值 [R]
+DestructableRestoreLife(destructable d, real life, boolean birth)\ncommon.j 可破坏物 - 复活
+GetTriggerExecCount(trigger whichTrigger)\ncommon.j 触发器 - 触发动作运行次数
+SelectGroupBJ(group g)\nblizzard.j 选择 - 选择单位组(所有玩家)
+MeleeCrippledPlayerTimeout()\nblizzard.j
+ForceUICancelBJ(player whichPlayer)\nblizzard.j 游戏 - 强制按Esc键
+SetDestructableOccluderHeight(destructable d, real height)\ncommon.j 可破坏物 - 设置闭塞高度
+ReviveHeroLoc(unit whichHero, location loc, boolean doEyecandy)\ncommon.j 英雄 - 立即复活(指定点)
+MeleeStartingUnitsUnknownRace(player whichPlayer, location startLoc, boolean doHeroes, boolean doCamera, boolean doPreload)\nblizzard.j
+IsUnitIllusion(unit whichUnit)\ncommon.j
+GetUnitStateSwap(unitstate whichState, unit whichUnit)\nblizzard.j 单位 - 属性
+SetUnitTimeScalePercent(unit whichUnit, real percentScale)\nblizzard.j 动画 - 改变单位动画播放速度(按百分比)
+SetUbersplatRender(ubersplat whichSplat, boolean flag)\ncommon.j 地面纹理 - 设置渲染状态
+GetEnumPlayer()\ncommon.j 选取玩家
+GetOrderTargetDestructable()\ncommon.j 事件响应 - 命令发布目标(可破坏物)
+SaveAgentHandleBJ(agent whichAgent, integer key, integer missionKey, hashtable table)\nblizzard.j
+ClearTextMessagesBJ(force toForce)\nblizzard.j 游戏 - 清空文本信息(指定玩家组)
+SaveIntegerBJ(integer value, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存整数
+SetUnitFlyHeight(unit whichUnit, real newHeight, real rate)\ncommon.j
+NewSoundEnvironment(string environmentName)\ncommon.j
+ConvertStartLocPrio(integer i)\ncommon.j
+GetHeroLevel(unit whichHero)\ncommon.j 英雄 - 英雄等级
+SetUnitBlendTimeBJ(unit whichUnit, real blendTime)\nblizzard.j 动画 - 改变单位混合时间
+SetMapFlag(mapflag whichMapFlag, boolean value)\ncommon.j 游戏 - 设置地图参数
+SetUnitUseFoodBJ(boolean enable, unit whichUnit)\nblizzard.j 单位 - 允许/禁止 人口占用
+AddWeatherEffectSaveLast(rect where, integer effectID)\nblizzard.j 环境 - 添加天气效果
+CustomDefeatDialogBJ(player whichPlayer, string message)\nblizzard.j
+CreateTextTagUnitBJ(string s, unit whichUnit, real zOffset, real size, real red, real green, real blue, real transparency)\nblizzard.j 漂浮文字 - 创建漂浮文字(指定单位)
+GetSoldUnit()\ncommon.j 事件响应 - 被贩卖单位
+IsTimerDialogDisplayed(timerdialog whichDialog)\ncommon.j
+PanCameraToTimedWithZ(real x, real y, real zOffsetDest, real duration)\ncommon.j 镜头 - 指定高度平移镜头(所有玩家)(限时) [R]
+SaveDefeatConditionHandleBJ(defeatcondition whichDefeatcondition, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存失败条件
+GetLastCreatedEffectBJ()\nblizzard.j Last类 - 最后创建的特效
+UnitRemoveTypeBJ(unittype whichType, unit whichUnit)\nblizzard.j 单位 - 删除类别
+FlushStoredMissionBJ(string missionKey, gamecache cache)\nblizzard.j 不推荐使用 - 删除类别
+FlashQuestDialogButtonBJ()\nblizzard.j 任务 - 闪动任务按钮
+TextTagSpeed2Velocity(real speed)\nblizzard.j
+SetUnitFacingTimed(unit whichUnit, real facingAngle, real duration)\ncommon.j 单位 - 设置单位面向角度(指定时间)
+VolumeGroupResetImmediateBJ()\nblizzard.j
+SetThematicMusicPlayPosition(integer millisecs)\ncommon.j 声音 - 设置主题音乐播放时间点 [R]
+GetElevatorHeight(destructable d)\nblizzard.j 可破坏物 - 升降机高度
+UnitRemoveBuffsEx(unit whichUnit, boolean removePositive, boolean removeNegative, boolean magic, boolean physical, boolean timedLife, boolean aura, boolean autoDispel)\ncommon.j 单位 - 删除魔法效果(详细类别) [R]
+FindElevatorWallBlockerEnum()\nblizzard.j
+ResetTerrainFogBJ()\nblizzard.j 环境 - 重置迷雾
+DestroyForce(force whichForce)\ncommon.j 玩家组 - 删除玩家组 [R]
+ItemPoolRemoveItemType(itempool whichItemPool, integer itemId)\ncommon.j 物品池 - 删除物品类型 [R]
+GetPlayerTechResearched(player whichPlayer, integer techid, boolean specificonly)\ncommon.j
+TriggerRegisterUnitInRange(trigger whichTrigger, unit whichUnit, real range, boolexpr filter)\ncommon.j
+IssueNeutralImmediateOrder(player forWhichPlayer, unit neutralStructure, string unitToBuild)\ncommon.j 单位 - 发布中介命令(无目标) [R]
+SetPlayerColorBJEnum()\nblizzard.j
+IsMapFlagSet(mapflag whichMapFlag)\ncommon.j 游戏 - 地图参数设置
+LeaderboardSetItemLabelColor(leaderboard lb, integer whichItem, integer red, integer green, integer blue, integer alpha)\ncommon.j
+SetPlayerAlliance(player sourcePlayer, player otherPlayer, alliancetype whichAllianceSetting, boolean value)\ncommon.j 玩家 - 设置联盟状态(指定项目) [R]
+GetClickedButton()\ncommon.j
+StopSoundBJ(sound soundHandle, boolean fadeOut)\nblizzard.j 声音 - 停止音效
+SetCampaignMenuRaceEx(integer campaignIndex)\ncommon.j
+LoadImageHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取图象
+CameraResetSmoothingFactorBJ()\nblizzard.j 镜头 - 重置镜头平滑参数
+TimerDialogSetTimeColor(timerdialog whichDialog, integer red, integer green, integer blue, integer alpha)\ncommon.j 计时器 - 改变计时器窗口计时颜色 [R]
+GetClickedDialogBJ()\nblizzard.j 对话框 - 点击的对话框
+MeleeGetCrippledTimerMessage(player whichPlayer)\nblizzard.j
+DestroyQuest(quest whichQuest)\ncommon.j
+UnitDropItemSlotBJ(unit whichUnit, item whichItem, integer slot)\nblizzard.j 单位 - 移动物品到物品栏
+SetSoundDuration(sound soundHandle, integer duration)\ncommon.j
+UnitDropItem(unit inUnit, integer inItemID)\nblizzard.j 单位掉落的物品
+UnitSetUsesAltIconBJ(boolean flag, unit whichUnit)\nblizzard.j 中立建筑 - 开启/关闭 小地图特殊标志
+ChooseRandomNPBuilding()\ncommon.j
+AddItemToStock(unit whichUnit, integer itemId, integer currentStock, integer stockMax)\ncommon.j
+SetCineFilterStartUV(real minu, real minv, real maxu, real maxv)\ncommon.j
+SetUnitRescuable(unit whichUnit, player byWhichPlayer, boolean flag)\ncommon.j 单位 - 设置可否营救(对玩家) [R]
+IssueInstantTargetOrder(unit whichUnit, string order, widget targetWidget, widget instantTargetWidget)\ncommon.j
+SetUnitVertexColor(unit whichUnit, integer red, integer green, integer blue, integer alpha)\ncommon.j 动画 - 改变单位的颜色(RGB:0-255) [R]
+RecycleGuardPosition(unit hUnit)\ncommon.j AI - 恢复指定单位的警戒点
+HaveSavedValue(integer key, integer valueType, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 哈希项存在
+GetRectHeightBJ(rect r)\nblizzard.j 区域(矩形) - 高度
+EnableTrigger(trigger whichTrigger)\ncommon.j 触发器 - 开启触发
+MultiboardSetItemsValueColor(multiboard lb, integer red, integer green, integer blue, integer alpha)\ncommon.j 多面板 - 设置所有项目颜色 [R]
+GetLightningColorR(lightning whichBolt)\ncommon.j
+ForcePlayerStartLocation(player whichPlayer, integer startLocIndex)\ncommon.j
+GetUnitFlyHeight(unit whichUnit)\ncommon.j 单位 - 当前飞行高度
+GetSpellTargetDestructable()\ncommon.j 事件响应 - 技能施放目标(可破坏物)
+IsQuestItemCompleted(questitem whichQuestItem)\ncommon.j 任务 - 任务项目完成
+GetUnitPropWindow(unit whichUnit)\ncommon.j 单位 - 当前转向角度(弧度制) [R]
+CameraSetupGetDestPositionX(camerasetup whichSetup)\ncommon.j
+ConvertAllianceType(integer i)\ncommon.j
+GetLightningColorB(lightning whichBolt)\ncommon.j
+GroupEnumUnitsInRangeOfLoc(group whichGroup, location whichLocation, real radius, boolexpr filter)\ncommon.j 单位组 - 选取单位添加到单位组(点)
+GetLightningColorG(lightning whichBolt)\ncommon.j
+SetPlayerAbilityAvailable(player whichPlayer, integer abilid, boolean avail)\ncommon.j 玩家 - 允许/禁用 技能 [R]
+SetGameSpeed(gamespeed whichspeed)\ncommon.j 游戏 - 设定游戏速度
+UnitRemoveAbilityBJ(integer abilityId, unit whichUnit)\nblizzard.j 单位 - 删除技能
+SetDestructableInvulnerable(destructable d, boolean flag)\ncommon.j
+GetWinningPlayer()\ncommon.j
+TriggerSyncReady()\ncommon.j
+UnitSuspendDecay(unit whichUnit, boolean suspend)\ncommon.j 单位 - 暂停尸体腐烂 [R]
+TriggerRegisterEnterRegion(trigger whichTrigger, region whichRegion, boolexpr filter)\ncommon.j 单位 - 单位进入不规则区域(指定条件) [R]
+GetDestructableX(destructable d)\ncommon.j 可破坏物 - 可破坏物所在X轴坐标 [R]
+GetDestructableY(destructable d)\ncommon.j 可破坏物 - 可破坏物所在Y轴坐标 [R]
+ForceUICancel()\ncommon.j
+CopySaveGame(string sourceSaveName, string destSaveName)\ncommon.j
+ResetUbersplat(ubersplat whichSplat)\ncommon.j 地面纹理 - 重置地面纹理变化
+SetUnitPathing(unit whichUnit, boolean flag)\ncommon.j 单位 - 设置碰撞开关
+SaveQuestHandleBJ(quest whichQuest, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存任务
+CreateItem(integer itemid, real x, real y)\ncommon.j 物品 - 创建
+TriggerRegisterPlayerEventEndCinematic(trigger trig, player whichPlayer)\nblizzard.j 玩家 - 按下Esc键
+DestroyFogModifier(fogmodifier whichFogModifier)\ncommon.j 可见度 - 删除可见度修正器
+SaveTimerHandleBJ(timer whichTimer, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存计时器
+ResetToGameCamera(real duration)\ncommon.j 镜头 - 重置游戏镜头(所有玩家) [R]
+ChooseRandomItemBJ(integer level)\nblizzard.j 随机物品类型
+LeaderboardSetPlayerItemValueColorBJ(player whichPlayer, leaderboard lb, real red, real green, real blue, real transparency)\nblizzard.j 排行榜 - 改变玩家分数颜色
+IsUnitAlly(unit whichUnit, player whichPlayer)\ncommon.j 单位 - 是玩家的同盟单位
+MeleeGetCrippledRevealedMessage(player whichPlayer)\nblizzard.j
+GetRevivableUnit()\ncommon.j 事件响应 - 可复活英雄
+UnitSetUpgradeProgress(unit whichUnit, integer upgradePercentage)\ncommon.j 单位 - 设置建筑升级进度条
+IsTriggerQueuedBJ(trigger trig)\nblizzard.j 触发器 - 触发在队列中
+IssueHauntOrderAtLocBJFilter()\nblizzard.j
+CameraSetupSetField(camerasetup whichSetup, camerafield whichField, real value, real duration)\ncommon.j
+GetPlayerTechCountSimple(integer techid, player whichPlayer)\nblizzard.j 玩家 - 当前科技等级
+CompareRectsBJ(rect A, rect B)\nblizzard.j
+LeaderboardSetPlayerItemLabelBJ(player whichPlayer, leaderboard lb, string val)\nblizzard.j 排行榜 - 改变玩家名字
+RMinBJ(real a, real b)\nblizzard.j 数学 - 取较小值
+IsUnitGroupEmptyBJEnum()\nblizzard.j
+DestroyTextTagBJ(texttag tt)\nblizzard.j 漂浮文字 - 删除
+QueueDestructableAnimation(destructable d, string whichAnimation)\ncommon.j
+GetOrderTarget()\ncommon.j
+MultiboardSetItemValueBJ(multiboard mb, integer col, integer row, string val)\nblizzard.j 多面板 - 设置项目文本
+TerrainDeformationCraterBJ(real duration, boolean permanent, location where, real radius, real depth)\nblizzard.j 环境 - 创建地形变化:弹坑
+GetItemOfTypeFromUnitBJ(unit whichUnit, integer itemId)\nblizzard.j 单位持有物品(指定类型)
+SelectGroupForPlayerBJ(group g, player whichPlayer)\nblizzard.j 选择 - 选择单位组(指定玩家)
+GetOwningPlayer(unit whichUnit)\ncommon.j 单位所有者
+IsUnitVisible(unit whichUnit, player whichPlayer)\ncommon.j 可见度 - 单位可见
+GetConvertedPlayerId(player whichPlayer)\nblizzard.j 玩家 - 玩家索引
+PlaySoundBJ(sound soundHandle)\nblizzard.j 声音 - 播放音效
+GetClickedButtonBJ()\nblizzard.j 事件响应 - 点击的对话框按钮
+IssueTrainOrderByIdBJ(unit whichUnit, integer unitId)\nblizzard.j 单位 - 发布训练/升级命令
+QuestSetDescriptionBJ(quest whichQuest, string description)\nblizzard.j 任务 - 设置任务说明
+SaveLocationHandleBJ(location whichLocation, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存点
+MakeUnitRescuableToForceBJ(unit whichUnit, boolean isRescuable, force whichForce)\nblizzard.j 单位 - 设置可否营救(对玩家组)
+SelectUnitRemove(unit whichUnit)\nblizzard.j 选择 - 取消选择单位(所有玩家)
+MultiboardSetItemsWidth(multiboard lb, real width)\ncommon.j 多面板 - 设置所有项目宽度 [R]
+IncUnitAbilityLevelSwapped(integer abilcode, unit whichUnit)\nblizzard.j 单位 - 提升技能等级
+TriggerRegisterGameStateEvent(trigger whichTrigger, gamestate whichState, limitop opcode, real limitval)\ncommon.j
+IsUnitGroupDeadBJEnum()\nblizzard.j
+AdjustCameraField(camerafield whichField, real offset, real duration)\ncommon.j
+SetTextTagSuspendedBJ(texttag tt, boolean flag)\nblizzard.j 漂浮文字 - 暂停/恢复
+GroupEnumUnitsInRect(group whichGroup, rect r, boolexpr filter)\ncommon.j
+RemoveUnitFromAllStock(integer unitId)\ncommon.j 中立建筑 - 删除单位(所有市场)
+TimerDialogSetTimeColorBJ(timerdialog td, real red, real green, real blue, real transparency)\nblizzard.j 计时器 - 改变计时器窗口计时颜色
+GetPlayerStartLocationLoc(player whichPlayer)\nblizzard.j 玩家 - 玩家开始位置
+GetCurrentCameraBoundsMapRectBJ()\nblizzard.j 当前可用镜头范围
+SetTerrainPathable(real x, real y, pathingtype t, boolean flag)\ncommon.j 环境 - 设置地形通行状态(指定坐标) [R]
+MultiboardSetItemWidth(multiboarditem mbi, real width)\ncommon.j 多面板 - 设置指定项目宽度 [R]
+ConvertRacePref(integer i)\ncommon.j
+GetPlayersMatching(boolexpr filter)\nblizzard.j 所有符合条件的玩家
+SetSoundOffsetBJ(real newOffset, sound soundHandle)\nblizzard.j 声音 - 设置音效播放时间点
+WakePlayerUnits(player whichPlayer)\nblizzard.j
+DisableRestartMission(boolean flag)\ncommon.j 游戏 - 禁用 重新开始任务按钮
+SaveTriggerEventHandleBJ(event whichEvent, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存触发事件
+GetItemLoc(item whichItem)\nblizzard.j 物品 - 物品位置
+ResetToGameCameraForPlayer(player whichPlayer, real duration)\nblizzard.j 镜头 - 重置游戏镜头(指定玩家)
+PauseGameOn()\nblizzard.j 游戏 - 暂停游戏
+SetAllyColorFilterState(integer state)\ncommon.j 游戏 - 设置联盟颜色显示
+CachePlayerHeroData(player whichPlayer)\ncommon.j
+FinishCinematicFadeAfterBJ(real duration)\nblizzard.j
+IMaxBJ(integer a, integer b)\nblizzard.j 数学 - 取较大值
+VolumeGroupSetVolumeBJ(volumegroup vgroup, real percent)\nblizzard.j 声音 - 设置多通道音量
+PlayThematicMusicExBJ(string musicName, real startingOffset)\nblizzard.j 声音 - 跳播主题音乐
+GetClickedDialog()\ncommon.j
+SetCameraFieldForPlayer(player whichPlayer, camerafield whichField, real value, real duration)\nblizzard.j 镜头 - 设置镜头属性(指定玩家)(限时)
+DistanceBetweenPoints(location locA, location locB)\nblizzard.j 数学 - 两点间距
+SetTextTagPosBJ(texttag tt, location loc, real zOffset)\nblizzard.j 漂浮文字 - 改变位置(点)
+ForGroup(group whichGroup, code callback)\ncommon.j 单位组 - 选取单位组内单位做动作
+VolumeGroupSetVolume(volumegroup vgroup, real scale)\ncommon.j 声音 - 设置多通道音量 [R]
+PlayThematicMusicEx(string musicFileName, integer frommsecs)\ncommon.j 声音 - 跳播主题音乐 [R]
+MultiboardSetItemValue(multiboarditem mbi, string val)\ncommon.j 多面板 - 设置指定项目文本 [R]
+LeaderboardGetItemCount(leaderboard lb)\ncommon.j 排行榜 - 行数
+MeleeDoLeave(player whichPlayer)\nblizzard.j
+GetRectCenterY(rect whichRect)\ncommon.j 区域(矩形) - 中心Y坐标
+GetRectCenterX(rect whichRect)\ncommon.j 区域(矩形) - 中心X坐标
+TriggerRegisterTrackableTrackEvent(trigger whichTrigger, trackable t)\ncommon.j 可追踪物 - 鼠标移动到追踪对象 [R]
+RescueUnitBJ(unit whichUnit, player rescuer, boolean changeColor)\nblizzard.j 单位 - 营救单位
+GetUnitsOfPlayerAndTypeIdFilter()\nblizzard.j
+GetUnitMoveSpeed(unit whichUnit)\ncommon.j 单位 - 当前移动速度
+TriggerRegisterEnterRectSimple(trigger trig, rect r)\nblizzard.j 单位 - 单位进入矩形区域
+GetFilterItem()\ncommon.j 匹配物品
+I2R(integer i)\ncommon.j 转化 - 转换整数为实数
+I2S(integer i)\ncommon.j 转化 - 转换整数为字符串
+VolumeGroupResetBJ()\nblizzard.j 声音 - 重置多通道音量
+PauseUnit(unit whichUnit, boolean flag)\ncommon.j 单位 - 暂停/恢复 [R]
+SetCineFilterBlendMode(blendmode whichMode)\ncommon.j
+GetPlayerTechMaxAllowedSwap(integer techid, player whichPlayer)\nblizzard.j 玩家 - 最大科技等级
+GroupPointOrderByIdLoc(group whichGroup, integer order, location whichLocation)\ncommon.j 单位组 - 按ID发布命令(指定点) [R]
+UnitGenerateAlarms(unit whichUnit, boolean generate)\nblizzard.j 单位 - 设置警报开启/关闭
+StopMusic(boolean fadeOut)\ncommon.j
+PlayModelCinematic(string modelName)\ncommon.j
+RenameSaveDirectoryBJ(string sourceDirName, string destDirName)\nblizzard.j 游戏 - 重命名存档文件夹
+GetTeams()\ncommon.j 游戏 - 队伍数量
+GetLastCreatedImage()\nblizzard.j Last类 - 最后创建的图像
+CreateRegion()\ncommon.j 新建区域 [R]
+MakeUnitRescuableToForceBJEnum()\nblizzard.j
+GetConstructedStructure()\ncommon.j 事件响应 - 完成的建筑
+CreateTimerDialogBJ(timer t, string title)\nblizzard.j 计时器 - 创建计时器窗口
+SaveForceHandleBJ(force whichForce, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存玩家组
+MultiboardSetRowCount(multiboard lb, integer count)\ncommon.j 多面板 - 设置行数
+GetPlayerHandicapBJ(player whichPlayer)\nblizzard.j 玩家 - 生命障碍
+TriggerRegisterPlayerSelectionEventBJ(trigger trig, player whichPlayer, boolean selected)\nblizzard.j 玩家 - 选择单位事件
+ConvertFogState(integer i)\ncommon.j
+FogMaskEnableOff()\nblizzard.j 可见度 - 禁用黑色阴影
+ContinueCinematicFadeBJ()\nblizzard.j
+IssueTargetDestructableOrder(unit whichUnit, string order, widget targetWidget)\nblizzard.j 单位 - 发布命令(指定可破坏物)
+EnableCreepSleepBJ(boolean enable)\nblizzard.j 玩家 - 允许/禁止 中立生物睡眠
+PanCameraToLocForPlayer(player whichPlayer, location loc)\nblizzard.j
+ShowInterfaceForceOff(force whichForce, real fadeDuration)\nblizzard.j 电影 - 信箱模式开启(指定玩家组)
+AddSpellEffectTarget(string modelName, effecttype t, widget targetWidget, string attachPoint)\ncommon.j
+AddUnitAnimationPropertiesBJ(boolean add, string animProperties, unit whichUnit)\nblizzard.j 动画 - 添加/删除单位动画附加名
+TriggerRegisterPlayerEventLeave(trigger trig, player whichPlayer)\nblizzard.j 玩家 - 离开游戏
+LoadUbersplatHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取地面纹理变化
+MeleeWasUserPlayer(player whichPlayer)\nblizzard.j
+AdjustPlayerStateBJ(integer delta, player whichPlayer, playerstate whichPlayerState)\nblizzard.j 玩家 - 增加属性
+GetEnumItem()\ncommon.j 选取物品
+ConvertBlendMode(integer i)\ncommon.j
+IsPlayerInForce(player whichPlayer, force whichForce)\ncommon.j 玩家 - 在玩家组
+SetTextTagPosUnitBJ(texttag tt, unit whichUnit, real zOffset)\nblizzard.j 漂浮文字 - 改变位置(单位)
+GetOrderTargetUnit()\ncommon.j 事件响应 - 命令发布目标
+AddWeatherEffect(rect where, integer effectID)\ncommon.j 新建天气效果 [R]
+SetUbersplatRenderAlways(ubersplat whichSplat, boolean flag)\ncommon.j 地面纹理 - 设置永久渲染状态
+TriggerRegisterUnitInRangeSimple(trigger trig, real range, unit whichUnit)\nblizzard.j 单位 - 进入指定单位的范围
+GroupImmediateOrderById(group whichGroup, integer order)\ncommon.j 单位组 - 按ID发布命令(无目标) [R]
+CinematicModeExBJ(boolean cineMode, force forForce, real interfaceFadeTime)\nblizzard.j 电影 - 电影模式(指定时间)
+SetDestructableMaxLife(destructable d, real max)\ncommon.j
+SetSoundDistanceCutoff(sound soundHandle, real cutoff)\ncommon.j
+SetMusicPlayPosition(integer millisecs)\ncommon.j 声音 - 设置背景音乐播放时间点 [R]
+ConvertIGameState(integer i)\ncommon.j
+QueuedTriggerAddBJ(trigger trig, boolean checkConditions)\nblizzard.j 触发器 - 添加到触发队列
+QuestSetDescription(quest whichQuest, string description)\ncommon.j
+AddSpecialEffectTarget(string modelName, widget targetWidget, string attachPointName)\ncommon.j 新建特效(创建到单位) [R]
+IssueBuildOrderById(unit whichPeon, integer unitId, real x, real y)\ncommon.j 单位 - 发布建造命令(指定坐标) [R]
+SetPlayerUnitAvailableBJ(integer unitId, boolean allowed, player whichPlayer)\nblizzard.j 玩家 - 设置单位可用性
+GetItemUserData(item whichItem)\ncommon.j 物品 - 物品自定义值
+SetPlayerUnitsOwner(player whichPlayer, integer newOwner)\ncommon.j
+GetGameSpeed()\ncommon.j 当前游戏速度
+SaveGameCache(gamecache whichCache)\ncommon.j
+SetUnitState(unit whichUnit, unitstate whichUnitState, real newVal)\ncommon.j 单位 - 设置单位属性 [R]
+EnableUserUI(boolean b)\ncommon.j
+Or(boolexpr operandA, boolexpr operandB)\ncommon.j
+GetEntireMapRect()\nblizzard.j 完整地图区域
+GetBuyingUnit()\ncommon.j 事件响应 - 购买者
+SaveGame(string saveFileName)\ncommon.j 游戏 - 保存进度 [R]
+KillDestructable(destructable d)\ncommon.j 可破坏物 - 杀死
+IsItemIdSellable(integer itemId)\ncommon.j
+SetCameraBoundsToRectForPlayerBJ(player whichPlayer, rect r)\nblizzard.j 镜头 - 设置可用镜头区域(指定玩家)
+DestroyTextTag(texttag t)\ncommon.j
+IsFogEnabled()\ncommon.j 可见度 - 战争迷雾开启
+LivingPlayerUnitsOfTypeIdFilter()\nblizzard.j
+IsMaskedToPlayer(real x, real y, player whichPlayer)\ncommon.j 可见度 - 坐标在黑色阴影中
+WaygateIsActiveBJ(unit waygate)\nblizzard.j 中立建筑 - 传送门激活
+DestroyUbersplat(ubersplat whichSplat)\ncommon.j 地面纹理 - 删除地面纹理变化
+IsDestructableAliveBJ(destructable d)\nblizzard.j 可破坏物 - 可破坏物存活
+GetItemType(item whichItem)\ncommon.j 指定物品的分类
+TriggerRegisterEnterRegionSimple(trigger trig, region whichRegion)\nblizzard.j 单位 - 单位进入不规则区域 [R]
+SetItemPawnable(item i, boolean flag)\ncommon.j 物品 - 设置物品可否抵押
+GetInventoryIndexOfItemTypeBJ(unit whichUnit, integer itemId)\nblizzard.j 物品 - 物品在物品栏的序号 [C]
+InitHashtableBJ()\nblizzard.j 哈希表 - <1.24> 新建哈希表
+LeaderboardHasPlayerItemBJ(leaderboard lb, player whichPlayer)\nblizzard.j 排行榜 - 玩家在排行榜
+EnableSelect(boolean state, boolean ui)\ncommon.j 游戏 - 允许/禁用选择
+UnitRemoveBuffBJ(integer buffcode, unit whichUnit)\nblizzard.j 单位 - 删除指定魔法效果
+RandomDestructableInRectSimpleBJ(rect r)\nblizzard.j 矩形区域内的随机可破坏物
+LeaderboardSetLabelColorBJ(leaderboard lb, real red, real green, real blue, real transparency)\nblizzard.j 排行榜 - 设置文字颜色
+MakeUnitsPassiveForTeam(player whichPlayer)\nblizzard.j
+GetUnitX(unit whichUnit)\ncommon.j 单位 - 单位所在X轴坐标 [R]
+GetUnitY(unit whichUnit)\ncommon.j 单位 - 单位所在Y轴坐标 [R]
+GroupEnumUnitsInRange(group whichGroup, real x, real y, real radius, boolexpr filter)\ncommon.j 单位组 - 选取单位添加到单位组(坐标)
+UnitIsSleeping(unit whichUnit)\ncommon.j
+SetSoundVelocity(sound soundHandle, real x, real y, real z)\ncommon.j
+UnitRemoveItemFromSlotSwapped(integer itemSlot, unit whichHero)\nblizzard.j 英雄 - 丢弃物品(指定物品栏)
+IsPointBlighted(real x, real y)\ncommon.j 环境 - 坐标点被荒芜地表覆盖 [R]
+IsNoVictoryCheat()\ncommon.j 游戏 - 无法胜利 [R]
+PolarProjectionBJ(location source, real dist, real angle)\nblizzard.j 极坐标位移点
+GetTriggerDestructable()\ncommon.j
+IsUnitInRegion(region whichRegion, unit whichUnit)\ncommon.j 单位 - 在不规则区域内 [R]
+FlushParentHashtableBJ(hashtable table)\nblizzard.j 哈希表 - <1.24> 清空哈希表
+LoadButtonHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取对话框按钮
+RemoveAllGuardPositions(player num)\ncommon.j AI - 忽视所有单位的警戒点
+SetItemLifeBJ(widget whichWidget, real life)\nblizzard.j 物品 - 设置物品生命值
+TimerGetElapsed(timer whichTimer)\ncommon.j 计时器 - 逝去时间
+IssueNeutralPointOrderById(player forWhichPlayer,unit neutralStructure, integer unitId, real x, real y)\ncommon.j 单位 - 按ID发布中介命令(指定坐标) [R]
+Cheat(string cheatStr)\ncommon.j 游戏 - 输入作弊码 [R]
+GetAbilitySoundById(integer abilityId, soundtype t)\ncommon.j
+SetTerrainType(real x, real y, integer terrainType, integer variation, integer area, integer shape)\ncommon.j 环境 - 改变地形类型(指定坐标) [R]
+SetCameraQuickPositionForPlayer(player whichPlayer, real x, real y)\nblizzard.j
+GetPlayableMapRect()\nblizzard.j 可用地图区域
+LoadQuestHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取任务
+MeleeStartingUnitsUndead(player whichPlayer, location startLoc, boolean doHeroes, boolean doCamera, boolean doPreload)\nblizzard.j
+SetIntroShotText(string introText)\ncommon.j
+GetHeroSkillPoints(unit whichHero)\ncommon.j 英雄 - 未分配技能点数
+GetCameraEyePositionLoc()\ncommon.j 镜头 - 当前镜头源位置
+SetSoundPitch(sound soundHandle, real pitch)\ncommon.j
+OrderId2String(integer orderId)\ncommon.j
+GetTriggerPlayer()\ncommon.j 事件响应 - 触发玩家
+GetTrainedUnitType()\ncommon.j 事件响应 - 训练单位类型
+CopySaveGameBJ(string sourceSaveName, string destSaveName)\nblizzard.j 游戏 - 复制存档文件
+CreateForce()\ncommon.j 新建玩家组 [R]
+SetUnitOwner(unit whichUnit, player whichPlayer, boolean changeColor)\ncommon.j 单位 - 改变所属
+GetKillingUnitBJ()\nblizzard.j 事件响应 - 凶手单位
+SetDestructableLife(destructable d, real life)\ncommon.j 可破坏物 - 设置生命值(指定值)
+DestroyBoolExpr(boolexpr e)\ncommon.j
+ConvertedPlayer(integer convertedPlayerId)\nblizzard.j 转化 - 转换玩家索引号为玩家
+RemoveUnitFromStockBJ(integer unitId, unit whichUnit)\nblizzard.j 中立建筑 - 删除单位(指定市场)
+IsQuestCompleted(quest whichQuest)\ncommon.j 任务 - 任务完成
+GroupPickRandomUnit(group whichGroup)\nblizzard.j 单位组中随机单位
+CreateQuestItemBJ(quest whichQuest, string description)\nblizzard.j 任务 - 创建任务项目
+MultiboardSetItemsIcon(multiboard lb, string iconPath)\ncommon.j 多面板 - 设置所有项目图标 [R]
+GetUnitTypeId(unit whichUnit)\ncommon.j 指定单位的类型
+CreateDeadDestructableZ(integer objectid, real x, real y, real z, real face, real scale, integer variation)\ncommon.j 新建可破坏物(死亡的) [R]
+GetSpellAbility()\ncommon.j
+TriggerRegisterUnitStateEvent(trigger whichTrigger, unit whichUnit, unitstate whichState, limitop opcode, real limitval)\ncommon.j
+IssueBuildOrderByIdLocBJ(unit whichPeon, integer unitId, location loc)\nblizzard.j 单位 - 发布建造命令(指定点)
+CreateMultiboard()\ncommon.j 新建多面板 [R]
+UnitDropItemPointBJ(unit whichUnit, item whichItem, real x, real y)\nblizzard.j
+GroupTargetOrder(group whichGroup, string order, widget targetWidget)\ncommon.j 单位组 - 发布命令(指定单位)
+PauseGameOff()\nblizzard.j 游戏 - 恢复游戏
+FogMaskEnable(boolean enable)\ncommon.j 可见度 - 启用/禁用黑色阴影 [R]
+RemoveWeatherEffectBJ(weathereffect whichWeatherEffect)\nblizzard.j 环境 - 删除天气效果
+CreateQuest()\ncommon.j 任务 - 新建任务 [R]
+UnitInventoryCount(unit whichUnit)\nblizzard.j 单位 - 持有物品数量
+Sin(real radians)\ncommon.j 数学 - 正弦(弧度) [R]
+TriggerRegisterDestDeathInRegionEvent(trigger trig, rect r)\nblizzard.j 可破坏物 - 可破坏物在区域内死亡(矩形区域)
+GetPlayerStartLocationX(player whichPlayer)\nblizzard.j
+SetUnitManaBJ(unit whichUnit, real newValue)\nblizzard.j 单位 - 设置魔法值(指定值)
+DestroyQuestBJ(quest whichQuest)\nblizzard.j 任务 - 删除任务
+StartSound(sound soundHandle)\ncommon.j
+LoadPlayerHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取玩家
+GetLastCreatedDestructable()\nblizzard.j Last类 - 最后创建的可破坏物
+SetUnitTimeScale(unit whichUnit, real timeScale)\ncommon.j 动画 - 改变单位动画播放速度(按倍数) [R]
+LeaderboardDisplayBJ(boolean show, leaderboard lb)\nblizzard.j 排行榜 - 显示/隐藏
+LoadTriggerHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取触发器
+SetUnitVertexColorBJ(unit whichUnit, real red, real green, real blue, real transparency)\nblizzard.j 动画 - 改变单位颜色(RGB:0-100%)
+ConvertFGameState(integer i)\ncommon.j
+MakeUnitsPassiveForPlayer(player whichPlayer)\nblizzard.j 游戏 - 设置玩家单位为中立受害单位
+CustomVictoryDialogBJ(player whichPlayer)\nblizzard.j
+CameraSetupSetDestPosition(camerasetup whichSetup, real x, real y, real duration)\ncommon.j
+UnitDamageTargetBJ(unit whichUnit, unit target, real amount, attacktype whichAttack, damagetype whichDamage)\nblizzard.j 单位 - 伤害目标
+GetCustomCampaignButtonVisible(integer whichButton)\ncommon.j
+RandomDestructableInRectBJEnum()\nblizzard.j
+DoNotSaveReplay()\ncommon.j 游戏 - 关闭游戏录像功能 [R]
+IsDestructableInvulnerable(destructable d)\ncommon.j
+IsItemPowerup(item whichItem)\ncommon.j 物品 - 物品是拾取时自动使用的 [R]
+UnitPauseTimedLifeBJ(boolean flag, unit whichUnit)\nblizzard.j 单位 - 暂停/恢复生命周期
+QueuedTriggerCheck()\nblizzard.j
+SetPlayerAllianceStateVisionBJ(player sourcePlayer, player otherPlayer, boolean flag)\nblizzard.j
+DialogAddButton(dialog whichDialog, string buttonText, integer hotkey)\ncommon.j 添加对话框按钮 [R]
+TextTagSize2Height(real size)\nblizzard.j
+SetUnitRallyPoint(unit whichUnit, location targPos)\nblizzard.j 单位 - 设置集结点(指定点)
+CameraSetupGetDestPositionLoc(camerasetup whichSetup)\ncommon.j 镜头 - 镜头目标点
+GetRandomDirectionDeg()\nblizzard.j 数学 - 随机角度
+MeleeGetAllyStructureCount(player whichPlayer)\nblizzard.j
+GetEventPlayerState()\ncommon.j
+SetPlayerStartLocation(player whichPlayer, integer startLocIndex)\ncommon.j
+TimerDialogSetTitle(timerdialog whichDialog, string title)\ncommon.j
+GetBooleanAnd(boolean valueA, boolean valueB)\nblizzard.j 条件 - And
+ForcePickRandomPlayer(force whichForce)\nblizzard.j 玩家组中随机玩家
+GetIssuedOrderIdBJ()\nblizzard.j 事件响应 - 发布的命令ID
+GetHeroStatBJ(integer whichStat, unit whichHero, boolean includeBonuses)\nblizzard.j 英雄 - 英雄属性
+SetPlayerTaxRate(player sourcePlayer, player otherPlayer, playerstate whichResource, integer rate)\ncommon.j 玩家 - 设置税率 [R]
+GetRandomSubGroupEnum()\nblizzard.j
+GetAbilityEffectBJ(integer abilcode, effecttype t, integer index)\nblizzard.j 游戏 - 技能效果路径名
+DefeatConditionSetDescriptionBJ(defeatcondition whichCondition, string description)\nblizzard.j 任务 - 改变失败条件说明
+GetLastCreatedTerrainDeformation()\nblizzard.j Last类 - 最后创建的地形变化
+CameraSetupApply(camerasetup whichSetup, boolean doPan, boolean panTimed)\ncommon.j
+GetItemTypeId(item i)\ncommon.j 指定物品的类型
+AttachSoundToUnit(sound soundHandle, unit whichUnit)\ncommon.j
+VersionCompatible(version whichVersion)\ncommon.j
+InitQueuedTriggers()\nblizzard.j
+SaveStringBJ(string value, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存字符串
+IsUnitRace(unit whichUnit, race whichRace)\ncommon.j 单位 - 单位种族检查
+SetAllUnitTypeSlots(integer slots)\ncommon.j 中立建筑 - 限制单位种类(所有市场)
+Tan(real radians)\ncommon.j 数学 - 正切(弧度) [R]
+SmartCameraPanBJ(player whichPlayer, location loc, real duration)\nblizzard.j 镜头 - 在必要时平移镜头(指定玩家)(限时)
+UnitUseItemPoint(unit whichUnit, item whichItem, real x, real y)\ncommon.j 英雄 - 使用物品(指定坐标)
+EnableOcclusion(boolean flag)\ncommon.j 电影 - 允许/禁止闭塞(所有玩家) [R]
+GetHeroStr(unit whichHero, boolean includeBonuses)\ncommon.j 英雄 - 英雄力量 [R]
+DisplayTimedTextFromPlayer(player toPlayer, real x, real y, real duration, string message)\ncommon.j
+KillUnit(unit whichUnit)\ncommon.j 单位 - 杀死
+GetLastTransmissionDurationBJ()\nblizzard.j 电影 - 最后发言长度
+RemoveRegion(region whichRegion)\ncommon.j 区域(不规则) - 删除不规则区域 [R]
+SetPlayerFlagBJ(playerstate whichPlayerFlag, boolean flag, player whichPlayer)\nblizzard.j 玩家 - 开启/关闭 玩家参数
+LeaderboardSetPlayerItemValueBJ(player whichPlayer, leaderboard lb, integer val)\nblizzard.j 排行榜 - 改变玩家分数
+LeaderboardSetPlayerItemLabelColorBJ(player whichPlayer, leaderboard lb, real red, real green, real blue, real transparency)\nblizzard.j 排行榜 - 设置玩家名字颜色
+DestroyTimerDialog(timerdialog whichDialog)\ncommon.j
+CameraSetTargetNoiseEx(real mag, real velocity, boolean vertOnly)\ncommon.j 镜头 - 摇晃镜头目标(所有玩家) [R]
+IsLocationVisibleToPlayer(location whichLocation, player whichPlayer)\ncommon.j 可见度 - 点可见
+IsCineFilterDisplayed()\ncommon.j
+IsUnit(unit whichUnit, unit whichSpecifiedUnit)\ncommon.j 单位 - 单位检查
+SetSoundChannel(sound soundHandle, integer channel)\ncommon.j
+SetPlayerOnScoreScreen(player whichPlayer, boolean flag)\ncommon.j 玩家 - 显示/隐藏计分屏显示 [R]
+Atan2(real y, real x)\ncommon.j 数学 - 反正切(Y:X)(弧度) [R]
+TerrainDeformWave(real x, real y, real dirX, real dirY, real distance, real speed, real radius, real depth, integer trailTime, integer count)\ncommon.j 新建地形变化:冲击波 [R]
+GetRescuer()\ncommon.j
+GetLastCreatedLightningBJ()\nblizzard.j Last类 - 最后创建的闪电效果
+TriggerRegisterPlayerKeyEventBJ(trigger trig, player whichPlayer, integer keType, integer keKey)\nblizzard.j 玩家 - 键盘事件
+PreloadRefresh()\ncommon.j
+GetPlayerId(player whichPlayer)\ncommon.j 玩家 - 玩家索引 [R]
+PauseAllUnitsBJEnum()\nblizzard.j
+ShowUbersplatBJ(boolean flag, ubersplat whichSplat)\nblizzard.j 地面纹理 - ~Show/Hide," ",~Ubersplat
+SetTextTagSuspended(texttag t, boolean flag)\ncommon.j
+CommandAI(player num, integer command, integer data)\ncommon.j AI - 发送AI命令
+SaveGroupHandleBJ(group whichGroup, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存单位组
+IsItemVisible(item whichItem)\ncommon.j 物品 - 物品可见 [R]
+ClearSelectionForPlayer(player whichPlayer)\nblizzard.j 选择 - 清空选择(指定玩家)
+GetManipulatedItem()\ncommon.j 事件响应 - 被操作物品
+LeaderboardSortItemsBJ(leaderboard lb, integer sortType, boolean ascending)\nblizzard.j 排行榜 - 排序
+WaygateGetDestinationLocBJ(unit waygate)\nblizzard.j 中立建筑 - 传送门目的地
+SetPlayerTechMaxAllowed(player whichPlayer, integer techid, integer maximum)\ncommon.j
+SetHeroLevel(unit whichHero, integer level,  boolean showEyeCandy)\ncommon.j 英雄 - 设置等级
+MoveLocation(location whichLocation, real newX, real newY)\ncommon.j 点 - 移动点 [R]
+GetLightningColorBBJ(lightning whichBolt)\nblizzard.j 闪电效果 - 蓝颜色值
+TriggerRegisterTimerExpireEvent(trigger whichTrigger, timer t)\ncommon.j
+MeleeStartingUnitsHuman(player whichPlayer, location startLoc, boolean doHeroes, boolean doCamera, boolean doPreload)\nblizzard.j
+SetPlayerRacePreference(player whichPlayer, racepreference whichRacePreference)\ncommon.j
+UnitMakeAbilityPermanent(unit whichUnit, boolean permanent, integer abilityId)\ncommon.j 单位 - 设置技能永久性 [R]
+PauseTimer(timer whichTimer)\ncommon.j 计时器 - 暂停计时器 [R]
+UnitShareVision(unit whichUnit, player whichPlayer, boolean share)\ncommon.j 单位 - 共享视野 [R]
+ConvertVolumeGroup(integer i)\ncommon.j
+PanCameraToTimed(real x, real y, real duration)\ncommon.j 镜头 - 平移镜头(所有玩家)(限时) [R]
+ConvertVersion(integer i)\ncommon.j
+SetCineModeVolumeGroupsImmediateBJ()\nblizzard.j
+UnitItemInSlot(unit whichUnit, integer itemSlot)\ncommon.j 单位持有物品
+StartTimerBJ(timer t, boolean periodic, real timeout)\nblizzard.j 计时器 - 启动计时器
+CripplePlayer(player whichPlayer, force toWhichPlayers, boolean flag)\ncommon.j
+GetEventUnitState()\ncommon.j
+IsUnitDeadBJ(unit whichUnit)\nblizzard.j 单位 - 单位死亡
+TriggerRegisterUnitManaEvent(trigger trig, unit whichUnit, limitop opcode, real limitval)\nblizzard.j 单位 - 魔法值变化
+StoreRealBJ(real value, string key, string missionKey, gamecache cache)\nblizzard.j 不推荐使用 - 记录实数
+ModifyHeroStat(integer whichStat, unit whichHero, integer modifyMethod, integer value)\nblizzard.j 英雄 - 修改英雄属性
+PauseAllUnitsBJ(boolean pause)\nblizzard.j 单位 - 暂停/恢复 所有单位
+LoadWidgetHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j <1.24> 从哈希表提取物体
+MeleeGetAllyCount(player whichPlayer)\nblizzard.j
+GetPlayersAll()\nblizzard.j 所有玩家
+CameraSetupApplyWithZ(camerasetup whichSetup, real zDestOffset)\ncommon.j
+CountPlayersInForceEnum()\nblizzard.j
+GetLearnedSkillLevel()\ncommon.j 事件响应 - 学习技能等级
+CheckInitPlayerSlotAvailability()\nblizzard.j
+SetUnitMoveSpeed(unit whichUnit, real newSpeed)\ncommon.j 单位 - 设置移动速度
+SetPlayerColor(player whichPlayer, playercolor color)\ncommon.j 玩家 - 改变玩家颜色 [R]
+IssueInstantPointOrder(unit whichUnit, string order, real x, real y, widget instantTargetWidget)\ncommon.j
+MeleeGrantItemsToTrainedHero()\nblizzard.j
+Preload(string filename)\ncommon.j 游戏 - 预载文件
+TanBJ(real degrees)\nblizzard.j 数学 - 正切(角度)
+ConvertPlayerGameResult(integer i)\ncommon.j
+GetWidgetLife(widget whichWidget)\ncommon.j
+GetCameraBoundMinY()\ncommon.j 当前可用镜头区域最小Y坐标 [R]
+GetCameraBoundMinX()\ncommon.j 当前可用镜头区域最小X坐标 [R]
+ShowImageBJ(boolean flag, image whichImage)\nblizzard.j 图像 - 显示/隐藏图像
+LeaderboardAddItemBJ(player whichPlayer, leaderboard lb, string label, integer value)\nblizzard.j 排行榜 - 添加玩家
+IsLocationMaskedToPlayer(location whichLocation, player whichPlayer)\ncommon.j 可见度 - 点在黑色阴影中
+SelectUnit(unit whichUnit, boolean flag)\ncommon.j
+CreateTimer()\ncommon.j 新建计时器 [R]
+SetPlayerTechResearched(player whichPlayer, integer techid, integer setToLevel)\ncommon.j
+SetSoundConeAngles(sound soundHandle, real inside, real outside, integer outsideVolume)\ncommon.j
+GetItemPlayer(item whichItem)\ncommon.j 物品所属玩家
+LeaderboardGetItemCountBJ(leaderboard lb)\nblizzard.j
+AddSpecialEffect(string modelName, real x, real y)\ncommon.j 新建特效(创建到坐标) [R]
+SetPlayerMaxHeroesAllowed(integer maximum, player whichPlayer)\nblizzard.j 玩家 - 限制英雄数量
+TriggerRegisterBuildSubmenuEventBJ(trigger trig)\nblizzard.j 游戏 - 建造建筑按钮被点击
+GetLastCreatedWeatherEffect()\nblizzard.j Last类 - 最后创建的天气效果
+IsSuspendedXP(unit whichHero)\ncommon.j 英雄 - 经验不可获得
+UnitDropItemPoint(unit whichUnit, item whichItem, real x, real y)\ncommon.j 单位 - 发布丢弃物品命令(指定坐标) [R]
+TerrainDeformationRandomBJ(real duration, location where, real radius, real minDelta, real maxDelta, real updateInterval)\nblizzard.j 环境 - 创建地形变化:随机
+QueuedTriggerAttemptExec()\nblizzard.j
+SelectHeroSkill(unit whichHero, integer abilcode)\ncommon.j 英雄 - 学习技能
+SetUnitPositionLocFacingBJ(unit whichUnit, location loc, real facing)\nblizzard.j 单位 - 移动单位面向角度(立即)
+CreateFogModifierRadiusLoc(player forWhichPlayer, fogstate whichState, location center, real radius, boolean useSharedVision, boolean afterUnits)\ncommon.j
+GetUnitsOfPlayerMatching(player whichPlayer, boolexpr filter)\nblizzard.j 玩家单位(指定条件)
+IssueBuildOrder(unit whichPeon, string unitToBuild, real x, real y)\ncommon.j
+IsPlayerSlotState(player whichPlayer, playerslotstate whichState)\nblizzard.j
+GetLeavingUnit()\ncommon.j 事件响应 - 离开的单位
+TriggerRegisterUnitEvent(trigger whichTrigger, unit whichUnit, unitevent whichEvent)\ncommon.j 单位 - 指定单位事件
+WaygateIsActive(unit waygate)\ncommon.j
+GetAttacker()\ncommon.j 事件响应 - 攻击单位
+SetImageRender(image whichImage, boolean flag)\ncommon.j 图像 - 设置图像渲染状态
+MeleeExposePlayer(player whichPlayer, boolean expose)\nblizzard.j
+GetEventGameState()\ncommon.j
+GetUnitDefaultPropWindowBJ(unit whichUnit)\nblizzard.j 单位 - 默认转向角度
+MeleeGrantHeroItems()\nblizzard.j 对战游戏 - 英雄初始物品
+DestroyMultiboardBJ(multiboard mb)\nblizzard.j 多面板 - 删除
+ResumeMusic()\ncommon.j
+MeleeGetNearestValueWithin(real val, real minVal, real maxVal)\nblizzard.j
+GetSoldItem()\ncommon.j 事件响应 - 被售出物品
+GetUnitStatePercent(unit whichUnit, unitstate whichState, unitstate whichMaxState)\nblizzard.j
+SetTextTagLifespanBJ(texttag tt, real lifespan)\nblizzard.j 漂浮文字 - 设置显示时间
+GetRandomLocInRect(rect whichRect)\nblizzard.j 矩形区域内随机点
+FlashQuestDialogButton()\ncommon.j
+CountLivingPlayerUnitsOfTypeId(integer unitId, player whichPlayer)\nblizzard.j 单位 - 玩家拥有单位数量
+PingMinimapLocForForce(force whichForce, location loc, real duration)\nblizzard.j 电影 - 小地图信号(指定玩家组)
+SetDestructableAnimation(destructable d, string whichAnimation)\ncommon.j
+GroupImmediateOrder(group whichGroup, string order)\ncommon.j 单位组 - 发布命令(无目标)
+MultiboardGetItem(multiboard lb, integer row, integer column)\ncommon.j 多面板项目 [R]
+SaveQuestItemHandleBJ(questitem whichQuestitem, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存任务要求
+MeleeDefeatDialogBJ(player whichPlayer, boolean leftGame)\nblizzard.j
+PlaySoundFromOffsetBJ(sound soundHandle, real volumePercent, real startingOffset)\nblizzard.j 声音 - 跳播音效
+AtanBJ(real degrees)\nblizzard.j 数学 - 反正切(角度)
+PanCameraToTimedLocWithZForPlayer(player whichPlayer, location loc, real zOffset, real duration)\nblizzard.j 镜头 - 指定高度平移镜头(指定玩家)(限时)
+LoadFogStateHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取迷雾状态
+PanCameraTo(real x, real y)\ncommon.j
+GetPlayerHandicapXPBJ(player whichPlayer)\nblizzard.j 玩家 - 经验增长率
+TryInitRescuableTriggersBJ()\nblizzard.j
+LoadTimerDialogHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取计时器窗口
+EnablePreSelect(boolean state, boolean ui)\ncommon.j 游戏 - 允许/禁用预选
+GetSelectedUnit()\ncommon.j
+InitMapRects()\nblizzard.j
+LoadIntegerBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取整数
+GetHeroAgi(unit whichHero, boolean includeBonuses)\ncommon.j 英雄 - 英雄敏捷 [R]
+SetImagePosition(image whichImage, real x, real y, real z)\ncommon.j 图像 - 改变图像位置(指定坐标) [R]
+LeaderboardGetPlayerIndexBJ(player whichPlayer, leaderboard lb)\nblizzard.j 排行榜 - 排行榜位置
+SaveImageHandleBJ(image whichImage, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存图像
+SetCinematicAvailableBJ(boolean available, integer cinematicIndex)\nblizzard.j 游戏 - 允许/禁止 开场电影
+StringCase(string source, boolean upper)\ncommon.j 转化 - 大小写转换
+GetRandomInt(integer lowBound, integer highBound)\ncommon.j 数学 - 随机整数
+GetPlayerTechMaxAllowed(player whichPlayer, integer techid)\ncommon.j
+SetCreatureDensity(mapdensity whichdensity)\ncommon.j
+SetAltMinimapIcon(string iconPath)\ncommon.j 中立建筑 - 设置小地图特殊标志
+SetPlayerHandicapXP(player whichPlayer, real handicap)\ncommon.j 英雄 - 设置经验获得率 [R]
+QuestSetFailedBJ(quest whichQuest, boolean failed)\nblizzard.j 任务 - 设置任务失败
+IsPointBlightedBJ(location where)\nblizzard.j 环境 - 点被荒芜地表覆盖
+GetLastCreatedItem()\nblizzard.j Last类 - 最后创建的物品
+SetPlayerHandicap(player whichPlayer, real handicap)\ncommon.j 玩家 - 设置生命上限 [R]
+IsPlayerFlagSetBJ(playerstate whichPlayerFlag, player whichPlayer)\nblizzard.j 玩家 - 玩家参数开启
+Asin(real y)\ncommon.j 数学 - 反正弦(弧度) [R]
+ConvertAttackType(integer i)\ncommon.j
+QueuedTriggerDoneBJ()\nblizzard.j
+DialogCreate()\ncommon.j 新建对话框 [R]
+SetItemCharges(item whichItem, integer charges)\ncommon.j 物品 - 设置物品使用次数
+EnableWeatherEffect(weathereffect whichEffect, boolean enable)\ncommon.j 环境 - 启用/禁用 天气效果
+SetLightningColorBJ(lightning whichBolt, real r, real g, real b, real a)\nblizzard.j 闪电效果 - 改变闪电效果颜色
+DecUnitAbilityLevel(unit whichUnit, integer abilcode)\ncommon.j 单位 - 降低技能等级 [R]
+PingMinimapLocForForceEx(force whichForce, location loc, real duration, integer style, real red, real green, real blue)\nblizzard.j 电影 - 小地图信号(指定颜色)(指定玩家组)
+ConvertMapFlag(integer i)\ncommon.j
+SetDoodadAnimationBJ(string animName, integer doodadID, real radius, location center)\nblizzard.j 动画 - 播放圆范围内地形装饰物动画
+TriggerRegisterFilterUnitEvent(trigger whichTrigger, unit whichUnit, unitevent whichEvent, boolexpr filter)\ncommon.j
+GetPlayersAllies(player whichPlayer)\nblizzard.j 玩家的盟友
+LeaderboardResizeBJ(leaderboard lb)\nblizzard.j
+DelayedSuspendDecayBoneEnum()\nblizzard.j
+SetTextTagAge(texttag t, real age)\ncommon.j
+ForceCampaignSelectScreen()\ncommon.j
+GetOrderedUnit()\ncommon.j 事件响应 - 发布命令的单位
+GetTriggerWidget()\ncommon.j
+UnitCountBuffsExBJ(integer polarity, integer resist, unit whichUnit, boolean bTLife, boolean bAura)\nblizzard.j 单位 - 拥有Buff数量
+CreateDestructableZ(integer objectid, real x, real y, real z, real face, real scale, integer variation)\ncommon.j 新建可破坏物 [R]
+MoveRectToLoc(rect whichRect, location newCenterLoc)\ncommon.j 区域(矩形) - 移动矩形区域(指定点)
+LoadUnitPoolHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取单位池
+IsUnitFogged(unit whichUnit, player whichPlayer)\ncommon.j 可见度 - 单位在迷雾中
+DestroyLeaderboardBJ(leaderboard lb)\nblizzard.j 排行榜 - 删除
+GetUnitDefaultMoveSpeed(unit whichUnit)\ncommon.j 单位 - 默认移动速度
+SetWaterDeforms(boolean val)\ncommon.j 环境 - 开启/关闭 水面变形
+GetRectCenter(rect whichRect)\nblizzard.j 矩形区域中心
+IsLeaderboardDisplayed(leaderboard lb)\ncommon.j
+SetHeroStat(unit whichHero, integer whichStat, integer value)\nblizzard.j
+GroupPointOrderLoc(group whichGroup, string order, location whichLocation)\ncommon.j 单位组 - 发布命令(指定点)
+StopCameraForPlayerBJ(player whichPlayer)\nblizzard.j 镜头 - 停止播放镜头(指定玩家)
+UnitHasItemOfTypeBJ(unit whichUnit, integer itemId)\nblizzard.j 英雄 - 持有物品(指定类型)
+SaveAndLoadGameBJ(string saveFileName, string loadFileName, boolean doScoreScreen)\nblizzard.j 游戏 - 保存并读取进度
+TriggerRegisterTrackableHitEvent(trigger whichTrigger, trackable t)\ncommon.j 可追踪物 - 鼠标点击可追踪物 [R]
+MeleeDoDefeatEnum()\nblizzard.j
+MultiboardSetItemsValue(multiboard lb, string value)\ncommon.j 多面板 - 设置所有项目文本 [R]
+ClearMapMusic()\ncommon.j
+SetHeroInt(unit whichHero, integer newInt, boolean permanent)\ncommon.j 英雄 - 设置英雄智力 [R]
+CreateSound(string fileName, boolean looping, boolean is3D, boolean stopwhenoutofrange, integer fadeInRate, integer fadeOutRate, string eaxSetting)\ncommon.j
+RectContainsItem(item whichItem, rect r)\nblizzard.j 物品 - 物品在矩形区域
+PauseTimerBJ(boolean pause, timer whichTimer)\nblizzard.j 计时器 - 暂停/恢复 计时器
+SetTextTagPosUnit(texttag t, unit whichUnit, real heightOffset)\ncommon.j
+PreloadEndEx()\ncommon.j
+S2I(string s)\ncommon.j 转化 - 转换字符串为整数
+GetLastCreatedFogModifier()\nblizzard.j Last类 - 最后创建的可见度修正器
+NearbyElevatorExists(real x, real y)\nblizzard.j
+S2R(string s)\ncommon.j 转化 - 转换字符串为实数
+IsTerrainPathableBJ(location where, pathingtype t)\nblizzard.j 环境 - 地形通行状态关闭(指定点)
+FlushGameCacheBJ(gamecache cache)\nblizzard.j 游戏缓存 - 删除缓存
+GetDestructableName(destructable d)\ncommon.j 可破坏物 - 物件名字
+EndThematicMusicBJ()\nblizzard.j 声音 - 停止主题音乐
+UnitCanSleepBJ(unit whichUnit)\nblizzard.j 单位 - 允许夜晚睡眠
+ConvertDialogEvent(integer i)\ncommon.j
+SetUnitAnimation(unit whichUnit, string whichAnimation)\ncommon.j 动画 - 播放单位动画
+GetStoredBooleanBJ(string key, string missionKey, gamecache cache)\nblizzard.j 不推荐使用 - 读取布尔值
+GetWidgetX(widget whichWidget)\ncommon.j
+PlaySoundAtPointBJ(sound soundHandle, real volumePercent, location loc, real z)\nblizzard.j 声音 - 播放3D音效(指定点)
+GetSoundFileDuration(string musicFileName)\ncommon.j
+DialogClear(dialog whichDialog)\ncommon.j
+SyncStoredBoolean(gamecache cache, string missionKey, string key)\ncommon.j
+CameraSetupGetFieldSwap(camerafield whichField, camerasetup whichSetup)\nblizzard.j 镜头 - 镜头属性(指定镜头)
+SetCameraOrientControllerForPlayerBJ(player whichPlayer, unit whichUnit, real xoffset, real yoffset)\nblizzard.j 镜头 - 锁定镜头到单位(固定镜头源)(指定玩家)
+QuestSetTitleBJ(quest whichQuest, string title)\nblizzard.j 任务 - 设置任务标题
+LoadMultiboardHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取多面板
+UnitAddItemToSlotById(unit whichUnit, integer itemId, integer itemSlot)\ncommon.j 英雄 - 新建物品到指定物品栏 [R]
+SaveFogModifierHandleBJ(fogmodifier whichFogModifier, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存可见度修正器
+PercentTo255(real percentage)\nblizzard.j
+ForceUIKey(string key)\ncommon.j
+LeaderboardSortItemsByLabelBJ(leaderboard lb, boolean ascending)\nblizzard.j
+SetUnitAcquireRangeBJ(unit whichUnit, real acquireRange)\nblizzard.j 单位 - 设置主动攻击范围
+ConvertUnitEvent(integer i)\ncommon.j
+LoadTimerHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取计时器
+GetTerrainVarianceBJ(location where)\nblizzard.j 环境 - 地形样式(指定点)
+SetItemDropOnDeath(item whichItem, boolean flag)\ncommon.j
+SelectUnitRemoveForPlayer(unit whichUnit, player whichPlayer)\nblizzard.j 选择 - 取消选择单位(指定玩家)
+GroupTrainOrderByIdBJ(group g, integer unitId)\nblizzard.j 单位组 - 发布发布训练/升级命令
+GetResourceAmount(unit whichUnit)\ncommon.j 中立建筑 - 储金量
+IssueNeutralTargetOrder(player forWhichPlayer,unit neutralStructure, string unitToBuild, widget target)\ncommon.j 单位 - 发布中介命令(指定单位) [R]
+LeaderboardSortItemsByLabel(leaderboard lb, boolean ascending)\ncommon.j
+InitGameCacheBJ(string campaignFile)\nblizzard.j 游戏缓存 - 创建游戏缓存
+LeaderboardSetValueColorBJ(leaderboard lb, real red, real green, real blue, real transparency)\nblizzard.j 排行榜 - 设置数值颜色
+PlaceRandomUnit(unitpool whichPool, player forWhichPlayer, real x, real y, real facing)\ncommon.j 单位池 - 选择放置单位 [R]
+ChooseRandomCreepBJ(integer level)\nblizzard.j 随机中立单位类型
+ShowDestructable(destructable d, boolean flag)\ncommon.j 可破坏物 - 显示/隐藏 [R]
+LeaderboardSetStyle(leaderboard lb, boolean showLabel, boolean showNames, boolean showValues, boolean showIcons)\ncommon.j
+GetUnitManaPercent(unit whichUnit)\nblizzard.j 单位 - 魔法百分比
+NudgeItemsInRectEnum()\nblizzard.j
+GetLastPlayedSound()\nblizzard.j Last类 - 最后播放的音效
+SetTextTagFadepoint(texttag t, real fadepoint)\ncommon.j
+CreateBlightedGoldmine(player id, real x, real y, real face)\ncommon.j 新建不死族金矿 [R]
+SetPlayerHandicapXPBJ(player whichPlayer, real handicapPercent)\nblizzard.j 英雄 - 设置经验获得率
+GetLocalPlayer()\ncommon.j 本地玩家 [R]
+GetUnitDefaultPropWindow(unit whichUnit)\ncommon.j
+ForceEnumPlayersCounted(force whichForce, boolexpr filter, integer countLimit)\ncommon.j
+PingMinimapForPlayer(player whichPlayer, real x, real y, real duration)\nblizzard.j
+RemoveItem(item whichItem)\ncommon.j 物品 - 删除
+UnitId2OrderIdBJ(integer unitId)\nblizzard.j 转化 - 转换单位类型为命令ID
+TriggerSleepAction(real timeout)\ncommon.j 等待 - 等待(玩家时间)
+CreateTextTag()\ncommon.j 新建漂浮文字 [R]
+SetCameraTargetController(unit whichUnit, real xoffset, real yoffset, boolean inheritOrientation)\ncommon.j 镜头 - 锁定镜头到单位(所有玩家) [R]
+ConvertPlayerColor(integer i)\ncommon.j
+GetLastCreatedTextTag()\nblizzard.j Last类 - 最后创建的漂浮文字
+GetLastCreatedUbersplat()\nblizzard.j Last类 - 最后创建的地面纹理变化
+SetSoundPlayPosition(sound soundHandle, integer millisecs)\ncommon.j 声音 - 设置音效播放时间点 [R]
+SetUnitBlendTime(unit whichUnit, real blendTime)\ncommon.j
+Location(real x, real y)\ncommon.j 转化 - 坐标点
+GetEventDamage()\ncommon.j 事件响应 - 伤害值
+InitNeutralBuildings()\nblizzard.j
+GroupEnumUnitsInRangeOfLocCounted(group whichGroup, location whichLocation, real radius, boolexpr filter, integer countLimit)\ncommon.j 单位组 - 选取单位添加到单位组(点)(不建议使用)
+SetUnitAnimationByIndex(unit whichUnit, integer whichAnimation)\ncommon.j 动画 - 播放单位指定序号动动作 [R]
+SaveTriggerConditionHandleBJ(triggercondition whichTriggercondition, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存触发条件
+WidgetDropItem(widget inWidget, integer inItemID)\nblizzard.j
+SetUnitRescueRange(unit whichUnit, real range)\ncommon.j 单位 - 设置营救范围
+MeleeCheckForLosersAndVictors()\nblizzard.j
+IsItemPawnable(item whichItem)\ncommon.j 物品 - 物品可被抵押 [R]
+MultiboardMinimizeBJ(boolean minimize, multiboard mb)\nblizzard.j 多面板 - 最大/最小化
+SetResourceDensity(mapdensity whichdensity)\ncommon.j
+GetCreatureDensity()\ncommon.j
+UpdateEachStockBuilding(itemtype iType, integer iLevel)\nblizzard.j
+GetRandomSubGroup(integer count, group sourceGroup)\nblizzard.j 单位组中随机单位
+CinematicFadeCommonBJ(real red, real green, real blue, real duration, string tex, real startTrans, real endTrans)\nblizzard.j
+LeaderboardSetStyleBJ(leaderboard lb, boolean showLabel, boolean showNames, boolean showValues, boolean showIcons)\nblizzard.j 排行榜 - 设置显示样式
+GetPlayerStartLocationY(player whichPlayer)\nblizzard.j
+SetCineFilterTexMapFlags(texmapflags whichFlags)\ncommon.j
+SetTerrainFogEx(integer style, real zstart, real zend, real density, real red, real green, real blue)\ncommon.j 环境 - 设置迷雾 [R]
+R2SW(real r, integer width, integer precision)\ncommon.j 转化 - 格式转换实数为字符串
+GroupEnumUnitsInRangeCounted(group whichGroup, real x, real y, real radius, boolexpr filter, integer countLimit)\ncommon.j 单位组 - 选取单位添加到单位组(坐标)(不建议使用)
+GetTimeOfDay()\nblizzard.j 游戏 - 游戏时间
+IsItemSellable(item whichItem)\ncommon.j 物品 - 物品可被市场随机出售 [R]
+GetUnitCurrentOrder(unit whichUnit)\ncommon.j 单位 - 当前命令ID
+SetPlayerController(player whichPlayer, mapcontrol controlType)\ncommon.j
+MeleeGetCrippledWarningMessage(player whichPlayer)\nblizzard.j
+LoadLeaderboardHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取排行榜
+SelectGroupBJEnum()\nblizzard.j
+MeleeTournamentFinishNowRuleA(integer multiplier)\nblizzard.j
+UnitResetCooldown(unit whichUnit)\ncommon.j 单位 - 重置技能CD
+TimerDialogDisplayBJ(boolean show, timerdialog td)\nblizzard.j 计时器 - 显示/隐藏 计时器窗口(所有玩家)
+AllowVictoryDefeat(playergameresult gameResult)\nblizzard.j
+SetDestructableAnimationBJ(destructable d, string whichAnimation)\nblizzard.j 动画 - 播放可破坏物动画
+ConvertMapVisibility(integer i)\ncommon.j
+IsMultiboardMinimized(multiboard lb)\ncommon.j 多面板 - 多面板最小化
+UnitDropItemTargetBJ(unit whichUnit, item whichItem, widget target)\nblizzard.j 单位 - 发布给予物品命令
+UnitRemoveAbility(unit whichUnit, integer abilityId)\ncommon.j 单位 - 删除技能 [R]
+SetDestructableMaxLifeBJ(destructable d, real max)\nblizzard.j 可破坏物 - 设置最大生命值
+LoadBooleanExprHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取布尔表达式
+PanCameraToForPlayer(player whichPlayer, real x, real y)\nblizzard.j
+DisplayCineFilterBJ(boolean flag)\nblizzard.j 电影 - 显示/隐藏 滤镜
+PolledWait(real duration)\nblizzard.j 等待 - 等待(游戏时间)
+RemoveUnit(unit whichUnit)\ncommon.j 单位 - 删除
+ModifyHeroSkillPoints(unit whichHero, integer modifyMethod, integer value)\nblizzard.j 英雄 - 修改剩余技能点
+TriggerRegisterGameEvent(trigger whichTrigger, gameevent whichGameEvent)\ncommon.j 游戏 - 比赛游戏事件
+ItemPoolAddItemType(itempool whichItemPool, integer itemId, real weight)\ncommon.j 物品池 - 添加物品类型 [R]
+GameOverDialogBJ(player whichPlayer, boolean leftGame)\nblizzard.j
+SetDoodadAnimationRectBJ(string animName, integer doodadID, rect r)\nblizzard.j 动画 - 播放矩形区域内地形装饰物动画
+IsDestructableDeadBJ(destructable d)\nblizzard.j 可破坏物 - 可破坏物死亡
+QueueUnitAnimation(unit whichUnit, string whichAnimation)\ncommon.j
+GetSoundFileDurationBJ(string musicFileName)\nblizzard.j 声音 - 音乐长度
+StartCampaignAI(player num, string script)\ncommon.j AI - 启用战役AI
+GetCameraEyePositionX()\ncommon.j 镜头 - 当前镜头源X坐标
+UnitIgnoreAlarmToggled(unit whichUnit)\ncommon.j
+GetUnitRallyDestructable(unit whichUnit)\ncommon.j 单位 - 单位集结点目标
+RemovePurchasedItem()\nblizzard.j
+CreateDefeatConditionBJ(string description)\nblizzard.j 任务 - 创建失败条件
+UnitAddItemByIdSwapped(integer itemId, unit whichHero)\nblizzard.j 英雄 - 创建物品给英雄
+MeleeRemoveObservers()\nblizzard.j
+SetRescueUnitColorChangeBJ(boolean changeColor)\nblizzard.j 单位 - 设置营救颜色(单位)
+CreateDestructable(integer objectid, real x, real y, real face, real scale, integer variation)\ncommon.j
+SetOpCinematicAvailable(integer campaignNumber, boolean available)\ncommon.j
+CustomDefeatReduceDifficultyBJ()\nblizzard.j
+GetDestructableTypeId(destructable d)\ncommon.j 指定可破坏物的类型
+CosBJ(real degrees)\nblizzard.j 数学 - 余弦(角度)
+RemovePlayer(player whichPlayer, playergameresult gameResult)\ncommon.j 玩家 - 踢除玩家
+MultiboardSetItemValueColor(multiboarditem mbi, integer red, integer green, integer blue, integer alpha)\ncommon.j 多面板 - 设置指定项目颜色 [R]
+UnitId(string  unitIdString)\ncommon.j
+StartSoundForPlayerBJ(player whichPlayer, sound soundHandle)\nblizzard.j
+SetMapDescription(string description)\ncommon.j
+SaveSoundHandleBJ(sound whichSound, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存音效
+SetSoundPitchBJ(sound soundHandle, real pitch)\nblizzard.j 声音 - 设置声音速率
+UnitRemoveBuffsExBJ(integer polarity, integer resist, unit whichUnit, boolean bTLife, boolean bAura)\nblizzard.j 单位 - 删除魔法效果(详细类别)
+SetTerrainFog(real a, real b, real c, real d, real e)\ncommon.j
+SetPlayerTechResearchedSwap(integer techid, integer levels, player whichPlayer)\nblizzard.j 玩家 - 设置科技等级
+FogEnableOff()\nblizzard.j 可见度 - 禁用战争迷雾
+SetCinematicCameraForPlayer(player whichPlayer, string cameraModelFile)\nblizzard.j 镜头 - 播放电影镜头(指定玩家)
+MultiboardSetColumnCount(multiboard lb, integer count)\ncommon.j 多面板 - 设置列数
+SetCampaignAvailableBJ(boolean available, integer campaignNumber)\nblizzard.j 游戏 - 允许/禁止 战役
+MultiboardDisplayBJ(boolean show, multiboard mb)\nblizzard.j 多面板 - 显示/隐藏
+GroupTargetOrderById(group whichGroup, integer order, widget targetWidget)\ncommon.j 单位组 - 按ID发布命令(指定单位) [R]
+UnitModifySkillPoints(unit whichHero, integer skillPointDelta)\ncommon.j 英雄 - 添加剩余技能点 [R]
+SetDNCSoundsDusk()\nblizzard.j
+GetAllyColorFilterState()\ncommon.j 游戏 - 联盟颜色显示设置
+SetUnitLifeBJ(unit whichUnit, real newValue)\nblizzard.j 单位 - 设置生命值(指定值)
+LeaderboardAddItem(leaderboard lb, string label, integer value, player p)\ncommon.j
+IssueTargetOrder(unit whichUnit, string order, widget targetWidget)\ncommon.j 单位 - 发布命令(指定单位)
+SaveWidgetHandleBJ(widget whichWidget, integer key, integer missionKey, hashtable table)\nblizzard.j <1.24> 保存物体
+AddSpellEffectLoc(string abilityString, effecttype t,location where)\ncommon.j
+SetUnitColor(unit whichUnit, playercolor whichColor)\ncommon.j 单位 - 改变队伍颜色
+IsDestructableInvulnerableBJ(destructable d)\nblizzard.j 可破坏物 - 物件无敌
+GetLastCreatedTimerBJ()\nblizzard.j Last类 - 最后启用的计时器
+SetSkyModel(string skyModelFile)\ncommon.j 环境 - 设置天空
+MoveLightningEx(lightning whichBolt, boolean checkVisibility, real x1, real y1, real z1, real x2, real y2, real z2)\ncommon.j 闪电效果 - 移动闪电效果(指定坐标) [R]
+SetUnitLifePercentBJ(unit whichUnit, real percent)\nblizzard.j 单位 - 设置生命值(百分比)
+GetTriggerEventId()\ncommon.j
+LoadMultiboardItemHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取多面板项目
+TriggerRegisterGameSavedEventBJ(trigger trig)\nblizzard.j 游戏 - 游戏存档
+TriggerRegisterGameStateEventTimeOfDay(trigger trig, limitop opcode, real limitval)\nblizzard.j 游戏 - 游戏时间事件
+SetTextTagTextBJ(texttag tt, string s, real size)\nblizzard.j 漂浮文字 - 改变文字内容
+ChooseRandomItem(integer level)\ncommon.j
+IsUnitSelected(unit whichUnit, player whichPlayer)\ncommon.j 单位 - 被玩家选择
+GetSpellTargetItem()\ncommon.j 事件响应 - 技能施放目标
+UnitHasBuffBJ(unit whichUnit, integer buffcode)\nblizzard.j 单位 - 拥有魔法效果
+PostTriggerExecuteBJ(trigger trig, boolean checkConditions)\nblizzard.j
+LoadUnitHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取单位
+GetDestructableOccluderHeight(destructable d)\ncommon.j 可破坏物 - 闭塞高度
+ModuloReal(real dividend, real divisor)\nblizzard.j 数学 - 模
+GetTrainedUnit()\ncommon.j 事件响应 - 训练单位
+GroupTargetOrderBJ(group whichGroup, string order, widget targetWidget)\nblizzard.j
+RandomDestructableInRectBJ(rect r, boolexpr filter)\nblizzard.j 矩形区域内的随机可破坏物(指定条件)
+TriggerAddAction(trigger whichTrigger, code actionFunc)\ncommon.j
+TryInitCinematicBehaviorBJ()\nblizzard.j
+RegisterStackedSound(sound soundHandle, boolean byPosition, real rectwidth, real rectheight)\ncommon.j
+GroupPointOrder(group whichGroup, string order, real x, real y)\ncommon.j 单位组 - 发布命令(指定坐标) [R]
+RestoreUnitLocFacingPointBJ(string key, string missionKey, gamecache cache, player forWhichPlayer, location loc, location lookAt)\nblizzard.j 游戏缓存 - 读取单位(面向点)
+FinishCinematicFadeBJ()\nblizzard.j
+IssueTargetOrderBJ(unit whichUnit, string order, widget targetWidget)\nblizzard.j
+TriggerRegisterDialogEvent(trigger whichTrigger, dialog whichDialog)\ncommon.j
+TeamInitPlayerSlots(integer teamCount)\nblizzard.j
+RegionClearRect(region whichRegion, rect r)\ncommon.j 区域(不规则) - 移除区域 [R]
+IsUnitInRangeXY(unit whichUnit, real x, real y, real distance)\ncommon.j 单位 - 在指定坐标范围内 [R]
+GetPlayerTeam(player whichPlayer)\ncommon.j 玩家 - 玩家队伍
+IssueNeutralImmediateOrderById(player forWhichPlayer,unit neutralStructure, integer unitId)\ncommon.j 单位 - 按ID发布中介命令(无目标) [R]
+DestroyLightning(lightning whichBolt)\ncommon.j
+GetDecayingUnit()\ncommon.j 事件响应 - 腐化的单位
+SyncSelections()\ncommon.j
+GetAbilitySound(string abilityString, soundtype t)\ncommon.j
+SetCineFilterTexture(string filename)\ncommon.j
+IsUnitGroupDeadBJ(group g)\nblizzard.j 单位组 - 单位组中所有单位死亡
+IsUnitInTransport(unit whichUnit, unit whichTransport)\ncommon.j
+QuestSetEnabledBJ(boolean enabled, quest whichQuest)\nblizzard.j 任务 - 启用/禁用任务
+IMinBJ(integer a, integer b)\nblizzard.j 数学 - 取较小值
+SetMusicVolumeBJ(real volumePercent)\nblizzard.j 声音 - 设置背景音乐音量
+GetOrderTargetItem()\ncommon.j 事件响应 - 命令发布目标
+UnitRemoveBuffsBJ(integer buffType, unit whichUnit)\nblizzard.j 单位 - 删除魔法效果(指定类别)
+TriggerRegisterDistanceBetweenUnits(trigger trig, unit whichUnit, boolexpr condition, real range)\nblizzard.j
+CameraClearNoiseForPlayer(player whichPlayer)\nblizzard.j 镜头 - 停止摇晃/震动镜头(指定玩家)
+GetUnitPointValue(unit whichUnit)\ncommon.j 单位 - 单位附加值
+LeaderboardSetLabelBJ(leaderboard lb, string label)\nblizzard.j 排行榜 - 设置标题
+BlightGoldMineForPlayerBJ(unit goldMine, player whichPlayer)\nblizzard.j
+CreateUbersplatBJ(location where, string name, real red, real green, real blue, real alpha, boolean forcePaused, boolean noBirthTime)\nblizzard.j 创建地面纹理变化
+GetUnitUserData(unit whichUnit)\ncommon.j 单位 - 单位自定义值
+SetPlayers(integer playercount)\ncommon.j
+SetItemDropID(item whichItem, integer unitId)\ncommon.j 物品 - 设置重生神符的产生单位类型
+ShowUnit(unit whichUnit, boolean show)\ncommon.j 单位 - 显示/隐藏 [R]
+TriggerRegisterTimerExpireEventBJ(trigger trig, timer t)\nblizzard.j 时间 - 计时器到期
+SetHeroAgi(unit whichHero, integer newAgi, boolean permanent)\ncommon.j 英雄 - 设置英雄敏捷 [R]
+GetGameTypeSelected()\ncommon.j
+GetFoodUsed(integer unitId)\ncommon.j 单位 - 单位使用人口数量(指定单位类型)
+UnitAddAbilityBJ(integer abilityId, unit whichUnit)\nblizzard.j 单位 - 添加技能
+UnitPoolRemoveUnitType(unitpool whichPool, integer unitId)\ncommon.j 单位池 - 删除单位类型 [R]
+IsTerrainPathable(real x, real y, pathingtype t)\ncommon.j 环境 - 地形通行状态关闭(指定坐标) [R]
+MeleeClearExcessUnit()\nblizzard.j
+MultiboardSetItemStyleBJ(multiboard mb, integer col, integer row, boolean showValue, boolean showIcon)\nblizzard.j 多面板 - 设置项目显示风格
+ResumeTimer(timer whichTimer)\ncommon.j 计时器 - 恢复计时器 [R]
+SetUnitPositionLoc(unit whichUnit, location whichLocation)\ncommon.j 单位 - 移动单位(立即)(指定点)
+LeaderboardRemovePlayerItem(leaderboard lb, player p)\ncommon.j
+SaveUnitPoolHandleBJ(unitpool whichUnitpool, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存单位池
+LeaderboardSetItemStyle(leaderboard lb, integer whichItem, boolean showLabel, boolean showValue, boolean showIcon)\ncommon.j
+QuestItemSetCompletedBJ(questitem whichQuestItem, boolean completed)\nblizzard.j 任务 - 设置任务项目完成
+SetTextTagVelocityBJ(texttag tt, real speed, real angle)\nblizzard.j 漂浮文字 - 设置速率
+GetIntegerGameState(igamestate whichIntegerGameState)\ncommon.j
+ConvertPlacement(integer i)\ncommon.j
+UnitCanSleepPerm(unit whichUnit)\ncommon.j 单位 - 允许控制睡眠状态
+GetTransportUnit()\ncommon.j
+PauseUnitBJ(boolean pause, unit whichUnit)\nblizzard.j 单位 - 暂停/恢复
+QuestMessageBJ(force f, integer messageType, string message)\nblizzard.j 任务 - 发送任务信息
+GroupPickRandomUnitEnum()\nblizzard.j
+FogMaskEnableOn()\nblizzard.j 可见度 - 启用黑色阴影
+UnitItemInSlotBJ(unit whichUnit, integer itemSlot)\nblizzard.j 单位持有物品
+CreateTimerBJ(boolean periodic, real timeout)\nblizzard.j
+MeleeTriggerActionUnitConstructionStart()\nblizzard.j
+GroupAddGroup(group sourceGroup, group destGroup)\nblizzard.j 单位组 - 添加单位组
+SetUnitAcquireRange(unit whichUnit, real newAcquireRange)\ncommon.j
+GetLastCreatedDefeatConditionBJ()\nblizzard.j Last类 - 最后创建的失败条件
+ItemAddIndicatorBJ(item whichItem, real red, real green, real blue, real transparency)\nblizzard.j 电影 - 闪动指示器(对物品)
+RemoveSaveDirectoryBJ(string sourceDirName)\nblizzard.j 游戏 - 删除存档文件夹
+MultiboardSetItemWidthBJ(multiboard mb, integer col, integer row, real width)\nblizzard.j 多面板 - 设置项目宽度
+SetUnitCreepGuard(unit whichUnit, boolean creepGuard)\ncommon.j AI - 锁定指定单位的警戒点 [R]
+UnitMakeAbilityPermanentBJ(boolean permanent, integer abilityId, unit whichUnit)\nblizzard.j
+UnitId2StringBJ(integer unitId)\nblizzard.j 转化 - 转换单位类型为字符串
+SetDoodadAnimationRect(rect r, integer doodadID, string animName, boolean animRandom)\ncommon.j 动画 - 播放矩形区域内地形装饰物动画 [R]
+GetPlayerRace(player whichPlayer)\ncommon.j 玩家的种族
+GetStartLocationX(integer whichStartLocation)\ncommon.j
+GetStartLocationY(integer whichStartLocation)\ncommon.j
+GetUnitState(unit whichUnit, unitstate whichUnitState)\ncommon.j 单位 - 属性 [R]
+SetPlayerSlotAvailable(player whichPlayer, mapcontrol control)\nblizzard.j
+StopCamera()\ncommon.j 镜头 - 停止播放镜头(所有玩家) [R]
+SubString(string source, integer start, integer end)\ncommon.j 截取字符串 [R]
+DialogSetMessageBJ(dialog whichDialog, string message)\nblizzard.j 对话框 - 改变标题
+IsUnitPaused(unit whichHero)\ncommon.j
+LeaderboardRemovePlayerItemBJ(player whichPlayer, leaderboard lb)\nblizzard.j 排行榜 - 移除玩家
+GetUnitsInRangeOfLocMatching(real radius, location whichLocation, boolexpr filter)\nblizzard.j 圆范围内单位(指定条件)
+GetStoredStringBJ(string key, string missionKey, gamecache cache)\nblizzard.j 不推荐使用 - 读取字符串
+UnitIgnoreAlarm(unit whichUnit, boolean flag)\ncommon.j
+ShowImage(image whichImage, boolean flag)\ncommon.j 图像 - 显示/隐藏 [R]
+SaveBooleanExprHandleBJ(boolexpr whichBoolexpr, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存布尔表达式
+AddSpecialEffectTargetUnitBJ(string attachPointName, widget targetWidget, string modelName)\nblizzard.j 特殊效果 - 创建特效(绑定单位)
+TriggerRegisterPlayerUnitEvent(trigger whichTrigger, player whichPlayer, playerunitevent whichPlayerUnitEvent, boolexpr filter)\ncommon.j
+SetCineFilterEndColor(integer red, integer green, integer blue, integer alpha)\ncommon.j
+IsItemHiddenBJ(item whichItem)\nblizzard.j 物品 - 物品隐藏
+IssuePointOrderLocBJ(unit whichUnit, string order, location whichLocation)\nblizzard.j
+DestroyEffectBJ(effect whichEffect)\nblizzard.j 特殊效果 - 删除特效
+ConvertAIDifficulty(integer i)\ncommon.j
+UnitAddIndicator(unit whichUnit, integer red, integer green, integer blue, integer alpha)\ncommon.j 电影 - 闪动指示器(对单位) [R]
+ResetUnitLookAt(unit whichUnit)\ncommon.j 动画 - 重置身体朝向
+WaygateActivate(unit waygate, boolean activate)\ncommon.j
+SetHeroLevelBJ(unit whichHero, integer newLevel, boolean showEyeCandy)\nblizzard.j
+StringHashBJ(string s)\nblizzard.j 哈希表 - <1.24> 获取字符串的哈希值
+DefineStartLocation(integer whichStartLoc, real x, real y)\ncommon.j
+GetTransmissionDuration(sound soundHandle, integer timeType, real timeVal)\nblizzard.j
+MeleeCheckForVictors()\nblizzard.j
+ClearSelection()\ncommon.j 选择 - 清空选择(所有玩家)
+GetItemY(item i)\ncommon.j 物品 - 物品的Y轴坐标 [R]
+GetItemX(item i)\ncommon.j 物品 - 物品的X轴坐标 [R]
+TimerDialogDisplay(timerdialog whichDialog, boolean display)\ncommon.j 计时器 - 显示/隐藏 计时器窗口(所有玩家) [R]
+StartMeleeAI(player num, string script)\ncommon.j AI - 启用对战AI
+IsUnitAliveBJ(unit whichUnit)\nblizzard.j 单位 - 单位存活
+RandomItemInRectSimpleBJ(rect r)\nblizzard.j 矩形区域内随机物品
+CameraSetupApplyForceDurationWithZ(camerasetup whichSetup, real zDestOffset, real forceDuration)\ncommon.j
+IsUnitGroupInRectBJ(group g, rect r)\nblizzard.j 单位组 - 单位组中单位在矩形区域内
+IsUnitInvisible(unit whichUnit, player whichPlayer)\ncommon.j 可见度 - 单位不可见
+UnitShareVisionBJ(boolean share, unit whichUnit, player whichPlayer)\nblizzard.j 单位 - 共享视野
+MultiboardGetRowCount(multiboard lb)\ncommon.j 多面板 - 行数
+LoadItemHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取物品
+SetTeams(integer teamcount)\ncommon.j
+KillSoundWhenDone(sound soundHandle)\ncommon.j
+DestroyTimer(timer whichTimer)\ncommon.j 计时器 - 删除计时器 [R]
+GetLearningUnit()\ncommon.j 事件响应 - 学习技能的英雄
+MeleeGetLocWithinRect(location src, rect r)\nblizzard.j
+SetMapName(string name)\ncommon.j
+RegionClearCellAtLoc(region whichRegion, location whichLocation)\ncommon.j 区域(不规则) - 移除单元点(指定点) [R]
+GetAbilityEffect(string abilityString, effecttype t, integer index)\ncommon.j
+SelectUnitForPlayerSingle(unit whichUnit, player whichPlayer)\nblizzard.j 选择 - 选择单位(指定玩家)
+MeleeTriggerActionConstructCancel()\nblizzard.j
+SetUnitScale(unit whichUnit, real scaleX, real scaleY, real scaleZ)\ncommon.j 动画 - 改变单位尺寸(按倍数) [R]
+DialogSetMessage(dialog whichDialog, string messageText)\ncommon.j
+IsUnitPausedBJ(unit whichUnit)\nblizzard.j 单位 - 单位暂停
+GetSpellAbilityId()\ncommon.j 事件响应 - 施放技能
+GetPlayerAlliance(player sourcePlayer, player otherPlayer, alliancetype whichAllianceSetting)\ncommon.j 玩家 - 联盟状态设置
+SetDoodadAnimation(real x, real y, real radius, integer doodadID, boolean nearestOnly, string animName, boolean animRandom)\ncommon.j 动画 - 播放圆范围内地形装饰物动画 [R]
+PanCameraToTimedLocForPlayer(player whichPlayer, location loc, real duration)\nblizzard.j 镜头 - 平移镜头(指定玩家)(限时)
+StoreBooleanBJ(boolean value, string key, string missionKey, gamecache cache)\nblizzard.j 不推荐使用 - 记录布尔值
+UnitAddItem(unit whichUnit, item whichItem)\ncommon.j 英雄 - 给予物品 [R]
+GetForceOfPlayer(player whichPlayer)\nblizzard.j 转换玩家为玩家组
+CreateFogModifierRadiusLocBJ(boolean enabled, player whichPlayer, fogstate whichFogState, location center, real radius)\nblizzard.j 可见度 - 创建可见度修正器(圆范围)
+InitBlizzardGlobals()\nblizzard.j
+SaveGameCacheBJ(gamecache cache)\nblizzard.j 游戏缓存 - 本地保存游戏缓存
+ConvertUnitState(integer i)\ncommon.j
+TriggerRegisterPlayerEventVictory(trigger trig, player whichPlayer)\nblizzard.j 玩家 - 游戏胜利
+UnitAddItemById(unit whichUnit, integer itemId)\ncommon.j
+MeleeDoDefeat(player whichPlayer)\nblizzard.j
+AdjustCameraBoundsForPlayerBJ(integer adjustMethod, player whichPlayer, real dxWest, real dxEast, real dyNorth, real dySouth)\nblizzard.j 镜头 - 扩张/收缩 可用镜头区域(指定玩家)
+CameraSetTargetNoise(real mag, real velocity)\ncommon.j 摇晃镜头目标(所有玩家)(不使用摇晃方式) [R]
+EnumUnitsSelected(player whichPlayer, boolexpr enumFilter, code enumAction)\nblizzard.j
+IntegerTertiaryOp(boolean flag, integer valueA, integer valueB)\nblizzard.j
+SetSoundConeOrientation(sound soundHandle, real x, real y, real z)\ncommon.j
+MoveLightning(lightning whichBolt, boolean checkVisibility, real x1, real y1, real x2, real y2)\ncommon.j
+CustomDefeatRestartBJ()\nblizzard.j
+LoadFogModifierHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取可见度修正器
+LeaderboardGetPlayerIndex(leaderboard lb, player p)\ncommon.j
+PlayerGetLeaderboardBJ(player whichPlayer)\nblizzard.j 玩家使用的排行榜
+SetCameraQuickPositionLoc(location loc)\nblizzard.j
+SuspendHeroXPBJ(boolean flag, unit whichHero)\nblizzard.j 英雄 - 允许/禁止经验获取
+UnitAddSleepPerm(unit whichUnit, boolean add)\ncommon.j 单位 - 控制单位睡眠状态
+SetGameTypeSupported(gametype whichGameType, boolean value)\ncommon.j
+GetLightningColorABJ(lightning whichBolt)\nblizzard.j 闪电效果 - Alpha通道值
+SetGameDifficulty(gamedifficulty whichdifficulty)\ncommon.j 游戏 - 设置游戏难度 [R]
+IsUnitInGroup(unit whichUnit, group whichGroup)\ncommon.j 单位 - 在单位组
+MeleeStartingHeroLimit()\nblizzard.j 对战游戏 - 英雄限制
+FlushChildHashtableBJ(integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 清空哈希表主索引
+CustomVictorySkipBJ(player whichPlayer)\nblizzard.j
+GetRandomReal(real lowBound, real highBound)\ncommon.j 数学 - 随机实数
+GetUnitsInRectOfPlayer(rect r, player whichPlayer)\nblizzard.j 矩形区域内的玩家单位
+IsPlayerRacePrefSet(player whichPlayer, racepreference pref)\ncommon.j 玩家 - 玩家的种族选择
+GetLoadedUnitBJ()\nblizzard.j 事件响应 - 被装载单位
+EndGame(boolean doScoreScreen)\ncommon.j
+RemoveWeatherEffect(weathereffect whichEffect)\ncommon.j
+GetUnitsOfPlayerAll(player whichPlayer)\nblizzard.j 玩家单位
+SetPlayerAllianceStateFullControlBJ(player sourcePlayer, player otherPlayer, boolean flag)\nblizzard.j
+SyncStoredUnit(gamecache cache, string missionKey, string key)\ncommon.j
+ForcePickRandomPlayerEnum()\nblizzard.j
+UnitAddItemSwapped(item whichItem, unit whichHero)\nblizzard.j 英雄 - 给予物品
+GetLastCreatedHashtableBJ()\nblizzard.j Last类 - 最后创建的哈希表
+UnitId2String(integer unitId)\ncommon.j
+InitGameCache(string campaignFile)\ncommon.j 游戏缓存 - 新建游戏缓存 [R]
+TimerGetTimeout(timer whichTimer)\ncommon.j 计时器 - 设置时间
+LoadTextTagHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取漂浮文字
+DoTransmissionBasicsXYBJ(integer unitId, playercolor color, real x, real y, sound soundHandle, string unitName, string message, real duration)\nblizzard.j
+IncUnitAbilityLevel(unit whichUnit, integer abilcode)\ncommon.j 单位 - 提升技能等级 [R]
+GetLoadedUnit()\ncommon.j
+SetWaterBaseColor(integer red, integer green, integer blue, integer alpha)\ncommon.j 环境 - 设置水颜色 [R]
+SaveMultiboardItemHandleBJ(multiboarditem whichMultiboarditem, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存多面板项目
+SetUnitUseFood(unit whichUnit, boolean useFood)\ncommon.j 单位 - 允许/禁止 人口占用 [R]
+SetItemDroppable(item i, boolean flag)\ncommon.j
+Acos(real x)\ncommon.j 数学 - 反余弦(弧度) [R]
+SyncStoredInteger(gamecache cache, string missionKey, string key)\ncommon.j
+EnumItemsInRect(rect r, boolexpr filter, code actionFunc)\ncommon.j
+IssueTargetOrderById(unit whichUnit, integer order, widget targetWidget)\ncommon.j 单位 - 按ID发布命令(指定单位) [R]
+MultiboardReleaseItem(multiboarditem mbi)\ncommon.j 多面板 - 删除多面板项目 [R]
+GetCameraMargin(integer whichMargin)\ncommon.j
+CompareLocationsBJ(location A, location B)\nblizzard.j
+SaveItemHandleBJ(item whichItem, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存物品
+Atan2BJ(real y, real x)\nblizzard.j 数学 - 反正切(角度)(Y:X)
+QuestCreateItem(quest whichQuest)\ncommon.j
+CreateDefeatCondition()\ncommon.j
+SetUnitAbilityLevel(unit whichUnit, integer abilcode, integer level)\ncommon.j 单位 - 设置技能等级 [R]
+GroupAddGroupEnum()\nblizzard.j
+GetTriggerEvalCount(trigger whichTrigger)\ncommon.j 触发器 - 触发条件判断次数
+IsTriggerWaitOnSleeps(trigger whichTrigger)\ncommon.j
+AddLightningLoc(string codeName, location where1, location where2)\nblizzard.j 闪电效果 - 创建闪电效果
+MeleeCheckLostUnit(unit lostUnit)\nblizzard.j
+PanCameraToWithZ(real x, real y, real zOffsetDest)\ncommon.j
+Rad2Deg(real radians)\ncommon.j 转化 - 转换弧度为角度
+CreateUbersplat(real x, real y, string name, integer red, integer green, integer blue, integer alpha, boolean forcePaused, boolean noBirthTime)\ncommon.j 新建地面纹理变化 [R]
+GroupTargetDestructableOrder(group whichGroup, string order, widget targetWidget)\nblizzard.j 单位组 - 发布命令(指定可破坏物)
+SetStartLocPrioCount(integer whichStartLoc, integer prioSlotCount)\ncommon.j
+QuestSetEnabled(quest whichQuest, boolean enabled)\ncommon.j 任务 - 启用/禁用 任务 [R]
+SetBlightRectBJ(boolean addBlight, player whichPlayer, rect r)\nblizzard.j 环境 - 创建/删除荒芜地表(矩形区域)
+EnumDestructablesInRectAll(rect r, code actionFunc)\nblizzard.j 可破坏物 - 选取矩形区域内可破坏物做动作
+GetAbilityEffectById(integer abilityId, effecttype t, integer index)\ncommon.j
+CreateFogModifierRectSimple(player whichPlayer, fogstate whichFogState, rect r, boolean afterUnits)\nblizzard.j
+SetUnitRallyDestructable(unit whichUnit, destructable targDest)\nblizzard.j 单位 - 设置集结点(指定物件)
+SetItemInvulnerable(item whichItem, boolean flag)\ncommon.j
+GetPlayersEnemies(player whichPlayer)\nblizzard.j 玩家的敌人
+OrderId(string  orderIdString)\ncommon.j
+CameraSetSourceNoiseEx(real mag, real velocity, boolean vertOnly)\ncommon.j 镜头 - 摇晃镜头源(所有玩家) [R]
+GetDyingDestructable()\nblizzard.j 事件响应 - 死亡的可破坏物
+EnableDragSelect(boolean state, boolean ui)\ncommon.j 游戏 - 允许/禁用框选
+CreateUnitByName(player whichPlayer, string unitname, real x, real y, real face)\ncommon.j
+SetBlightRadiusLocBJ(boolean addBlight, player whichPlayer, location loc, real radius)\nblizzard.j 环境 - 创建/删除荒芜地表(圆范围)(指定点)
+SetThematicMusicOffsetBJ(real newOffset)\nblizzard.j 声音 - 设置主题音乐播放时间点
+Player(integer number)\ncommon.j
+GetPlayerTechCount(player whichPlayer, integer techid, boolean specificonly)\ncommon.j
+GetPlayerScore(player whichPlayer, playerscore whichPlayerScore)\ncommon.j 玩家 - 玩家得分
+SetTextTagPermanentBJ(texttag tt, boolean flag)\nblizzard.j 漂浮文字 - 设置永久显示
+Preloader(string filename)\ncommon.j 游戏 - 批量预载
+MeleeStartingUnitsOrc(player whichPlayer, location startLoc, boolean doHeroes, boolean doCamera, boolean doPreload)\nblizzard.j
+GetLastCreatedQuestItemBJ()\nblizzard.j Last类 - 最后创建的任务项目
+StringLength(string s)\ncommon.j 字符串长度
+SetUnitPosition(unit whichUnit, real newX, real newY)\ncommon.j 单位 - 移动单位(立即)(指定坐标) [R]
+SetSoundPosition(sound soundHandle, real x, real y, real z)\ncommon.j 声音 - 设置3D音效位置(指定坐标) [R]
+StoreStringBJ(string value, string key, string missionKey, gamecache cache)\nblizzard.j 不推荐使用 - 记录字符串
+SetTextTagColorBJ(texttag tt, real red, real green, real blue, real transparency)\nblizzard.j 漂浮文字 - 改变颜色
+LeaderboardSetLabelColor(leaderboard lb, integer red, integer green, integer blue, integer alpha)\ncommon.j 排行榜 - 设置文字颜色 [R]
+GetTerrainTypeBJ(location where)\nblizzard.j 环境 - 指定点地形
+CreateImage(string file, real sizeX, real sizeY, real sizeZ, real posX, real posY, real posZ, real originX, real originY, real originZ, integer imageType)\ncommon.j 新建图像 [R]
+SetForLoopIndexB(integer newIndex)\nblizzard.j Loop循环 - 设置循环整数B [R]
+SetForLoopIndexA(integer newIndex)\nblizzard.j Loop循环 - 设置循环整数A [R]
+SetTextTagColor(texttag t, integer red, integer green, integer blue, integer alpha)\ncommon.j 漂浮文字 - 改变颜色 [R]
+SetUnitPositionLocFacingLocBJ(unit whichUnit, location loc, location lookAt)\nblizzard.j 单位 - 移动单位面向点(立即)
+PickMeleeAI(player num, string s1, string s2, string s3)\nblizzard.j
+SetDayNightModels(string terrainDNCFile, string unitDNCFile)\ncommon.j
+PlaySoundOnUnitBJ(sound soundHandle, real volumePercent, unit whichUnit)\nblizzard.j 声音 - 播放3D音效(跟随单位)
+GroupAddUnit(group whichGroup, unit whichUnit)\ncommon.j 单位组 - 添加单位 [R]
+IsLocationInRegion(region whichRegion, location whichLocation)\ncommon.j 区域(不规则) - 包含点
+CancelCineSceneBJ()\nblizzard.j
+DestroyImage(image whichImage)\ncommon.j 图像 - 删除
+PingMinimapForForce(force whichForce, real x, real y, real duration)\nblizzard.j
+SetDestructableAnimationSpeed(destructable d, real speedFactor)\ncommon.j 动画 - 改变可破坏物动画播放速度 [R]
+GetPlayerStartLocation(player whichPlayer)\ncommon.j
+MultiboardSetTitleTextColor(multiboard lb, integer red, integer green, integer blue, integer alpha)\ncommon.j 多面板 - 设置标题颜色 [R]
+UnitIsSleepingBJ(unit whichUnit)\nblizzard.j 单位 - 正在睡眠
+CustomDefeatBJ(player whichPlayer, string message)\nblizzard.j 游戏 - 游戏失败
+OffsetRectBJ(rect r, real dx, real dy)\nblizzard.j 位移创建矩形区域
+GroupEnumUnitsOfType(group whichGroup, string unitname, boolexpr filter)\ncommon.j
+GetSpellTargetUnit()\ncommon.j 事件响应 - 技能施放目标
+GetLevelingUnit()\ncommon.j 事件响应 - 升级的英雄
+ForceUIKeyBJ(player whichPlayer, string key)\nblizzard.j 游戏 - 强制按键
+GroupEnumUnitsInRectCounted(group whichGroup, rect r, boolexpr filter, integer countLimit)\ncommon.j
+MultiboardDisplay(multiboard lb, boolean show)\ncommon.j 多面板 - 显示/隐藏 [R]
+SetAmbientDaySound(string inLabel)\nblizzard.j 声音 - 使用白天环境音效
+UseTimeOfDayBJ(boolean flag)\nblizzard.j 游戏 - 开启/关闭 昼夜交替
+CreateDeadDestructableLocBJ(integer objectid, location loc, real facing, real scale, integer variation)\nblizzard.j 可破坏物 - 创建可破坏物(死亡)
+AddLightningEx(string codeName, boolean checkVisibility, real x1, real y1, real z1, real x2, real y2, real z2)\ncommon.j 闪电效果 - 新建闪电效果(指定Z轴) [R]
+GetItemName(item whichItem)\ncommon.j 物品 - 物品名字
+SaveLightningHandleBJ(lightning whichLightning, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存闪电效果
+SaveEffectHandleBJ(effect whichEffect, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存特效
+ForceQuestDialogUpdate()\ncommon.j
+CreateCorpseLocBJ(integer unitid, player whichPlayer, location loc)\nblizzard.j 单位 - 创建尸体
+UnitCanSleep(unit whichUnit)\ncommon.j
+QueuedTriggerClearInactiveBJ()\nblizzard.j 触发器 - 清空未运行触发
+LeaderboardSetItemValue(leaderboard lb, integer whichItem, integer val)\ncommon.j
+RandomItemInRectBJEnum()\nblizzard.j
+MeleeVictoryDialogBJ(player whichPlayer, boolean leftGame)\nblizzard.j
+TriggerRegisterPlayerChatEvent(trigger whichTrigger, player whichPlayer, string chatMessageToDetect, boolean exactMatchOnly)\ncommon.j 玩家 - 输入聊天信息
+ConvertRace(integer i)\ncommon.j
+GroupRemoveUnit(group whichGroup, unit whichUnit)\ncommon.j 单位组 - 移除单位 [R]
+DialogDisplayBJ(boolean flag, dialog whichDialog, player whichPlayer)\nblizzard.j 对话框 - 显示/隐藏
+ForceAddPlayer(force whichForce, player whichPlayer)\ncommon.j 玩家组 - 添加玩家 [R]
+WaitForSoundBJ(sound soundHandle, real offset)\nblizzard.j 等待 - 等待(声音结束)
+InitHashtable()\ncommon.j 哈希表 - <1.24> 新建哈希表 [C]
+PingMinimapForForceEx(force whichForce, real x, real y, real duration, integer style, real red, real green, real blue)\nblizzard.j
+LeaderboardRemoveItem(leaderboard lb, integer index)\ncommon.j
+QuestSetCompletedBJ(quest whichQuest, boolean completed)\nblizzard.j 任务 - 设置任务完成
+GetFadeFromSeconds(real seconds)\nblizzard.j
+GetLastReplacedUnitBJ()\nblizzard.j Last类 - 最后替换的单位
+GetFoodMade(integer unitId)\ncommon.j 单位 - 单位提供人口数量(指定单位类型)
+ShowInterface(boolean flag, real fadeDuration)\ncommon.j 电影 - 开启/关闭 信箱模式(所有玩家) [R]
+TriggerRegisterAnyUnitEventBJ(trigger trig, playerunitevent whichEvent)\nblizzard.j 单位 - 任意单位事件
+GetPlayerSlotState(player whichPlayer)\ncommon.j 玩家游戏状态
+GetSoundIsLoading(sound soundHandle)\ncommon.j
+SetUserControlForceOn(force whichForce)\nblizzard.j 电影 - 启用玩家控制权(指定玩家组)
+EnableWorldFogBoundary(boolean b)\ncommon.j 电影 - 允许/禁止 边界染色(所有玩家) [R]
+ShowTextTagForceBJ(boolean show, texttag tt, force whichForce)\nblizzard.j 漂浮文字 - 显示/隐藏
+InitDNCSounds()\nblizzard.j
+PlayMusicBJ(string musicFileName)\nblizzard.j 声音 - 播放背景音乐
+GetPlayerHandicapXP(player whichPlayer)\ncommon.j
+SetDefaultDifficulty(gamedifficulty g)\ncommon.j
+GetSoundIsPlayingBJ(sound soundHandle)\nblizzard.j
+LeaderboardSetItemValueColor(leaderboard lb, integer whichItem, integer red, integer green, integer blue, integer alpha)\ncommon.j
+QueuedTriggerRemoveByIndex(integer trigIndex)\nblizzard.j
+PlaySound(string soundName)\nblizzard.j
+LeaderboardSetLabel(leaderboard lb, string label)\ncommon.j
+GetCameraBoundMaxY()\ncommon.j 当前可用镜头区域最大Y坐标 [R]
+GetCameraBoundMaxX()\ncommon.j 当前可用镜头区域最大X坐标 [R]
+CreateLeaderboard()\ncommon.j 新建排行榜 [R]
+GetAIDifficulty(player num)\ncommon.j 玩家的AI难度
+AttachSoundToUnitBJ(sound soundHandle, unit whichUnit)\nblizzard.j 声音 - 绑定单位
+DialogAddButtonWithHotkeyBJ(dialog whichDialog, string buttonText, integer hotkey)\nblizzard.j 对话框 - 添加对话框按钮(有快捷键) [R]
+QueueDestructableAnimationBJ(destructable d, string whichAnimation)\nblizzard.j 动画 - 将可破坏物动画加入队列
+FinishUbersplat(ubersplat whichSplat)\ncommon.j 地面纹理 - 结束地面纹理变化
+TerrainDeformRipple(real x, real y, real radius, real depth, integer duration, integer count, real spaceWaves, real timeWaves, real radiusStartPct, boolean limitNeg)\ncommon.j 新建地形变化:波纹 [R]
+DialogDisplay(player whichPlayer, dialog whichDialog, boolean flag)\ncommon.j 对话框 - 显示/隐藏 [R]
+AddUnitAnimationProperties(unit whichUnit, string animProperties, boolean add)\ncommon.j 动画 - 添加/删除 单位动画附加名 [R]
+DoNothing()\nblizzard.j 不做任何动作
+ContinueCinematicFadeAfterBJ(real duration, real red, real green, real blue, real trans, string tex)\nblizzard.j
+MeleeStartingUnits()\nblizzard.j 对战游戏 - 创建初始单位
+SetPlayerAllianceStateAllyBJ(player sourcePlayer, player otherPlayer, boolean flag)\nblizzard.j
+ShowInterfaceForceOn(force whichForce, real fadeDuration)\nblizzard.j 电影 - 信箱模式开启关闭(指定玩家组)
+AbilityId2String(integer abilityId)\ncommon.j
+ForceClear(force whichForce)\ncommon.j 玩家组 - 清空玩家组
+ConvertPlayerSlotState(integer i)\ncommon.j
+CinematicModeBJ(boolean cineMode, force forForce)\nblizzard.j 电影 - 电影模式
+AddSpecialEffectTargetDestructableBJ(string attachPointName, widget targetWidget, string modelName)\nblizzard.j
+LeaderboardDisplay(leaderboard lb, boolean show)\ncommon.j 排行榜 - 显示/隐藏 [R]
+ForceEnumEnemies(force whichForce, player whichPlayer, boolexpr filter)\ncommon.j
+GetSummoningUnit()\ncommon.j 事件响应 - 召唤者
+ConvertCameraField(integer i)\ncommon.j
+CreateUnitPool()\ncommon.j 新建单位池 [R]
+SetBlightLoc(player whichPlayer, location whichLocation, real radius, boolean addBlight)\ncommon.j
+SetItemVisibleBJ(boolean show, item whichItem)\nblizzard.j 物品 - 显示/隐藏
+SetAllItemTypeSlots(integer slots)\ncommon.j 中立建筑 - 限制物品种类(所有市场)
+GetFilterPlayer()\ncommon.j 匹配玩家
+QuestItemSetDescription(questitem whichQuestItem, string description)\ncommon.j
+SetUnitAnimationWithRarity(unit whichUnit, string whichAnimation, raritycontrol rarity)\ncommon.j 动画 - 播放单位动运作(指定概率)
+ChooseRandomItemEx(itemtype whichType, integer level)\ncommon.j
+SetItemDropOnDeathBJ(item whichItem, boolean flag)\nblizzard.j 物品 - 设置物品死亡是否掉落
+TriggerRegisterDialogEventBJ(trigger trig, dialog whichDialog)\nblizzard.j 对话框 - 对话框被点击
+Atan(real x)\ncommon.j 数学 - 反正切(弧度) [R]
+GetUnitRace(unit whichUnit)\ncommon.j 单位种族
+SetPlayerName(player whichPlayer, string name)\ncommon.j 玩家 - 更改名字
+AddSpellEffectTargetById(integer abilityId, effecttype t, widget targetWidget, string attachPoint)\ncommon.j 新建特效(指定技能，创建到单位) [R]
+MultiboardSuppressDisplay(boolean flag)\ncommon.j 多面板 - 显示/隐藏多面板模式 [R]
+PreloadStart()\ncommon.j
+EnableMinimapFilterButtons(boolean enableAlly, boolean enableCreep)\ncommon.j 游戏 - 允许/禁用小地图按钮
+Rect(real minx, real miny, real maxx, real maxy)\ncommon.j 新建矩形区域(指定边角坐标)
+DisplayTextToForce(force toForce, string message)\nblizzard.j 游戏 - 对玩家组显示文本消息(自动限时)
+SelectUnitSingle(unit whichUnit)\nblizzard.j 选择 - 选择单位(所有玩家)
+LoadDefeatConditionHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取失败条件
+GetLastCreatedTimerDialogBJ()\nblizzard.j Last类 - 最后创建的计时器窗口
+AddLightning(string codeName, boolean checkVisibility, real x1, real y1, real x2, real y2)\ncommon.j 闪电效果 - 新建闪电效果 [R]
+GetPlayerController(player whichPlayer)\ncommon.j 玩家控制者
+TimerGetRemaining(timer whichTimer)\ncommon.j 计时器 - 剩余时间
+ForForce(force whichForce, code callback)\ncommon.j 玩家组 - 选取玩家组内玩家做动作
+SetDestructableLifePercentBJ(destructable d, real percent)\nblizzard.j 可破坏物 - 设置生命值(百分比)
+ModuloInteger(integer dividend, integer divisor)\nblizzard.j 数学 - 模
+DestroyFilter(filterfunc f)\ncommon.j
+DestroyGroup(group whichGroup)\ncommon.j 单位组 - 删除单位组 [R]
+TransmissionFromUnitWithNameBJ(force toForce, unit whichUnit, string unitName, sound soundHandle, string message, integer timeType, real timeVal, boolean wait)\nblizzard.j 电影 - 播送单位消息(指定单位)
+GroupRemoveUnitSimple(unit whichUnit, group whichGroup)\nblizzard.j 单位组 - 移除单位
+RectContainsUnit(rect r, unit whichUnit)\nblizzard.j 单位 - 在矩形区域内
+UnitAddSleep(unit whichUnit, boolean add)\ncommon.j
+ChangeElevatorWalls(boolean open, integer walls, destructable d)\nblizzard.j 可破坏物 - 打开/关闭升降机墙壁
+MultiboardSetItemsStyle(multiboard lb, boolean showValues, boolean showIcons)\ncommon.j 多面板 - 设置所有项目显示风格 [R]
+CameraSetTargetNoiseForPlayer(player whichPlayer, real magnitude, real velocity)\nblizzard.j 镜头 - 摇晃镜头目标(指定玩家)
+CreatePermanentCorpseLocBJ(integer style, integer unitid, player whichPlayer, location loc, real facing)\nblizzard.j 单位 - 创建永久性尸体
+QueuedTriggerCountBJ()\nblizzard.j 触发器 - 队列中触发数量
+CreateNUnitsAtLoc(integer count, integer unitId, player whichPlayer, location loc, real face)\nblizzard.j 单位 - 创建单位(面向角度)
+SetMapMusic(string musicName, boolean random, integer index)\ncommon.j 声音 - 设置背景音乐列表 [R]
+UnitSetUsesAltIcon(unit whichUnit, boolean flag)\ncommon.j
+UnitAddAbility(unit whichUnit, integer abilityId)\ncommon.j 单位 - 添加技能 [R]
+GetLocationY(location whichLocation)\ncommon.j 点的Y轴坐标
+GetLocationX(location whichLocation)\ncommon.j 点的X轴坐标
+TerrainDeformCrater(real x, real y, real radius, real depth, integer duration, boolean permanent)\ncommon.j 新建地形变化:弹坑 [R]
+GetLastRestoredUnitBJ()\nblizzard.j Last类 - 最后读取的单位
+MultiboardGetTitleText(multiboard lb)\ncommon.j 多面板 - 多面板标题
+GetUnitFacing(unit whichUnit)\ncommon.j 单位 - 面向角度
+ChangeLevel(string newLevel, boolean doScoreScreen)\ncommon.j 游戏 - 切换关卡 [R]
+EnumItemsInRectBJ(rect r, code actionFunc)\nblizzard.j 物品 - 选取矩形区域内物品做动作
+DialogAddQuitButton(dialog whichDialog, boolean doScoreScreen, string buttonText, integer hotkey)\ncommon.j 对话框 - 添加退出游戏按钮 [R]
+SetUnitRallyUnit(unit whichUnit, unit targUnit)\nblizzard.j 单位 - 设置集结点(指定单位)
+GetCameraBoundsMapRect()\nblizzard.j 初始可用镜头范围
+ConfigureNeutralVictim()\nblizzard.j
+LoadDestructableHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取可破坏物
+DestroyCondition(conditionfunc c)\ncommon.j
+DelayedSuspendDecayFleshEnum()\nblizzard.j
+BlightGoldMineForPlayer(unit goldMine, player whichPlayer)\nblizzard.j 中立建筑 - 创建不死族金矿(立即)
+GetStartLocPrio(integer whichStartLoc, integer prioSlotIndex)\ncommon.j
+CreateFogModifierRectBJ(boolean enabled, player whichPlayer, fogstate whichFogState, rect r)\nblizzard.j 可见度 - 创建可见度修正器(矩形区域)
+GetUnitLifePercent(unit whichUnit)\nblizzard.j 单位 - 生命百分比
+PauseCompAI(player p,   boolean pause)\ncommon.j AI - 暂停/恢复 AI脚本运行 [R]
+NudgeUnitsInRectEnum()\nblizzard.j
+MeleeClearExcessUnits()\nblizzard.j 对战游戏 - 删除多余单位
+CameraSetupApplyForceDuration(camerasetup whichSetup, boolean doPan, real forceDuration)\ncommon.j 镜头 - 应用镜头(所有玩家)(限时) [R]
+SetCampaignAvailable(integer campaignNumber, boolean available)\ncommon.j
+ClearMapMusicBJ()\nblizzard.j 声音 - 清空背景音乐列表
+TriggerRegisterLeaveRegion(trigger whichTrigger, region whichRegion, boolexpr filter)\ncommon.j 单位 - 单位离开不规则区域(指定条件) [R]
+MeleeCheckAddedUnit(unit addedUnit)\nblizzard.j
+SyncStoredString(gamecache cache, string missionKey, string key)\ncommon.j
+SetForceAllianceStateBJ(force sourceForce, force targetForce, integer allianceState)\nblizzard.j 玩家组 - 设置联盟
+GetUnitsOfTypeIdAll(integer unitid)\nblizzard.j 所有指定类型单位
+GetPlayerTaxRate(player sourcePlayer, player otherPlayer, playerstate whichResource)\ncommon.j 玩家 - 玩家税率 [R]
+SetUnitFlyHeightBJ(unit whichUnit, real newHeight, real rate)\nblizzard.j 动画 - 改变单位飞行高度
+UnitPoolAddUnitType(unitpool whichPool, integer unitId, real weight)\ncommon.j 单位池 - 添加单位类型 [R]
+TriggerRegisterShowSkillEventBJ(trigger trig)\nblizzard.j 游戏 - 英雄技能按钮被点击
+IssueNeutralPointOrder(player forWhichPlayer,unit neutralStructure, string unitToBuild, real x, real y)\ncommon.j 单位 - 发布中介命令(指定坐标) [R]
+LeaderboardGetLabelText(leaderboard lb)\ncommon.j
+LeaderboardSetPlayerItemStyleBJ(player whichPlayer, leaderboard lb, boolean showLabel, boolean showValue, boolean showIcon)\nblizzard.j 排行榜 - 设置玩家显示样式
+GetPlayerTypedUnitCount(player whichPlayer, string unitName, boolean includeIncomplete, boolean includeUpgrades)\ncommon.j
+GetSoundDuration(sound soundHandle)\ncommon.j
+LeaderboardSetSizeByItemCount(leaderboard lb, integer count)\ncommon.j
+MultiboardClear(multiboard lb)\ncommon.j 多面板 - 清空多面板
+TriggerRegisterVariableEvent(trigger whichTrigger, string varName, limitop opcode, real limitval)\ncommon.j 游戏 - 实数变量事件
+GetUnitsOfTypeIdAllFilter()\nblizzard.j
+GetRectMaxY(rect whichRect)\ncommon.j 区域(矩形) - 右上角Y坐标
+GetRectMaxX(rect whichRect)\ncommon.j 区域(矩形) - 右上角X坐标
+GetDetectedUnit()\ncommon.j
+CreateUnit(player id, integer unitid, real x, real y, real face)\ncommon.j 新建单位(指定坐标) [R]
+SetBlightRect(player whichPlayer, rect r, boolean addBlight)\ncommon.j 环境 - 创建/删除荒芜地表(矩形区域) [R]
+GetUnitsInRectAll(rect r)\nblizzard.j 矩形区域内的单位
+MultiboardGetColumnCount(multiboard lb)\ncommon.j 多面板 - 列数
+EndThematicMusic()\ncommon.j 声音 - 停止主题音乐[C]
+GetUnitsInRangeOfLocAll(real radius, location whichLocation)\nblizzard.j 圆范围内单位
+ConvertPathingType(integer i)\ncommon.j
+SetSoundDistanceCutoffBJ(sound soundHandle, real cutoff)\nblizzard.j 声音 - 设置声音截断距离
+ExecuteFunc(string funcName)\ncommon.j 运行函数 [R]
+UnitWakeUpBJ(unit whichUnit)\nblizzard.j 单位 - 叫醒
+MeleeFindNearestMine(location src, real range)\nblizzard.j
+AddHeroXPSwapped(integer xpToAdd, unit whichHero, boolean showEyeCandy)\nblizzard.j 英雄 - 增加经验值
+UnitDropItemSlot(unit whichUnit, item whichItem, integer slot)\ncommon.j 单位 - 移动物品到物品栏 [R]
+SetCinematicSceneBJ(sound soundHandle, integer portraitUnitId, playercolor color, string speakerTitle, string text, real sceneDuration, real voiceoverDuration)\nblizzard.j
+LockGameSpeedBJ()\nblizzard.j 游戏 - 锁定游戏速度
+SetPlayerState(player whichPlayer, playerstate whichPlayerState, integer value)\ncommon.j 玩家 - 设置属性
+IssuePointOrderLoc(unit whichUnit, string order, location whichLocation)\ncommon.j 单位 - 发布命令(指定点)
+MeleeInitVictoryDefeat()\nblizzard.j 对战游戏 - 强制胜利/失败条件
+GetAbilitySoundBJ(integer abilcode, soundtype t)\nblizzard.j 游戏 - 技能音效名
+ShowUbersplat(ubersplat whichSplat, boolean flag)\ncommon.j 地面纹理 - 显示/隐藏 地面纹理变化[R]
+UnitAddType(unit whichUnit, unittype whichUnitType)\ncommon.j 单位 - 添加类别 [R]
+IsPlayerObserver(player whichPlayer)\ncommon.j 玩家 - 玩家是裁判或观察者 [R]
+GetCancelledStructure()\ncommon.j 事件响应 - 被取消的建筑
+Cos(real radians)\ncommon.j 数学 - 余弦(弧度) [R]
+DefineStartLocationLoc(integer whichStartLoc, location whichLocation)\ncommon.j
+CustomDefeatQuitBJ()\nblizzard.j
+ChooseRandomItemExBJ(integer level, itemtype whichType)\nblizzard.j 随机物品类型(指定分类)
+GetTournamentFinishSoonTimeRemaining()\ncommon.j 事件响应 - 比赛剩余时间
+SetFogStateRect(player forWhichPlayer, fogstate whichState, rect where, boolean useSharedVision)\ncommon.j 可见度 - 设置地图迷雾(矩形区域) [R]
+GetRectFromCircleBJ(location center, real radius)\nblizzard.j
+PingMinimap(real x, real y, real duration)\ncommon.j 电影 - 小地图信号(所有玩家) [R]
+UnitRemoveItemSwapped(item whichItem, unit whichHero)\nblizzard.j 英雄 - 丢弃物品(指定物品)
+ISignBJ(integer a)\nblizzard.j 数学 - 符号标志
+MeleeGetAllyKeyStructureCount(player whichPlayer)\nblizzard.j
+StopSound(sound soundHandle, boolean killWhenDone, boolean fadeOut)\ncommon.j
+GetIssuedOrderId()\ncommon.j
+RenameSaveDirectory(string sourceDirName, string destDirName)\ncommon.j
+SetImageColorBJ(image whichImage, real red, real green, real blue, real alpha)\nblizzard.j 图像 - 改变图像颜色
+ForGroupBJ(group whichGroup, code callback)\nblizzard.j
+SetWaterBaseColorBJ(real red, real green, real blue, real transparency)\nblizzard.j 环境 - 设置水颜色
+PlayerSetLeaderboard(player toPlayer, leaderboard lb)\ncommon.j 排行榜 - 设置玩家使用的排行榜 [R]
+GetDestructableLife(destructable d)\ncommon.j 可破坏物 - 生命值
+GetPlayerStructureCount(player whichPlayer, boolean includeIncomplete)\ncommon.j 玩家 - 建筑数量
+RemoveUnitFromStock(unit whichUnit, integer unitId)\ncommon.j
+IsGameTypeSupported(gametype whichGameType)\ncommon.j
+TimerDialogSetRealTimeRemaining(timerdialog whichDialog, real timeRemaining)\ncommon.j
+SetItemTypeSlots(unit whichUnit, integer slots)\ncommon.j 中立建筑 - 限制物品种类(指定市场)
+SetTimeOfDay(real whatTime)\nblizzard.j 游戏 - 设置游戏时间
+ModifyGateBJ(integer gateOperation, destructable d)\nblizzard.j 可破坏物 - 打开/关闭/破坏大门
+IssuePointOrderById(unit whichUnit, integer order, real x, real y)\ncommon.j 单位 - 按ID发布命令(指定坐标) [R]
+LoadLightningHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取闪电效果
+SetTextTagText(texttag t, string s, real height)\ncommon.j 漂浮文字 - 改变文字内容 [R]
+SetImageColor(image whichImage, integer red, integer green, integer blue, integer alpha)\ncommon.j 图像 - 改变图像颜色 [R]
+LoadTrackableHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取可追踪物
+AddResourceAmount(unit whichUnit, integer amount)\ncommon.j
+WaitTransmissionDuration(sound soundHandle, integer timeType, real timeVal)\nblizzard.j
+GetLightningColorA(lightning whichBolt)\ncommon.j
+TimerDialogSetTitleColorBJ(timerdialog td, real red, real green, real blue, real transparency)\nblizzard.j 计时器 - 改变计时器窗口标题颜色
+ConvertSoundType(integer i)\ncommon.j
+MeleeClearNearbyUnits(real x, real y, real range)\nblizzard.j
+GetDefaultDifficulty()\ncommon.j
+LoadTriggerActionHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取触发动作
+StringIdentity(string theString)\nblizzard.j 转化 - 本地字符串
+GetUnitFoodMade(unit whichUnit)\ncommon.j 单位 - 单位提供人口数量
+GetLastPlayedMusic()\nblizzard.j Last类 - 最后播放的音乐
+LoadEffectHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取特效
+GetLastCreatedUnit()\nblizzard.j Last类 - 最后创建的单位
+IsUnitInTransportBJ(unit whichUnit, unit whichTransport)\nblizzard.j 单位 - 被指定单位装载
+ShowUnitShow(unit whichUnit)\nblizzard.j 单位 - 显示
+SetUnitFacingToFaceLocTimed(unit whichUnit, location target, real duration)\nblizzard.j 单位 - 设置单位面向点
+PreloadGenEnd(string filename)\ncommon.j
+IsUnitInForce(unit whichUnit, force whichForce)\ncommon.j 单位 - 是玩家组里玩家的单位
+DisplayCineFilter(boolean flag)\ncommon.j
+AddSpecialEffectLoc(string modelName, location where)\ncommon.j 新建特效(创建到点) [R]
+SetUnitPointValueByType(integer unitType, integer newPointValue)\ncommon.j
+SetUserControlForceOff(force whichForce)\nblizzard.j 电影 - 禁用玩家控制权(指定玩家组)
+TimerDialogDisplayForPlayerBJ(boolean show, timerdialog td, player whichPlayer)\nblizzard.j 计时器 - 显示/隐藏 计时器窗口(指定玩家)
+DisableTrigger(trigger whichTrigger)\ncommon.j 触发器 - 关闭触发
+GetLastCreatedLeaderboard()\nblizzard.j Last类 - 最后创建的排行榜
+SetCineModeVolumeGroupsBJ()\nblizzard.j 声音 - 设置电影多通道音量环境
+CameraSetupGetField(camerasetup whichSetup, camerafield whichField)\ncommon.j 镜头 - 镜头属性(指定镜头) [R]
+SetUnitScalePercent(unit whichUnit, real percentScaleX, real percentScaleY, real percentScaleZ)\nblizzard.j 动画 - 改变单位尺寸(按比例)
+MeleeInitPlayerSlots()\nblizzard.j
+UnitUseItemPointLoc(unit whichUnit, item whichItem, location loc)\nblizzard.j 英雄 - 使用物品(指定点)
+ClearTextMessages()\ncommon.j 游戏 - 清空文本信息(所有玩家) [R]
+SetTextTagVelocity(texttag t, real xvel, real yvel)\ncommon.j 漂浮文字 - 设置速率 [R]
+DestroyTrigger(trigger whichTrigger)\ncommon.j 触发器 - 删除触发器 [R]
+GetPlayerState(player whichPlayer, playerstate whichPlayerState)\ncommon.j 玩家 - 玩家属性
+RAbsBJ(real a)\nblizzard.j 数学 - 绝对值
+ConvertGameSpeed(integer i)\ncommon.j
+UnitAddTypeBJ(unittype whichType, unit whichUnit)\nblizzard.j 单位 - 添加类别
+RegionClearCell(region whichRegion, real x, real y)\ncommon.j 区域(不规则) - 移除单元点(指定坐标) [R]
+RestartGame(boolean doScoreScreen)\ncommon.j
+MoveLightningLoc(lightning whichBolt, location where1, location where2)\nblizzard.j 闪电效果 - 移动闪电效果(指定点)
+CommentString(string commentString)\nblizzard.j 注释 - 文本注释
+SetTextTagPos(texttag t, real x, real y, real heightOffset)\ncommon.j 漂浮文字 - 改变位置(坐标) [R]
+AdjustCameraBoundsBJ(integer adjustMethod, real dxWest, real dxEast, real dyNorth, real dySouth)\nblizzard.j
+GetLearnedSkillBJ()\nblizzard.j 事件响应 - 学习技能
+String2OrderIdBJ(string orderIdString)\nblizzard.j 转化 - 转换命令字符串为命令ID
+AddSpellEffect(string abilityString, effecttype t, real x, real y)\ncommon.j
+RMaxBJ(real a, real b)\nblizzard.j 数学 - 取较大值
+ShareEverythingWithTeam(player whichPlayer)\nblizzard.j 游戏 - 共享视野和完全控制权
+UnitRemoveItemFromSlot(unit whichUnit, integer itemSlot)\ncommon.j
+SetItemUserData(item whichItem, integer data)\ncommon.j 物品 - 设置物品自定义值
+QuestSetIconPath(quest whichQuest, string iconPath)\ncommon.j
+LoadBooleanBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取布尔
+RegionAddCell(region whichRegion, real x, real y)\ncommon.j 区域(不规则) - 添加单元点(指定坐标) [R]
+ForceEnumPlayers(force whichForce, boolexpr filter)\ncommon.j
+MeleeTriggerActionPlayerLeft()\nblizzard.j
+GroupTargetItemOrder(group whichGroup, string order, widget targetWidget)\nblizzard.j 单位组 - 发布命令(指定物品)
+GetRectMinY(rect whichRect)\ncommon.j 区域(矩形) - 左下角Y坐标
+GetRectMinX(rect whichRect)\ncommon.j 区域(矩形) - 左下角X坐标
+CameraSetSmoothingFactor(real factor)\ncommon.j
+TerrainDeformStop(terraindeformation deformation, integer duration)\ncommon.j 环境 - 停止地形变化 [R]
+DisplayTimedTextToForce(force toForce, real duration, string message)\nblizzard.j 游戏 - 对玩家组显示文本消息(指定时间)
+LockGuardPosition(unit targ)\nblizzard.j AI - 锁定指定单位的警戒点
+GetLocalizedHotkey(string source)\ncommon.j 转化 - 本地热键 
+Filter(code func)\ncommon.j
+SetPlayerColorBJ(player whichPlayer, playercolor color, boolean changeExisting)\nblizzard.j 玩家 - 改变玩家颜色
+LoadTriggerConditionHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取触发条件
+CreateItemPool()\ncommon.j 新建物品池 [R]
+UnitUseItemDestructable(unit whichUnit, item whichItem, widget target)\nblizzard.j 英雄 - 使用物品(对可破坏物)
+DestroyLeaderboard(leaderboard lb)\ncommon.j
+QuestSetFailed(quest whichQuest, boolean failed)\ncommon.j
+SetSoundPositionLocBJ(sound soundHandle, location loc, real z)\nblizzard.j 声音 - 设置3D音效位置(指定点)
+GetTimeOfDayScalePercentBJ()\nblizzard.j 游戏 - 昼夜时间流逝速度
+RemovePlayerPreserveUnitsBJ(player whichPlayer, playergameresult gameResult, boolean leftGame)\nblizzard.j
+FogModifierStop(fogmodifier whichFogModifier)\ncommon.j 可见度 - 禁用可见度修正器
+StoreIntegerBJ(integer value, string key, string missionKey, gamecache cache)\nblizzard.j 不推荐使用 - 记录整数
+IssueUpgradeOrderByIdBJ(unit whichUnit, integer techId)\nblizzard.j 单位 - 发布研究科技命令
+R2I(real r)\ncommon.j 转化 - 转换实数为整数
+GetSpellAbilityUnit()\ncommon.j 事件响应 - 施法单位
+SuspendTimeOfDay(boolean b)\ncommon.j
+CreateTrigger()\ncommon.j 触发器 - 新建触发 [R]
+TerrainDeformationStopBJ(terraindeformation deformation, real duration)\nblizzard.j 环境 - 停止地形变化
+GetCameraEyePositionZ()\ncommon.j 镜头 - 当前镜头源Z坐标
+IssueInstantTargetOrderById(unit whichUnit, integer order, widget targetWidget, widget instantTargetWidget)\ncommon.j
+GetCameraEyePositionY()\ncommon.j 镜头 - 当前镜头源Y坐标
+SetItemPositionLoc(item whichItem, location loc)\nblizzard.j 物品 - 移动物品到指定点(立即)(指定点)
+SetItemVisible(item whichItem, boolean show)\ncommon.j 物品 - 显示/隐藏 [R]
+SetSoundParamsFromLabel(sound soundHandle, string soundLabel)\ncommon.j
+GetPlayerName(player whichPlayer)\ncommon.j 玩家 - 玩家名字
+SetUnitPropWindow(unit whichUnit, real newPropWindowAngle)\ncommon.j 动画 - 改变单位转向角度(弧度制) [R]
+GetCameraTargetPositionLoc()\ncommon.j 镜头 - 当前镜头目标点
+SelectUnitAdd(unit whichUnit)\nblizzard.j 选择 - 添加选择单位(所有玩家)
+ResetTerrainFog()\ncommon.j
+WaygateSetDestination(unit waygate, real x, real y)\ncommon.j 中立建筑 - 设置传送门目的坐标 [R]
+DestroyTimerBJ(timer whichTimer)\nblizzard.j
+MeleeDoDrawEnum()\nblizzard.j
+GetTerrainCliffLevelBJ(location where)\nblizzard.j 环境 - 地形悬崖高度(指定点)
+SetUnitFacingToFaceUnitTimed(unit whichUnit, unit target, real duration)\nblizzard.j 单位 - 设置单位面向单位
+UnitSetCanSleepBJ(unit whichUnit, boolean canSleep)\nblizzard.j 单位 - 设置单位夜晚睡眠
+GetTriggeringTrackable()\ncommon.j 事件响应 - 事件响应 - 触发可追踪物 [R]
+SetFogStateRadius(player forWhichPlayer, fogstate whichState, real centerx, real centerY, real radius, boolean useSharedVision)\ncommon.j 可见度 - 设置地图迷雾(圆范围) [R]
+OrderId2StringBJ(integer orderId)\nblizzard.j 转化 - 转换命令ID为字符串
+ChangeElevatorHeight(destructable d, integer newHeight)\nblizzard.j 可破坏物 - 设置升降机高度
+SetResourceAmount(unit whichUnit, integer amount)\ncommon.j 中立建筑 - 设置黄金储量
+DestroyDefeatConditionBJ(defeatcondition whichCondition)\nblizzard.j 任务 - 删除失败条件
+LeaderboardClear(leaderboard lb)\ncommon.j 排行榜 - 清空 [R]
+GetOrderPointLoc()\ncommon.j 事件响应 - 命令发布点
+GetUnitPointValueByType(integer unitType)\ncommon.j 单位 - 单位附加值(指定单位类型)
+CreateUnitAtLocSaveLast(player id, integer unitid, location loc, real face)\nblizzard.j
+IsCustomCampaignButtonVisibile(integer whichButton)\nblizzard.j 游戏 - 自定义战役按钮可见
+SaveRegionHandleBJ(region whichRegion, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存区域(不规则)
+IsDawnDuskEnabled()\nblizzard.j
+LoadRegionHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取区域(不规则)
+CreateUnitAtLocByName(player id, string unitname, location whichLocation, real face)\ncommon.j
+TriggerRegisterTimerEvent(trigger whichTrigger, real timeout, boolean periodic)\ncommon.j
+ConvertPlayerUnitEvent(integer i)\ncommon.j
+GetTriggeringTrigger()\ncommon.j 当前触发
+SetMusicOffsetBJ(real newOffset)\nblizzard.j 声音 - 设置背景音乐播放时间点
+GetItemCharges(item whichItem)\ncommon.j 物品 - 使用次数
+CameraSetSourceNoise(real mag, real velocity)\ncommon.j 摇晃镜头源(所有玩家)(不使用摇晃方式) [R]
+SetSoundVolume(sound soundHandle, integer volume)\ncommon.j 声音 - 设置音效音量 [R]
+SetUnitX(unit whichUnit, real newX)\ncommon.j 单位 - 设置X坐标 [R]
+SetUnitY(unit whichUnit, real newY)\ncommon.j 单位 - 设置Y坐标 [R]
+AbilityId(string  abilityIdString)\ncommon.j
+IsUnitLoadedBJ(unit whichUnit)\nblizzard.j 单位 - 被装载
+TriggerClearConditions(trigger whichTrigger)\ncommon.j
+GetSummonedUnit()\ncommon.j 事件响应 - 召唤单位
+GetGameDifficulty()\ncommon.j 当前游戏难度
+Not(boolexpr operand)\ncommon.j
+SaveFogStateHandleBJ(fogstate whichFogState, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存迷雾状态
+SetImageType(image whichImage, integer imageType)\ncommon.j 图像 - 改变图像类型
+GetObjectName(integer objectId)\ncommon.j 物体名称 [C]
+IsUnitIllusionBJ(unit whichUnit)\nblizzard.j 单位 - 单位是镜像
+UnitSetConstructionProgress(unit whichUnit, integer constructionPercentage)\ncommon.j 单位 - 设置建筑建造进度条
+LoadGame(string saveFileName, boolean doScoreScreen)\ncommon.j
+SetTextTagFadepointBJ(texttag tt, real fadepoint)\nblizzard.j 漂浮文字 - 设置消逝时间点
+ReviveHero(unit whichHero, real x, real y, boolean doEyecandy)\ncommon.j 英雄 - 立即复活(指定坐标) [R]
+TimerDialogSetTitleColor(timerdialog whichDialog, integer red, integer green, integer blue, integer alpha)\ncommon.j 计时器 - 改变计时器窗口文字颜色 [R]
+LoadStringBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取字符串
+MeleeTriggerActionUnitDeath()\nblizzard.j
+TriggerClearActions(trigger whichTrigger)\ncommon.j
+GetPlayersByMapControl(mapcontrol whichControl)\nblizzard.j 所有指定控制者的玩家
+ResetTrigger(trigger whichTrigger)\ncommon.j
+UnitHasItem(unit whichUnit, item whichItem)\ncommon.j 英雄 - 持有物品
+MultiboardSetItemIcon(multiboarditem mbi, string iconFileName)\ncommon.j 多面板 - 设置指定项目图标 [R]
+DisplayTimedTextToPlayer(player toPlayer, real x, real y, real duration, string message)\ncommon.j 游戏 - 对玩家显示文本消息(指定时间) [R]
+SetSpeechVolumeGroupsBJ()\nblizzard.j 声音 - 设置语音多通道音量环境
+IsFoggedToPlayer(real x, real y, player whichPlayer)\ncommon.j 可见度 - 坐标在迷雾中
+SaveUnitHandleBJ(unit whichUnit, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存单位
+SetCameraOrientController(unit whichUnit, real xoffset, real yoffset)\ncommon.j 镜头 - 锁定镜头到单位(固定镜头源)(所有玩家) [R]
+QuestItemSetCompleted(questitem whichQuestItem, boolean completed)\ncommon.j
+InitBlizzard()\nblizzard.j
+SaveRectHandleBJ(rect whichRect, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存区域(矩型)
+SetPlayerOnScoreScreenBJ(boolean flag, player whichPlayer)\nblizzard.j 玩家 - 显示/隐藏计分屏显示
+GetUnitRallyUnit(unit whichUnit)\ncommon.j 单位 - 单位集结点目标
+GroupPointOrderLocBJ(group whichGroup, string order, location whichLocation)\nblizzard.j
+IssueInstantPointOrderById(unit whichUnit, integer order, real x, real y, widget instantTargetWidget)\ncommon.j
+IssueImmediateOrderBJ(unit whichUnit, string order)\nblizzard.j
+RSignBJ(real a)\nblizzard.j 数学 - 符号标志
+GetUnitTurnSpeed(unit whichUnit)\ncommon.j 单位 - 当前转身速度
+ExplodeUnitBJ(unit whichUnit)\nblizzard.j 单位 - 爆炸
+MeleeStartingAI()\nblizzard.j 对战游戏 - 运行AI
+SetTerrainFogExBJ(integer style, real zstart, real zend, real density, real red, real green, real blue)\nblizzard.j 环境 - 设置迷雾
+RemoveItemFromStock(unit whichUnit, integer itemId)\ncommon.j
+GroupRemoveGroup(group sourceGroup, group destGroup)\nblizzard.j 单位组 - 移除单位组
+GetLastHauntedGoldMine()\nblizzard.j Last类 - 最后创建的不死族金矿
+GetTerrainType(real x, real y)\ncommon.j 环境 - 指定坐标地形 [R]
+HaveStoredValue(string key, integer valueType, string missionKey, gamecache cache)\nblizzard.j 游戏缓存 - 缓存项存在
+QuestSetRequired(quest whichQuest, boolean required)\ncommon.j
+CreateTimerDialog(timer t)\ncommon.j 新建计时器窗口 [R]
+R2S(real r)\ncommon.j 转化 - 转换实数为字符串
+TriggerWaitOnSleeps(trigger whichTrigger, boolean flag)\ncommon.j
+IsUnitIdType(integer unitId, unittype whichUnitType)\ncommon.j 单位 - 单位类别检查(指定单位类型)
+GetHandleId(handle h)\ncommon.j 哈希表 - <1.24> 获取对象的h2i值 [C]
+IsUnitInRangeLoc(unit whichUnit, location whichLocation, real distance)\ncommon.j 单位 - 在指定点范围内 [R]
+MeleeStartingUnitsForPlayer(race whichRace, player whichPlayer, location loc, boolean doHeroes)\nblizzard.j 对战游戏 - 创建初始单位(指定玩家)
+GetTriggerUnit()\ncommon.j 事件响应 - 触发单位
+ReloadGame()\ncommon.j
+PreloadGenClear()\ncommon.j
+SaveAbilityHandleBJ(ability whichAbility, integer key, integer missionKey, hashtable table)\nblizzard.j <1.24> 保存技能
+GetStoredIntegerBJ(string key, string missionKey, gamecache cache)\nblizzard.j 不推荐使用 - 缓存读取整数
+GetDyingUnit()\ncommon.j 事件响应 - 死亡单位
+EndCinematicScene()\ncommon.j
+CreateCameraSetup()\ncommon.j
+FogEnableOn()\nblizzard.j 可见度 - 启用战争迷雾
+UpdateStockAvailability(item whichItem)\nblizzard.j
+GetFadeFromSecondsAsReal(real seconds)\nblizzard.j
+MultiboardSetItemStyle(multiboarditem mbi, boolean showValue, boolean showIcon)\ncommon.j 多面板 - 设置指定项目显示风格 [R]
+GetEnteringUnit()\ncommon.j 事件响应 - 进入的单位
+IsUnitLoaded(unit whichUnit)\ncommon.j
+ConvertWidgetEvent(integer i)\ncommon.j
+SetPlayerTaxRateBJ(integer rate, playerstate whichResource, player sourcePlayer, player otherPlayer)\nblizzard.j 玩家 - 设置税率
+StartStockUpdates()\nblizzard.j
+GetCameraTargetPositionY()\ncommon.j 镜头 - 当前镜头目标Y坐标
+GetCameraTargetPositionX()\ncommon.j 镜头 - 当前镜头目标X坐标
+GetCameraTargetPositionZ()\ncommon.j 镜头 - 当前镜头目标Z坐标
+IsUnitGroupInRectBJEnum()\nblizzard.j
+GroupEnumUnitsOfTypeCounted(group whichGroup, string unitname, boolexpr filter, integer countLimit)\ncommon.j
+IsUnitHiddenBJ(unit whichUnit)\nblizzard.j 单位 - 单位隐藏
+TriggerRemoveAction(trigger whichTrigger, triggeraction whichAction)\ncommon.j
+AddUnitToStock(unit whichUnit, integer unitId, integer currentStock, integer stockMax)\ncommon.j
+RandomDistReset()\nblizzard.j
+GetPlayerSelectable(player whichPlayer)\ncommon.j
+SetCustomCampaignButtonVisible(integer whichButton, boolean visible)\ncommon.j
+TriggerRegisterGameLoadedEventBJ(trigger trig)\nblizzard.j 游戏 - 游戏读档
+SetDNCSoundsNight()\nblizzard.j
+IsNoDefeatCheat()\ncommon.j 游戏 - 无法失败 [R]
+IsUnitMasked(unit whichUnit, player whichPlayer)\ncommon.j 可见度 - 单位在黑色阴影中
+ConvertPlayerState(integer i)\ncommon.j
+GetResearched()\ncommon.j 事件响应 - 被研究科技
+IsUnitHidden(unit whichUnit)\ncommon.j
+ConvertMapDensity(integer i)\ncommon.j
+GroupAddUnitSimple(unit whichUnit, group whichGroup)\nblizzard.j 单位组 - 添加单位
+GetSpellTargetLoc()\ncommon.j 事件响应 - 技能施放点
+PlayMusic(string musicName)\ncommon.j
+IsQuestFailed(quest whichQuest)\ncommon.j 任务 - 任务失败
+RandomDistChoose()\nblizzard.j
+PercentToInt(real percentage, integer max)\nblizzard.j
+RemoveItemFromAllStock(integer itemId)\ncommon.j 中立建筑 - 删除物品(所有市场)
+ReloadGameCachesFromDisk()\ncommon.j 游戏缓存 - 读取本地缓存数据
+VolumeGroupReset()\ncommon.j
+MeleeTriggerTournamentFinishSoon()\nblizzard.j
+EnumDestructablesInCircleBJ(real radius, location loc, code actionFunc)\nblizzard.j 可破坏物 - 选取指定点范围内可破坏物做动作
+IssueTargetItemOrder(unit whichUnit, string order, widget targetWidget)\nblizzard.j 单位 - 发布命令(指定物品)
+GetPlayerUnitCount(player whichPlayer, boolean includeIncomplete)\ncommon.j 玩家 - 非建筑单位数量
+MakeUnitsPassiveForPlayerEnum()\nblizzard.j
+SaveLeaderboardHandleBJ(leaderboard whichLeaderboard, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存排行榜
+GetStoredRealBJ(string key, string missionKey, gamecache cache)\nblizzard.j 不推荐使用 - 缓存读取实数
+RemoveSaveDirectory(string sourceDirName)\ncommon.j
+SaveTriggerActionHandleBJ(triggeraction whichTriggeraction, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存触发动作
+EnumDestructablesInRect(rect r, boolexpr filter, code actionFunc)\ncommon.j
+GetLightningColorGBJ(lightning whichBolt)\nblizzard.j 闪电效果 - 绿颜色值
+GetKillingUnit()\ncommon.j
+TimerDialogSetTitleBJ(timerdialog td, string title)\nblizzard.j 计时器 - 改变计时器窗口标题
+UnitRemoveBuffs(unit whichUnit, boolean removePositive, boolean removeNegative)\ncommon.j 单位 - 删除魔法效果(指定极性) [R]
+InitSummonableCaps()\nblizzard.j
+DisplayTextToPlayer(player toPlayer, real x, real y, string message)\ncommon.j 游戏 - 对玩家显示文本消息(自动限时) [R]
+SetTerrainTypeBJ(location where, integer terrainType, integer variation, integer area, integer shape)\nblizzard.j 环境 - 改变地形类型(指定点)
+GetUnitRallyPoint(unit whichUnit)\ncommon.j 单位 - 单位集结点
+CreateMultiboardBJ(integer cols, integer rows, string title)\nblizzard.j 多面板 - 创建
+TriggerExecuteBJ(trigger trig, boolean checkConditions)\nblizzard.j
+PingMinimapEx(real x, real y, real duration, integer red, integer green, integer blue, boolean extraEffects)\ncommon.j 电影 - 小地图信号(指定颜色)(所有玩家) [R]
+LoadQuestItemHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取任务要求
+MultiboardSetItemColorBJ(multiboard mb, integer col, integer row, real red, real green, real blue, real transparency)\nblizzard.j 多面板 - 设置项目颜色
+FogModifierStart(fogmodifier whichFogModifier)\ncommon.j 可见度 - 启用可见度修正器
+GetUnitPropWindowBJ(unit whichUnit)\nblizzard.j 单位 - 当前转向角度(角度制)
+GetGamePlacement()\ncommon.j
+GetCreepCampFilterState()\ncommon.j 游戏 - 小地图中立生物显示开启
+SquareRoot(real x)\ncommon.j 数学 - 平方根
+AddSpecialEffectTargetItemBJ(string attachPointName, widget targetWidget, string modelName)\nblizzard.j
+UnitStripHeroLevel(unit whichHero, integer howManyLevels)\ncommon.j 英雄 - 降低等级 [R]
+DestroyItemPool(itempool whichItemPool)\ncommon.j 物品池 - 删除物品池 [R]
+GetTriggeringRegion()\ncommon.j 事件响应 - 触发区域 [R]
+GetEventPlayerChatStringMatched()\ncommon.j 事件响应 - 匹配的聊天信息
+SaveDialogHandleBJ(dialog whichDialog, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存对话框
+DoesUnitGenerateAlarms(unit whichUnit)\nblizzard.j 单位 - 开启警报
+AddSpellEffectByIdLoc(integer abilityId, effecttype t,location where)\ncommon.j 新建特效(指定技能，创建到点) [R]
+MeleeCheckForCrippledPlayers()\nblizzard.j
+CreateDeadDestructable(integer objectid, real x, real y, real face, real scale, integer variation)\ncommon.j
+ForceSetLeaderboardBJ(leaderboard lb, force toForce)\nblizzard.j
+CreateGroup()\ncommon.j 新建的单位组 [R]
+SetCameraPositionLocForPlayer(player whichPlayer, location loc)\nblizzard.j
+LeaderboardSortItemsByValue(leaderboard lb, boolean ascending)\ncommon.j
+SubStringBJ(string source, integer start, integer end)\nblizzard.j 截取字符串
+GetBooleanOr(boolean valueA, boolean valueB)\nblizzard.j 条件 - Or
+IsPointInRegion(region whichRegion, real x, real y)\ncommon.j 区域(不规则) - 包含坐标
+Deg2Rad(real degrees)\ncommon.j 转化 - 转换角度为弧度
+ResetUnitAnimation(unit whichUnit)\nblizzard.j 动画 - 重置单位动画
+ConvertMapControl(integer i)\ncommon.j
+CreateTrackable(string trackableModelPath, real x, real y, real facing)\ncommon.j 新建可追踪物 [R]
+SetBlight(player whichPlayer, real x, real y, real radius, boolean addBlight)\ncommon.j 环境 - 创建/删除荒芜地表(圆范围)(指定坐标) [R]
+GetUnitName(unit whichUnit)\ncommon.j 单位 - 单位名字
+MultiboardSetItemIconBJ(multiboard mb, integer col, integer row, string iconFileName)\nblizzard.j 多面板 - 设置项目图标
+FogEnable(boolean enable)\ncommon.j 可见度 - 启用/禁用 战争迷雾 [R]
+ConvertRarityControl(integer i)\ncommon.j
+GetHandleIdBJ(handle h)\nblizzard.j 哈希表 - <1.24> 获取对象的h2i值
+MeleePlayerIsOpponent(integer playerIndex, integer opponentIndex)\nblizzard.j
+TimerDialogSetSpeed(timerdialog whichDialog, real speedMultFactor)\ncommon.j 计时器 - 设置计时器窗口速率 [R]
+GetLastRemovedItem()\nblizzard.j Last类 - 最后丢弃的物品
+GetEventTargetUnit()\ncommon.j 事件响应 - 事件目标单位
+ConvertUnitType(integer i)\ncommon.j
+SetPlayerAbilityAvailableBJ(boolean avail, integer abilid, player whichPlayer)\nblizzard.j 玩家 - 允许/禁用 技能
+MoveRectTo(rect whichRect, real newCenterX, real newCenterY)\ncommon.j 区域(矩形) - 移动矩形区域(指定坐标) [R]
+IsPlayerEnemy(player whichPlayer, player otherPlayer)\ncommon.j 玩家 - 是玩家的敌人
+UnitRemoveType(unit whichUnit, unittype whichUnitType)\ncommon.j 单位 - 删除类别 [R]
+SuspendHeroXP(unit whichHero, boolean flag)\ncommon.j 英雄 - 允许/禁止经验获取 [R]
+GetCameraField(camerafield whichField)\ncommon.j 镜头 - 镜头属性(当前镜头)
+IssueImmediateOrderById(unit whichUnit, integer order)\ncommon.j 单位 - 按ID发布命令(无目标) [R]
+SetItemPosition(item i, real x, real y)\ncommon.j 物品 - 移动物品到坐标(立即)(指定坐标) [R]
+IsLocationFoggedToPlayer(location whichLocation, player whichPlayer)\ncommon.j 可见度 - 点在迷雾中
+SetDNCSoundsDay()\nblizzard.j
+MeleeStartingResources()\nblizzard.j 对战游戏 - 设置初始资源
+SaveItemPoolHandleBJ(itempool whichItempool, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存物品池
+AddIndicator(widget whichWidget, integer red, integer green, integer blue, integer alpha)\ncommon.j
+AbortCinematicFadeBJ()\nblizzard.j
+GroupEnumUnitsOfPlayer(group whichGroup, player whichPlayer, boolexpr filter)\ncommon.j
+SetReservedLocalHeroButtons(integer reserved)\ncommon.j 英雄 - 保留英雄图标
+SetTimeOfDayScalePercentBJ(real scalePercent)\nblizzard.j 游戏 - 设置昼夜时间流逝速度
+ConvertEffectType(integer i)\ncommon.j
+SetTextTagLifespan(texttag t, real lifespan)\ncommon.j
+SetTextTagAgeBJ(texttag tt, real age)\nblizzard.j 漂浮文字 - 设置已存在时间
+QueuedTriggerGetIndex(trigger trig)\nblizzard.j
+ConvertItemType(integer i)\ncommon.j
+RectContainsCoords(rect r, real x, real y)\nblizzard.j
+ConvertMapSetting(integer i)\ncommon.j
+SetUnitFog(real a, real b, real c, real d, real e)\ncommon.j
+CameraSetupGetDestPositionY(camerasetup whichSetup)\ncommon.j
+PlayMusicEx(string musicName, integer frommsecs, integer fadeinmsecs)\ncommon.j
+GetTournamentScore(player whichPlayer)\ncommon.j 游戏 - 对战比赛得分
+ShowCustomCampaignButton(boolean show, integer whichButton)\nblizzard.j 游戏 - 显示/隐藏 自定义战役按钮
+CreateFogModifierRadiusLocSimple(player whichPlayer, fogstate whichFogState, location center, real radius, boolean afterUnits)\nblizzard.j
+QuestSetDiscoveredBJ(quest whichQuest, boolean discovered)\nblizzard.j 任务 - 设置任务被发现
+ForceCinematicSubtitlesBJ(boolean flag)\nblizzard.j 电影 - 字幕显示
+GetLastCreatedGroup()\nblizzard.j Last类 - 最后创建的单位组
+WakePlayerUnitsEnum()\nblizzard.j
+AdjustPlayerStateSimpleBJ(player whichPlayer, playerstate whichPlayerState, integer delta)\nblizzard.j
+DetectGameStarted()\nblizzard.j
+GetItemLifeBJ(widget whichWidget)\nblizzard.j 物品 - 生命值
+IssueNeutralTargetOrderById(player forWhichPlayer,unit neutralStructure, integer unitId, widget target)\ncommon.j 单位 - 按ID发布中介命令(指定单位) [R]
+EnableWorldFogBoundaryBJ(boolean enable, force f)\nblizzard.j 电影 - 允许/禁止 边界染色(指定玩家组)
+Condition(code func)\ncommon.j
+CreateNUnitsAtLocFacingLocBJ(integer count, integer unitId, player whichPlayer, location loc, location lookAt)\nblizzard.j 单位 - 创建单位(面向点)
+SetImageAboveWater(image whichImage, boolean flag, boolean useWaterAlpha)\ncommon.j 图像 - 图像水面显示状态
+GetSaveBasicFilename()\ncommon.j 事件响应 - 存档文件名
+CameraSetSourceNoiseForPlayer(player whichPlayer, real magnitude, real velocity)\nblizzard.j 镜头 - 摇晃镜头源(指定玩家)
+TriggerRegisterLeaveRectSimple(trigger trig, rect r)\nblizzard.j 单位 - 单位离开矩形区域
+DestroyMultiboard(multiboard lb)\ncommon.j
+MeleePlayerIsCrippled(player whichPlayer)\nblizzard.j
+KillSoundWhenDoneBJ(sound soundHandle)\nblizzard.j 声音 - 删除音效
+CreateCorpse(player whichPlayer, integer unitid, real x, real y, real face)\ncommon.j 新建尸体 [R]
+CountUnitsInGroupEnum()\nblizzard.j
+IsTriggerEnabled(trigger whichTrigger)\ncommon.j 触发器 - 触发开启
+SetCameraRotateMode(real x, real y, real radiansToSweep, real duration)\ncommon.j 镜头 - 指定点旋转镜头(所有玩家)(弧度)(限时) [R]
+SetCinematicCamera(string cameraModelFile)\ncommon.j 镜头 - 播放电影镜头(所有玩家) [R]
+SetUnitTypeSlots(unit whichUnit, integer slots)\ncommon.j 中立建筑 - 限制单位种类(指定市场)
+SetRectFromLoc(rect whichRect, location min, location max)\ncommon.j 区域(矩形) - 设置矩形区域(指定点) [R]
+ForceRemovePlayerSimple(player whichPlayer, force whichForce)\nblizzard.j 玩家组 - 移除玩家
+IssueImmediateOrder(unit whichUnit, string order)\ncommon.j 单位 - 发布命令(无目标)
+IssuePointOrder(unit whichUnit, string order, real x, real y)\ncommon.j 单位 - 发布命令(指定坐标) [R]
+EnableDawnDusk(boolean flag)\nblizzard.j 声音 - 允许/禁止昼夜交替音效
+SetCampaignMenuRace(race r)\ncommon.j
+GetLastCreatedGameCacheBJ()\nblizzard.j Last类 - 最后创建的游戏缓存
+SetHeroStr(unit whichHero, integer newStr, boolean permanent)\ncommon.j 英雄 - 设置英雄力量 [R]
+GetLastCreatedGroupEnum()\nblizzard.j
+SetDestructableInvulnerableBJ(destructable d, boolean flag)\nblizzard.j 可破坏物 - 设置无敌/可攻击
+TriggerRegisterPlayerUnitEventSimple(trigger trig, player whichPlayer, playerunitevent whichEvent)\nblizzard.j 单位 - 玩家单位事件
+SetUnitPropWindowBJ(unit whichUnit, real propWindow)\nblizzard.j 动画 - 改变单位转向角度(角度制)
+PlayCinematic(string movieName)\ncommon.j
+PreloadEnd(real timeout)\ncommon.j 游戏 - 开始预载
+SetFloatGameState(fgamestate whichFloatGameState, real value)\ncommon.j
+LeaderboardSortItemsByPlayerBJ(leaderboard lb, boolean ascending)\nblizzard.j
+SetStackedSoundBJ(boolean add, sound soundHandle, rect r)\nblizzard.j 声音 - 添加/删除区域音效
+GetRandomPercentageBJ()\nblizzard.j 数学 - 随机百分数
+TriggerRegisterTimerEventPeriodic(trigger trig, real timeout)\nblizzard.j 时间 - 游戏计时(循环)
+Pow(real x, real power)\ncommon.j 数学 - 幂运算
+SetCameraPosition(real x, real y)\ncommon.j
+SinBJ(real degrees)\nblizzard.j 数学 - 正弦(角度)
+PlayerGetLeaderboard(player toPlayer)\ncommon.j
+ForceAddPlayerSimple(player whichPlayer, force whichForce)\nblizzard.j 玩家组 - 添加玩家
+GetUnitDefaultTurnSpeed(unit whichUnit)\ncommon.j 单位 - 默认转身速度
+SaveGameExists(string saveName)\ncommon.j 游戏 - 游戏存档存在
+GetLocationZ(location whichLocation)\ncommon.j 点的Z轴高度 [R]
+QuestItemSetDescriptionBJ(questitem whichQuestItem, string description)\nblizzard.j 任务 - 改变任务项目说明
+GetDestructableLoc(destructable whichDestructable)\nblizzard.j 可破坏物 - 可破坏物位置
+PerformStockUpdates()\nblizzard.j
+WaygateActivateBJ(boolean activate, unit waygate)\nblizzard.j 中立建筑 - 启用/禁用 传送门
+SaveDestructableHandleBJ(destructable whichDestructable, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存可破坏物
+SetItemPlayerBJ(item whichItem, player whichPlayer, boolean changeColor)\nblizzard.j 物品 - 改变物品所属玩家
+GroupEnumUnitsSelected(group whichGroup, player whichPlayer, boolexpr filter)\ncommon.j
+MeleeRandomHeroLoc(player p, integer id1, integer id2, integer id3, integer id4, location loc)\nblizzard.j
+DestroyEffect(effect whichEffect)\ncommon.j
+DecUnitAbilityLevelSwapped(integer abilcode, unit whichUnit)\nblizzard.j 单位 - 降低技能等级
+GetPlayerColor(player whichPlayer)\ncommon.j 玩家颜色
+AddUnitToStockBJ(integer unitId, unit whichUnit, integer currentStock, integer stockMax)\nblizzard.j 中立建筑 - 添加单位(指定市场)
+SetCampaignMenuRaceBJ(integer campaignNumber)\nblizzard.j 游戏 - 设置战役背景
+DefeatConditionSetDescription(defeatcondition whichCondition, string description)\ncommon.j
+CameraSetSmoothingFactorBJ(real factor)\nblizzard.j 镜头 - 设置镜头平滑参数
+GetUnitAbilityLevelSwapped(integer abilcode, unit whichUnit)\nblizzard.j 单位 - 单位技能等级
+CreateTextTagLocBJ(string s, location loc, real zOffset, real size, real red, real green, real blue, real transparency)\nblizzard.j 漂浮文字 - 创建漂浮文字(指定地点)
+GetChangingUnitPrevOwner()\ncommon.j 事件响应 - 原所有者
+QueueUnitAnimationBJ(unit whichUnit, string whichAnimation)\nblizzard.j 动画 - 单位动画加入队列
+LoadRealBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取实数
+GetFloatGameState(fgamestate whichFloatGameState)\ncommon.j
+DestroyUnitPool(unitpool whichPool)\ncommon.j 单位池 - 删除单位池 [R]
+PreloadGenStart()\ncommon.j
+GetWorldBounds()\ncommon.j
+ConvertGameEvent(integer i)\ncommon.j
+DestroyDefeatCondition(defeatcondition whichCondition)\ncommon.j
+IAbsBJ(integer a)\nblizzard.j 数学 - 绝对值
+GetLastCreatedButtonBJ()\nblizzard.j Last类 - 最后创建的对话框按钮
+AddUnitToAllStock(integer unitId, integer currentStock, integer stockMax)\ncommon.j 中立建筑 - 添加单位(所有市场)
+IsUnitOwnedByPlayer(unit whichUnit, player whichPlayer)\ncommon.j 单位 - 是玩家的单位
+SetMissionAvailable(integer campaignNumber, integer missionNumber, boolean available)\ncommon.j
+VersionSupported(version whichVersion)\ncommon.j
+SetGamePlacement(placement whichPlacementType)\ncommon.j
+SaveButtonHandleBJ(button whichButton, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存对话框按钮
+SetTerrainPathableBJ(location where, pathingtype t, boolean flag)\nblizzard.j 环境 - 设置地形通行状态(指定点)
+GetUnitFoodUsed(unit whichUnit)\ncommon.j 单位 - 单位使用人口数量
+SetUnitInvulnerable(unit whichUnit, boolean flag)\ncommon.j 单位 - 设置无敌/可攻击
+GetEnumUnit()\ncommon.j 选取单位
+SetCreepCampFilterState(boolean state)\ncommon.j 游戏 - 设置小地图中立生物显示
+GetWidgetY(widget whichWidget)\ncommon.j
+AddItemToAllStock(integer itemId, integer currentStock, integer stockMax)\ncommon.j 中立建筑 - 添加物品(所有市场)
+AddSpellEffectById(integer abilityId, effecttype t,real x, real y)\ncommon.j 新建特效(指定技能，创建到坐标) [R]
+SetSoundVolumeBJ(sound soundHandle, real volumePercent)\nblizzard.j 声音 - 设置音效音量
+TimerDialogSetSpeedBJ(timerdialog td, real speedMultFactor)\nblizzard.j
+LoadSoundHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取音效
+MeleeGetProjectedLoc(location src, location targ, real distance, real deltaAngle)\nblizzard.j
+MeleeEnumFindNearestMine()\nblizzard.j
+RandomItemInRectBJ(rect r, boolexpr filter)\nblizzard.j 矩形区域内随机物品(指定条件)
+TimerStart(timer whichTimer, real timeout, boolean periodic, code handlerFunc)\ncommon.j 计时器 - 运行计时器 [C]
+SetCameraPositionForPlayer(player whichPlayer, real x, real y)\nblizzard.j
+DialogAddButtonBJ(dialog whichDialog, string buttonText)\nblizzard.j 对话框 - 添加对话按钮
+CreateSoundFromLabel(string soundLabel, boolean looping, boolean is3D, boolean stopwhenoutofrange, integer fadeInRate, integer fadeOutRate)\ncommon.j
+DelayedSuspendDecay()\nblizzard.j
+BJDebugMsg(string msg)\nblizzard.j 游戏 - 显示Debug消息 [C]
+GetSoundIsPlaying(sound soundHandle)\ncommon.j
+SetCineFilterDuration(real duration)\ncommon.j
+SetImagePositionBJ(image whichImage, location where, real zOffset)\nblizzard.j 图像 - 改变图像位置(指定点)
+TriggerEvaluate(trigger whichTrigger)\ncommon.j 触发器 - 触发条件成立
+GetTransportUnitBJ()\nblizzard.j 事件响应 - 运输单位
+MeleeTriggerActionPlayerDefeated()\nblizzard.j
+StringHash(string s)\ncommon.j 数学 - 获取字符串的哈希值
+TerrainDeformationRippleBJ(real duration, boolean limitNeg, location where, real startRadius, real endRadius, real depth, real wavePeriod, real waveWidth)\nblizzard.j 环境 - 创建地形变化:波纹
+GetFilterDestructable()\ncommon.j 匹配的可破坏物
+SaveTriggerHandleBJ(trigger whichTrigger, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存触发器
+TerrainDeformRandom(real x, real y, real radius, real minDelta, real maxDelta, integer duration, integer updateInterval)\ncommon.j 新建地形变化:随机 [R]
+AddItemToStockBJ(integer itemId, unit whichUnit, integer currentStock, integer stockMax)\nblizzard.j 中立建筑 - 添加物品(指定市场)
+CreateMIDISound(string soundLabel, integer fadeInRate, integer fadeOutRate)\ncommon.j
+GetTerrainVariance(real x, real y)\ncommon.j 环境 - 地形样式(指定坐标) [R]
+TriggerRegisterDeathEvent(trigger whichTrigger, widget whichWidget)\ncommon.j 可破坏物 - 可破坏物死亡
+LoadTriggerEventHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取触发事件
+DialogClearBJ(dialog whichDialog)\nblizzard.j 对话框 - 清空
+MeleeGrantItemsToHero(unit whichUnit)\nblizzard.j
+SetPlayerAllianceStateBJ(player sourcePlayer, player otherPlayer, integer allianceState)\nblizzard.j 玩家 - 设置联盟状态
+IsItemIdPawnable(integer itemId)\ncommon.j
+MeleeTriggerActionAllianceChange()\nblizzard.j
+GetLastCreatedQuestBJ()\nblizzard.j Last类 - 最后创建的任务
+PlayersAreCoAllied(player playerA, player playerB)\nblizzard.j
+ConvertWeaponType(integer i)\ncommon.j
+MeleeStartingUnitsNightElf(player whichPlayer, location startLoc, boolean doHeroes, boolean doCamera, boolean doPreload)\nblizzard.j
+QuestSetDiscovered(quest whichQuest, boolean discovered)\ncommon.j
+CustomVictoryQuitBJ()\nblizzard.j
+SetMissionAvailableBJ(boolean available, integer missionIndex)\nblizzard.j 游戏 - 允许/禁止 关卡
+TriggerRegisterPlayerEventAllianceChanged(trigger trig, player whichPlayer)\nblizzard.j 玩家 - 联盟状态事件(任意状态)
+SetNextLevelBJ(string nextLevel)\nblizzard.j 游戏 - 设置下一关卡
+SetLightningColor(lightning whichBolt, real r, real g, real b, real a)\ncommon.j
+StoreUnitBJ(unit whichUnit, string key, string missionKey, gamecache cache)\nblizzard.j 游戏缓存 - 记录单位
+IsVisibleToPlayer(real x, real y, player whichPlayer)\ncommon.j 可见度 - 坐标可见
+SaveMultiboardHandleBJ(multiboard whichMultiboard, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存多面板
+ShowDestructableBJ(boolean flag, destructable d)\nblizzard.j 可破坏物 - 显示/隐藏
+And(boolexpr operandA, boolexpr operandB)\ncommon.j
+IsUnitEnemy(unit whichUnit, player whichPlayer)\ncommon.j 单位 - 是玩家的敌对单位
+RegionAddRect(region whichRegion, rect r)\ncommon.j 区域(不规则) - 添加区域 [R]
+SetSoundDistances(sound soundHandle, real minDist, real maxDist)\ncommon.j 声音 - 设置3D音效衰减范围
+GetDestructableMaxLife(destructable d)\ncommon.j 可破坏物 - 最大生命值
+MultiboardMinimize(multiboard lb, boolean minimize)\ncommon.j 多面板 - 最大/最小化 [R]
+SetTimeOfDayScale(real r)\ncommon.j 游戏 - 设置昼夜时间流逝速度 [R]
+CreateItemLoc(integer itemId, location loc)\nblizzard.j 物品 - 创建
+ConvertLimitOp(integer i)\ncommon.j
+SetCameraField(camerafield whichField, real value, real duration)\ncommon.j 镜头 - 设置镜头属性(所有玩家)(限时) [R]
+SetPlayerTeam(player whichPlayer, integer whichTeam)\ncommon.j 玩家 - 设置玩家队伍
+SetTextTagPermanent(texttag t, boolean flag)\ncommon.j
+SetCameraTargetControllerNoZForPlayer(player whichPlayer, unit whichUnit, real xoffset, real yoffset, boolean inheritOrientation)\nblizzard.j 镜头 - 锁定镜头到单位(指定玩家)
+RemoveDestructable(destructable d)\ncommon.j 可破坏物 - 删除
+InitGenericPlayerSlots()\nblizzard.j
+LeaderboardSetItemLabel(leaderboard lb, integer whichItem, string val)\ncommon.j
+GetPlayerHandicap(player whichPlayer)\ncommon.j
+AddPlayerTechResearched(player whichPlayer, integer techid, integer levels)\ncommon.j 玩家 - 增加科技等级
+SetCineFilterStartColor(integer red, integer green, integer blue, integer alpha)\ncommon.j
+LoadForceHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取玩家组
+IsUnitType(unit whichUnit, unittype whichUnitType)\ncommon.j 单位 - 单位类别检查
+SetEdCinematicAvailable(integer campaignNumber, boolean available)\ncommon.j
+IsQuestDiscovered(quest whichQuest)\ncommon.j 任务 - 任务被发现
+GroupClear(group whichGroup)\ncommon.j 单位组 - 清空单位组
+TriggerAddCondition(trigger whichTrigger, boolexpr condition)\ncommon.j
+AcosBJ(real degrees)\nblizzard.j 数学 - 反余弦(角度)
+SaveRealBJ(real value, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存实数
+SetImageConstantHeight(image whichImage, boolean flag, real height)\ncommon.j 图像 - 设置图像高度
+ReplaceUnitBJ(unit whichUnit, integer newUnitId, integer unitStateMethod)\nblizzard.j 单位 - 替换
+LoadLocationHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取点
+GetFilterUnit()\ncommon.j 匹配单位
+TriggerActionUnitRescuedBJ()\nblizzard.j
+LeaderboardGetIndexedPlayerBJ(integer position, leaderboard lb)\nblizzard.j 排行榜 - 玩家所在排行榜位置
+TriggerRemoveCondition(trigger whichTrigger, triggercondition whichCondition)\ncommon.j
+SetUnitManaPercentBJ(unit whichUnit, real percent)\nblizzard.j 单位 - 设置魔法值(百分比)
+CheckItemStatus(item whichItem, integer status)\nblizzard.j 物品 - 物品状态检查
+UnitDamageTarget(unit whichUnit, widget target, real amount, boolean attack, boolean ranged, attacktype attackType, damagetype damageType, weapontype weaponType)\ncommon.j 单位 - 伤害目标 [R]
+UnitApplyTimedLife(unit whichUnit, integer buffId, real duration)\ncommon.j 单位 - 设置生命周期 [R]
+GetUnitsInRectOfPlayerFilter()\nblizzard.j
+EndGameBJ()\nblizzard.j
+TransmissionFromUnitTypeWithNameBJ(force toForce, player fromPlayer, integer unitId, string unitName, location loc, sound soundHandle, string message, integer timeType, real timeVal, boolean wait)\nblizzard.j 电影 - 播送单位消息(指定单位-类型)
+ConvertGameType(integer i)\ncommon.j
+TriggerRegisterLeaveRegionSimple(trigger trig, region whichRegion)\nblizzard.j 单位 - 单位离开不规则区域 [R]
+SetRandomSeed(integer seed)\ncommon.j 数学 - 设置随机种子
+StopMusicBJ(boolean fadeOut)\nblizzard.j 声音 - 停止背景音乐
+ChangeElevatorWallBlocker(real x, real y, real facing, boolean open)\nblizzard.j
+SetMapMusicIndexedBJ(string musicName, integer index)\nblizzard.j 声音 - 设置背景音乐列表(指定播放)
+SetHeroXP(unit whichHero, integer newXpVal,  boolean showEyeCandy)\ncommon.j 英雄 - 设置经验值
+AddResourceAmountBJ(integer delta, unit whichUnit)\nblizzard.j 中立建筑 - 增加黄金储量
+GetHeroProperName(unit whichHero)\ncommon.j 英雄 - 英雄称谓
+SetCameraQuickPosition(real x, real y)\ncommon.j 镜头 - 设置空格键转向点(所有玩家) [R]
+SetUnitFacing(unit whichUnit, real facingAngle)\ncommon.j 单位 - 设置单位面向角度(立即) [R]
+SetUnitTurnSpeedBJ(unit whichUnit, real turnSpeed)\nblizzard.j 动画 - 改变单位转身速度
+IsQuestEnabled(quest whichQuest)\ncommon.j 任务 - 任务激活
+PlayThematicMusicBJ(string musicName)\nblizzard.j 声音 - 播放主题音乐
+GetStartLocationLoc(integer whichStartLocation)\ncommon.j
+MultiboardSetTitleText(multiboard lb, string label)\ncommon.j 多面板 - 设置标题
+CreateImageBJ(string file, real size, location where, real zOffset, integer imageType)\nblizzard.j 图像 - 创建
+CreateDestructableLoc(integer objectid, location loc, real facing, real scale, integer variation)\nblizzard.j 可破坏物 - 创建可破坏物
+GetPlayerTaxRateBJ(playerstate whichResource, player sourcePlayer, player otherPlayer)\nblizzard.j 玩家 - 玩家税率
+UnitUseItemTarget(unit whichUnit, item whichItem, widget target)\ncommon.j 英雄 - 使用物品(对单位)
+CreateLeaderboardBJ(force toForce, string label)\nblizzard.j 排行榜 - 创建
+TriggerRegisterUnitLifeEvent(trigger trig, unit whichUnit, limitop opcode, real limitval)\nblizzard.j 单位 - 生命值变化
+ConditionalTriggerExecute(trigger trig)\nblizzard.j 触发器 - 运行触发(检查条件)
+SetItemPlayer(item whichItem, player whichPlayer, boolean changeColor)\ncommon.j
+UnlockGameSpeedBJ()\nblizzard.j 游戏 - 解除锁定游戏速度
+NudgeObjectsInRect(rect nudgeArea)\nblizzard.j
+ConvertPlayerScore(integer i)\ncommon.j
+SetIntroShotModel(string introModelPath)\ncommon.j
+GetLearnedSkill()\ncommon.j 事件响应 - 学习技能 [R]
+SelectUnitAddForPlayer(unit whichUnit, player whichPlayer)\nblizzard.j 选择 - 添加选择单位(指定玩家)
+FFAInitPlayerSlots()\nblizzard.j
+SaveUbersplatHandleBJ(ubersplat whichUbersplat, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存地面纹理变化
+GetUnitAcquireRange(unit whichUnit)\ncommon.j 单位 - 当前主动攻击范围
+IsUnitInRange(unit whichUnit, unit otherUnit, real distance)\ncommon.j 单位 - 在指定单位范围内 [R]
+SetUnitExplodedBJ(unit whichUnit, boolean exploded)\nblizzard.j 单位 - 设置死亡方式
+GetConstructingStructure()\ncommon.j 事件响应 - 正在建造的建筑
+SetRescueBuildingColorChangeBJ(boolean changeColor)\nblizzard.j 单位 - 设置营救颜色(建筑)
+DestroyLightningBJ(lightning whichBolt)\nblizzard.j 闪电效果 - 删除闪电效果
+UnitCountBuffsEx(unit whichUnit, boolean removePositive, boolean removeNegative, boolean magic, boolean physical, boolean timedLife, boolean aura, boolean autoDispel)\ncommon.j 单位 - 拥有Buff数量 [R]
+CreateSoundFilenameWithLabel(string fileName, boolean looping, boolean is3D, boolean stopwhenoutofrange, integer fadeInRate, integer fadeOutRate, string SLKEntryName)\ncommon.j
+WaygateGetDestinationX(unit waygate)\ncommon.j 中立建筑 - 传送门目的地X坐标
+WaygateGetDestinationY(unit waygate)\ncommon.j 中立建筑 - 传送门目的地Y坐标
+UnitUseItem(unit whichUnit, item whichItem)\ncommon.j 英雄 - 使用物品(无目标)
+GetCurrentCameraSetup()\nblizzard.j 玩家当前镜头
+LoadHashtableHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j
+IsItemInvulnerable(item whichItem)\ncommon.j 物品 - 物品无敌
+GetAttackedUnitBJ()\nblizzard.j 事件响应 - 被攻击单位
+WaygateSetDestinationLocBJ(unit waygate, location loc)\nblizzard.j 中立建筑 - 设置传送门目的点
+GetUnitDefaultFlyHeight(unit whichUnit)\ncommon.j 单位 - 默认飞行高度
+CinematicFilterGenericBJ(real duration, blendmode bmode, string tex, real red0, real green0, real blue0, real trans0, real red1, real green1, real blue1, real trans1)\nblizzard.j 电影 - 高级滤镜
+GetItemLevel(item whichItem)\ncommon.j 物品 - 物品等级
+UnitHasBuffsEx(unit whichUnit, boolean removePositive, boolean removeNegative, boolean magic, boolean physical, boolean timedLife, boolean aura, boolean autoDispel)\ncommon.j
+MeleeGrantItemsToHiredHero()\nblizzard.j
+TriggerExecute(trigger whichTrigger)\ncommon.j 触发器 - 运行触发(无视条件)
+PlayThematicMusic(string musicFileName)\ncommon.j 声音 - 播放主题音乐 [C]
+UnitInventorySizeBJ(unit whichUnit)\nblizzard.j 单位 - 物品栏格数
+ConvertTexMapFlags(integer i)\ncommon.j
+SetMusicVolume(integer volume)\ncommon.j 声音 - 设置背景音乐音量 [R]
+GetStartLocPrioSlot(integer whichStartLoc, integer prioSlotIndex)\ncommon.j
+TriggerExecuteWait(trigger whichTrigger)\ncommon.j
+ConvertPlayerEvent(integer i)\ncommon.j
+GetTournamentFinishNowPlayer()\ncommon.j
+TerrainDeformStopAll()\ncommon.j 环境 - 停止所有地形变化
+GetUnitsOfPlayerAndTypeId(player whichPlayer, integer unitid)\nblizzard.j 玩家单位(指定单位类型)
+GetUnitLevel(unit whichUnit)\ncommon.j 单位 - 单位等级
+RectFromLoc(location min, location max)\ncommon.j 新建矩形区域(指定边角点)
+SaveAndChangeLevelBJ(string saveFileName, string newLevel, boolean doScoreScreen)\nblizzard.j 游戏 - 保存并切换关卡
+IsUnitGroupEmptyBJ(group g)\nblizzard.j 单位组 - 单位组为空
+TerrainDeformationWaveBJ(real duration, location source, location target, real radius, real depth, real trailDelay)\nblizzard.j 环境 - 创建地形变化:冲击波
+CustomVictoryBJ(player whichPlayer, boolean showDialog, boolean showScores)\nblizzard.j 游戏 - 游戏胜利
+String2UnitIdBJ(string unitIdString)\nblizzard.j 转化 - 转换字符串为单位类型
+PanCameraToTimedForPlayer(player whichPlayer, real x, real y, real duration)\nblizzard.j
+GetHeroInt(unit whichHero, boolean includeBonuses)\ncommon.j 英雄 - 英雄智力 [R]
+GetUnitsInRectMatching(rect r, boolexpr filter)\nblizzard.j 矩形区域内的单位(指定条件)
+GetHeroXP(unit whichHero)\ncommon.j 英雄 - 英雄经验值
+LoadDialogHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取对话框
+QueuedTriggerRemoveBJ(trigger trig)\nblizzard.j 触发器 - 移出触发队列
+IsItemOwned(item whichItem)\ncommon.j 物品 - 物品被持有
+SetCameraBoundsToRect(rect r)\nblizzard.j
+RectFromCenterSizeBJ(location center, real width, real height)\nblizzard.j 新建矩形区域(指定中心点)
+CreateFogModifierRadius(player forWhichPlayer, fogstate whichState, real centerx, real centerY, real radius, boolean useSharedVision, boolean afterUnits)\ncommon.j 新建可见度修正器(圆范围) [R]
+SetImageRenderAlways(image whichImage, boolean flag)\ncommon.j 图像 - 设置图像永久渲染状态
+CreateUnitAtLoc(player id, integer unitid, location whichLocation, real face)\ncommon.j 新建单位(指定点) [R]
+SetCameraBounds(real x1, real y1, real x2, real y2, real x3, real y3, real x4, real y4)\ncommon.j 镜头 - 设置可用镜头区域(所有玩家) [R]
+MeleeTriggerTournamentFinishNow()\nblizzard.j
+AddSpecialEffectLocBJ(location where, string modelName)\nblizzard.j 特殊效果 - 创建特效(指定点)
+MeleeStartingVisibility()\nblizzard.j 对战游戏 - 使用对战昼夜设置
+SavePlayerHandleBJ(player whichPlayer, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存玩家
+GetResearchingUnit()\ncommon.j 事件响应 - 研究科技的单位
+MeleeTrainedUnitIsHeroBJFilter()\nblizzard.j
+AngleBetweenPoints(location locA, location locB)\nblizzard.j 数学 - 两点间方向
+SetTextTagVisibility(texttag t, boolean flag)\ncommon.j 漂浮文字 - 显示/隐藏 (所有玩家) [R]
+RotateCameraAroundLocBJ(real degrees, location loc, player whichPlayer, real duration)\nblizzard.j 镜头 - 指定点旋转镜头(指定玩家)(角度)(限时)
+PlayMusicExBJ(string musicFileName, real startingOffset, real fadeInTime)\nblizzard.j 声音 - 跳播背景音乐
+UnitSuspendDecayBJ(boolean suspend, unit whichUnit)\nblizzard.j 单位 - 暂停尸体腐烂
+SetUnitLookAt(unit whichUnit, string whichBone, unit lookAtTarget, real offsetX, real offsetY, real offsetZ)\ncommon.j 动画 - 锁定身体朝向
+MultiboardSetTitleTextColorBJ(multiboard mb, real red, real green, real blue, real transparency)\nblizzard.j 多面板 - 设置标题颜色
+SaveTrackableHandleBJ(trackable whichTrackable, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存可追踪物
+SetFogStateRadiusLoc(player forWhichPlayer, fogstate whichState, location center, real radius, boolean useSharedVision)\ncommon.j
+LoadGroupHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 从哈希表提取单位组
+CountUnitsInGroup(group g)\nblizzard.j 单位 - 单位组中单位数量
+PlaceRandomItem(itempool whichItemPool, real x, real y)\ncommon.j 物品池 - 选择放置物品 [R]
+DisplayLoadDialog()\ncommon.j
+UnregisterStackedSound(sound soundHandle, boolean byPosition, real rectwidth, real rectheight)\ncommon.j
+ShareEverythingWithTeamAI(player whichPlayer)\nblizzard.j
+GetTournamentFinishNowRule()\ncommon.j 游戏 - 比赛结束规则
+SetItemInvulnerableBJ(item whichItem, boolean flag)\nblizzard.j 物品 - 设置物品无敌/可攻击
+LeaderboardHasPlayerItem(leaderboard lb, player p)\ncommon.j
+TriggerRegisterPlayerAllianceChange(trigger whichTrigger, player whichPlayer, alliancetype whichAlliance)\ncommon.j 玩家 - 联盟状态更改(指定项目)
+IsFogMaskEnabled()\ncommon.j 可见度 - 黑色阴影开启
+ShowUnitHide(unit whichUnit)\nblizzard.j 单位 - 隐藏
+GetManipulatingUnit()\ncommon.j 事件响应 - 操作物品的单位
+CheckItemcodeStatus(integer itemId, integer status)\nblizzard.j 物品 - 物品类型状态检查
+UnitPauseTimedLife(unit whichUnit, boolean flag)\ncommon.j 单位 - 暂停/恢复生命周期 [R]
+GetOrderPointX()\ncommon.j 事件响应 - 命令发布点X坐标 [R]
+GetOrderPointY()\ncommon.j 事件响应 - 命令发布点Y坐标 [R]
+QuestSetTitle(quest whichQuest, string title)\ncommon.j
+IsMultiboardDisplayed(multiboard lb)\ncommon.j 多面板 - 多面板显示
+TriggerRegisterPlayerStateEvent(trigger whichTrigger, player whichPlayer, playerstate whichState, limitop opcode, real limitval)\ncommon.j 玩家 - 属性事件
+SetPlayerAllianceBJ(player sourcePlayer, alliancetype whichAllianceSetting, boolean value, player otherPlayer)\nblizzard.j 玩家 - 设置联盟状态(指定项目)
+GetUnitsSelectedAll(player whichPlayer)\nblizzard.j 玩家选择单位
+LoadAbilityHandleBJ(integer key, integer missionKey, hashtable table)\nblizzard.j <1.24> 从哈希表提取技能
+SaveTextTagHandleBJ(texttag whichTexttag, integer key, integer missionKey, hashtable table)\nblizzard.j 哈希表 - <1.24> 保存漂浮文字
+CustomVictoryOkBJ()\nblizzard.j
+IsPlayerAlly(player whichPlayer, player otherPlayer)\ncommon.j 玩家 - 是玩家的盟友
+NearbyElevatorExistsEnum()\nblizzard.j
+SetRect(rect whichRect, real minx, real miny, real maxx, real maxy)\ncommon.j 区域(矩形) - 设置矩形区域(指定坐标) [R]
+GetTerrainCliffLevel(real x, real y)\ncommon.j 环境 - 地形悬崖高度(指定坐标) [R]
+GetForLoopIndexB()\nblizzard.j Loop循环 - 循环整数B
+GetForLoopIndexA()\nblizzard.j Loop循环 - 循环整数A
+VolumeGroupSetVolumeForPlayerBJ(player whichPlayer, volumegroup vgroup, real scale)\nblizzard.j
+GetEventPlayerChatString()\ncommon.j 事件响应 - 输入的聊天信息
+GetUnitDefaultAcquireRange(unit whichUnit)\ncommon.j 单位 - 默认主动攻击范围
+GetResourceDensity()\ncommon.j

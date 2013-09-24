@@ -1,0 +1,27 @@
+[Snippet]
+Title=Jass
+Count=6
+[Item0]
+Trigger=function
+Title=Function declaration
+Snippet=#function ${1:func_name} takes ${2:nothing} returns ${2:nothing}\r\n\t$0\r\nendfunction
+[Item1]
+Trigger=globals
+Title=Globals declaration
+Snippet=#globals\r\n\t$0\r\nendglobals
+[Item2]
+Trigger=library
+Title=Library declaration
+Snippet=#library ${1:lib_name} initializer ${2:init} requires ${3:base}\r\n\t$0\r\nendlibrary
+[Item3]
+Trigger=if
+Title=If conditional
+Snippet=#if ${1:condition} then\r\n\t$0\r\nendif
+[Item4]
+Trigger=loop
+Title=For loop
+Snippet=#set ${1:index} = ${2:0}\r\nloop\r\n\texitwhen ${1:index} >= ${3:10}\r\n\t$0\r\n\tset ${1:index} = ${1:index} + 1\r\nendloop
+[Item5]
+Trigger=loop
+Title=Simple loop
+Snippet=#loop\r\n\texitwhen ${1:true}\r\n\t$0\r\nendloop
