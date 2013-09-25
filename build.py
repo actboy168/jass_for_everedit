@@ -3,6 +3,7 @@
 import sys
 import os
 import re
+from mac_builder import *
 
 func_re = re.compile(r'(native|function)[ ]+([a-zA-Z_][a-zA-Z0-9_]*)[ ]+takes([\s\S]*?)returns')
 
@@ -115,10 +116,90 @@ def create_jass_ecp(filename):
         else:
             f.write('{0}({1})\\n{2}\n'.format(k, v['param'], v['type']))
     f.close()
+    
+def build_jass_mac(cj, bj):
+    syntax = syntax_file()
+    syntax.header('jass', 'actboy168', 'www.ydwe.net')
+    syntax.Include('.\const.mac')
+    
+    syntax.block('create parser')
+    jass = syntax.Set('jass', syntax.CreateParser())
+    
+    syntax.block('comment')
+    rLineComment  = syntax.Set('rLineComment',  jass.CreateRegion(COLOR_COMMENT1, '+//+', '$',    True))
+    rBlockComment = syntax.Set('rBlockComment', jass.CreateRegion(COLOR_COMMENT2, '+/*+', '+*/+', True))
+    jass.AddRegion(rLineComment)
+    jass.AddRegion(rBlockComment)
+    iTodo = syntax.Set('iTodo', jass.CreateItem(COLOR_HIGHLIGHT2, r'\b(TODO|FIX)\b', False))
+    rLineComment.AddItem(iTodo)
+    rBlockComment.AddItem(iTodo)
+    
+    syntax.block('string')
+    jass.AddRegion(jass.CreateStringRegion(COLOR_STRING1, '\'', '\\', False))
+    jass.AddRegion(jass.CreateStringRegion(COLOR_STRING1, '""', '\\', False))
+    
+    syntax.block('function def')
+    jass.AddItem(jass.CreateItem(COLOR_FUNCTION, r'\b(function)\s+([a-zA-Z_][a-zA-Z0-9_]*)\s+takes\s+', False))
+    
+    syntax.block('number')
+    jass.AddItem(jass.CreateItem(COLOR_NUMBER, r'\b\d+\b', False))
+    
+    syntax.block('operators')
+    jass.AddItem(jass.CreateItem(COLOR_OPERATOR, r'[\{\}\(\)\+\-\*\\=%&\^!~\|<>?\.;\[\]]', False))
 
+    syntax.block('keywords')
+    jass.AddWord(jass.CreateWord(COLOR_WORD3, 'globals endglobals library endlibrary struct endstruct scope endscope method endmethod interface endinterface function endfunction loop endloop if then else elseif endif exitwhen native takes returns return local call set true false null array extends type constant and or not requires needs uses initializer public private defaults operator debug', True))
+
+    syntax.block('type')
+    jass.AddItem(jass.CreateWord(COLOR_WORD2, 'hashtable integer real boolean string handle agent event player widget unit destructable item ability buff force group trigger triggercondition triggeraction timer location region rect boolexpr sound conditionfunc filterfunc unitpool itempool race alliancetype racepreference gamestate igamestate fgamestate playerstate playerscore playergameresult unitstate aidifficulty eventid gameevent playerevent playerunitevent unitevent limitop widgetevent dialogevent unittype gamespeed gamedifficulty gametype mapflag mapvisibility mapsetting mapdensity mapcontrol playerslotstate volumegroup camerafield camerasetup playercolor placement startlocprio raritycontrol blendmode texmapflags effect effecttype weathereffect terraindeformation fogstate fogmodifier dialog button quest questitem defeatcondition timerdialog leaderboard multiboard multiboarditem trackable gamecache version itemtype texttag attacktype damagetype weapontype soundtype lightning pathingtype image ubersplat nothing', True))
+
+    syntax.block('common.j function')
+    jass.AddItem(jass.CreateWord(COLOR_WORD4, cj, True))
+    
+    syntax.block('blizzard.j function')
+    jass.AddItem(jass.CreateWord(COLOR_WORD1, bj, True))
+    
+    syntax.block('marco')
+    jass.AddItem(jass.CreateItem(COLOR_MACRO, r'#\s*if\s+!?defined', False))
+    jass.AddItem(jass.CreateItem(COLOR_MACRO, r'#\s*(if|pragma|else|elif|error|ifndef|define|endif|undef|ifdef)\b', False))
+    jass.AddRegion(jass.CreateRegion(COLOR_COMMENT1, r'#\s*error\b', '$', True))
+    iInclude1 = syntax.Set('iInclude1', jass.CreateItem(COLOR_MACRO, r'#\s*include\s*(<.*?>)', False))
+    iInclude1.Capture(1, COLOR_STRING2)
+    jass.AddItem(iInclude1)
+    iInclude2 = syntax.Set('iInclude2', jass.CreateItem(COLOR_MACRO, r'#\s*include\s*(?="")', False))
+    iInclude2.Capture(1, COLOR_STRING2)
+    jass.AddItem(iInclude2)
+    
+    syntax.block('extra')
+    syntax.Call(jass.FoldText(r'^\s*\b(globals|library|struct|scope|method|interface|function|if|loop|private\s+function|public\s+function|private\s+method|public\s+method|private\s+struct|public\s+struct)\b', True))
+    syntax.Call(jass.UnfoldText(r'\b(endglobals|endlibrary|endfunction|endstruct|endscope|endmethod|endinterface|endif|endloop)\b', True))
+    syntax.Call(jass.IndentText(r'^\s*(globals|library|struct|scope|method|interface|function|if|loop)', True))
+    syntax.Call(jass.UnindentText(r'\b(endglobals|endlibrary|endfunction|endstruct|endscope|endmethod|endinterface|endif|endloop)$', True))
+    syntax.Call(jass.SetPairs('[]()""""\'\''))
+    syntax.Call(jass.CommentLine(r'//'))
+    syntax.Call(jass.CommentBlock(r'/*', r'*/'))
+    jass.AddSnippet('jass.snippet')
+    jass.AddCallTip('jass.ecp', True, ' ', '(', ',', ')', True)
+
+    return syntax.get()
+    
+def create_jass_mac(filename):
+    create_directories(os.path.dirname(filename))
+    cj = ''
+    bj = ''
+    for k, v in func.items():
+        if 'common.j' == v['type']:
+            cj += k + ' '
+        elif 'blizzard.j' == v['type']:
+            bj += k + ' '
+    f = file(filename, 'w')
+    f.write(build_jass_mac(cj[:-1], bj[:-1]))
+    f.close()
+    
 if __name__ == '__main__':
     read_script('script/common.j')
     read_script('script/blizzard.j')
     read_ui()
     create_jass_ecp('jass_for_everedit/calltip/jass.ecp')
+    create_jass_mac('jass_for_everedit/syntax/jass.mac')
 
