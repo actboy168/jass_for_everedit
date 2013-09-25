@@ -173,13 +173,3 @@ class syntax_file():
         
     def CreateParser(self):
         return 'CreateParser()'
-        
-def create_jass_mac(filename, value):
-    import os
-    try:
-        os.makedirs(os.path.dirname(filename))
-    except WindowsError:
-        pass
-    f = file(filename, 'w')
-    f.write(value)
-    f.close()
