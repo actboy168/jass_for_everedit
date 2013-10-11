@@ -5,7 +5,7 @@ import os
 import re
 from mac_builder import *
 
-func_re = re.compile(r'(native|function)[ ]+([a-zA-Z_][a-zA-Z0-9_]*)[ ]+takes([\s\S]*?)returns')
+func_re = re.compile(r'(native|function)[ \t]+([a-zA-Z_][a-zA-Z0-9_]*)[ \t]+takes([\s\S]*?)returns')
 
 func = {}
 
