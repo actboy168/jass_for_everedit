@@ -33,7 +33,7 @@ jass.AddItem(jass.CreateItem(COLOR_NUMBER, "\b\d+\b", False))
 jass.AddItem(jass.CreateItem(COLOR_OPERATOR, "[\{\}\(\)\+\-\*\\=%&\^!~\|<>?\.;\[\]]", False))
 
 'keywords
-jass.AddWord(jass.CreateWord(COLOR_WORD3, "globals endglobals library endlibrary struct endstruct scope endscope method endmethod interface endinterface function endfunction loop endloop if then else elseif endif exitwhen native takes returns return local call set true false null array extends type constant and or not requires needs uses initializer public private defaults operator debug", True))
+jass.AddWord(jass.CreateWord(COLOR_WORD3, "globals endglobals library endlibrary struct endstruct scope endscope method endmethod interface endinterface function endfunction loop endloop if then else elseif endif exitwhen native takes returns return local call set true false null array extends type constant and or not requires needs uses initializer public private static defaults operator debug", True))
 
 'type
 jass.AddItem(jass.CreateWord(COLOR_WORD2, "hashtable integer real boolean string handle agent event player widget unit destructable item ability buff force group trigger triggercondition triggeraction timer location region rect boolexpr sound conditionfunc filterfunc unitpool itempool race alliancetype racepreference gamestate igamestate fgamestate playerstate playerscore playergameresult unitstate aidifficulty eventid gameevent playerevent playerunitevent unitevent limitop widgetevent dialogevent unittype gamespeed gamedifficulty gametype mapflag mapvisibility mapsetting mapdensity mapcontrol playerslotstate volumegroup camerafield camerasetup playercolor placement startlocprio raritycontrol blendmode texmapflags effect effecttype weathereffect terraindeformation fogstate fogmodifier dialog button quest questitem defeatcondition timerdialog leaderboard multiboard multiboarditem trackable gamecache version itemtype texttag attacktype damagetype weapontype soundtype lightning pathingtype image ubersplat nothing", True))
@@ -56,7 +56,7 @@ iInclude2.Capture 1, COLOR_STRING2
 jass.AddItem(iInclude2)
 
 'extra
-Call jass.FoldText("^\s*\b(globals|library|struct|scope|method|interface|function|if|loop|private\s+function|public\s+function|private\s+method|public\s+method|private\s+struct|public\s+struct)\b", True)
+Call jass.FoldText("^\s*\b(globals|library|struct|scope|method|interface|function|if|loop|private\s+function|public\s+function|static\s+function|private\s+method|public\s+method|static\s+method|private\s+struct|public\s+struct|static\s+struct)\b", True)
 Call jass.UnfoldText("\b(endglobals|endlibrary|endfunction|endstruct|endscope|endmethod|endinterface|endif|endloop)\b", True)
 Call jass.IndentText("^\s*(globals|library|struct|scope|method|interface|function|if|loop)", True)
 Call jass.UnindentText("\b(endglobals|endlibrary|endfunction|endstruct|endscope|endmethod|endinterface|endif|endloop)$", True)
