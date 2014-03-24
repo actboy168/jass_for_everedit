@@ -1,7 +1,7 @@
 Set cfg=App.CreateSyntaxConfig()
 cfg.Title = "Jass"
 cfg.Ext = "j"
-cfg.File = "jass.mac"
+cfg.FileName = "jass.mac"
 cfg.Template = ""
 cfg.Mode = "Jass"
 cfg.HelpFile = ""
