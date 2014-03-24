@@ -3,6 +3,7 @@
 import sys
 import os
 import re
+import zip_package as zip
 from mac_builder import *
 
 func_re = re.compile(r'(native|function)[ \t]+([a-zA-Z_][a-zA-Z0-9_]*)[ \t]+takes([\s\S]*?)returns')
@@ -202,4 +203,4 @@ if __name__ == '__main__':
     read_ui()
     create_jass_ecp('jass_for_everedit/calltip/jass.ecp')
     create_jass_mac('jass_for_everedit/syntax/jass.mac')
-
+    zip.zip_folder('jass_for_everedit', '../jass.ezip')
