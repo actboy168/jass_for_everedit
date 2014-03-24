@@ -1,0 +1,8 @@
+[Menu]
+Title=Jass
+[Menu0]
+Key=CS+C
+Command0=3,JassHelper ±‡“Î,${AppPath}\mode\Jass\jasshelper_compile.mac
+[Menu1]
+Key=CS+V
+Command0=3,JassHelper ºÏ≤È”Ô∑®,${AppPath}\mode\Jass\jasshelper_check.mac

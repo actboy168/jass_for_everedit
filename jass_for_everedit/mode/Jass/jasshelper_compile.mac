@@ -1,0 +1,40 @@
+Set filesystem     = CreateObject("Scripting.FileSystemObject")
+Set shell          = CreateObject("WSCript.shell")
+
+EverEditPath   = App.AppPath
+WorkPath       = EverEditPath + "\jasshelper\"
+JassHelperPath = EverEditPath + "\jasshelper\jasshelper.exe"
+CommonJPath    = EverEditPath + "\jasshelper\common.j"
+BlizzardJPath  = EverEditPath + "\jasshelper\blizzard.j"
+FilePath       = App.ActiveDoc.PathName
+NewFilePath    = FilePath + ".vj"
+
+Call JassHelperCompile
+
+Set filesystem = Nothing
+Set shell = Nothing
+
+
+Sub JassHelperCompile
+	If (Not filesystem.FileExists(JassHelperPath)) Or (Not filesystem.FileExists(CommonJPath)) Or (Not filesystem.FileExists(BlizzardJPath)) Then
+		MsgBox "没有找到JassHelper"
+		Exit Sub
+	End If
+	
+	JassHelperPath = """" + JassHelperPath + """"
+	CommonJPath    = """" + CommonJPath + """"
+	BlizzardJPath  = """" + BlizzardJPath + """"
+	FilePath       = """" + FilePath + """"
+	NewFilePath    = """" + NewFilePath + """"
+	
+	command = JassHelperPath
+	command = command + " --scriptonly"
+	command = command + " " + CommonJPath
+	command = command + " " + BlizzardJPath
+	command = command + " " + FilePath
+	command = command + " " + NewFilePath
+	
+	shell.CurrentDirectory = WorkPath
+	Set result = shell.Exec(command)
+	Set result = Nothing
+End Sub

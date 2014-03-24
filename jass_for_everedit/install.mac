@@ -1,0 +1,14 @@
+Set cfg=App.CreateSyntaxConfig()
+cfg.Title = "Jass"
+cfg.Ext = "j"
+cfg.File = "jass.mac"
+cfg.Template = ""
+cfg.Mode = "Jass"
+cfg.HelpFile = ""
+cfg.ColMark = ""
+cfg.TabSize = 4
+cfg.SoftTab = false
+cfg.TrimEol = true
+cfg.BlankLineAtLast = true
+App.AddSyntaxConfig(cfg)
+App.SaveAllSyntaxConfigs
