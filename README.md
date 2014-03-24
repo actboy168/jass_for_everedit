@@ -26,8 +26,10 @@ jass for everedit
 
 将jass_for_everedit目录覆盖到*EverEdit*，然后打开*EverEdit*菜单设置->语法着色，手动添加一个语法着色，可以参考以下设置选项。
 
+```
 标题: Jass
 语法文件: jass.mac
 扩展名: j
 *高级*
 模式: jass
+```
