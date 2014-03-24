@@ -12,11 +12,11 @@ jass for everedit
 编译
 ====
 
-双击build.bat
+1.安装python2.7
+2.双击build.py
 
 使用
 ====
-du
 
 * For EverEdit 3.2+
 
