@@ -12,8 +12,8 @@ jass for everedit
 编译
 ====
 
-1.安装python2.7
-2.双击build.py
+1. 安装python2.7
+2. 双击build.py
 
 使用
 ====
