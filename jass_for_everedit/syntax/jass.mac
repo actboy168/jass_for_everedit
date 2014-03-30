@@ -64,4 +64,4 @@ Call jass.SetPairs("[]()""""''")
 Call jass.CommentLine("//")
 Call jass.CommentBlock("/*", "*/")
 jass.AddSnippet "jass.snippet"
-jass.AddCallTip "jass.ecp", True, " ", "(", ",", ")", True
+jass.AddCallTip "jass.ecp", True

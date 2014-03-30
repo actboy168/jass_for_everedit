@@ -180,7 +180,7 @@ def build_jass_mac(cj, bj):
     syntax.Call(jass.CommentLine(r'//'))
     syntax.Call(jass.CommentBlock(r'/*', r'*/'))
     jass.AddSnippet('jass.snippet')
-    jass.AddCallTip('jass.ecp', True, ' ', '(', ',', ')', True)
+    jass.AddCallTip('jass.ecp', True)
 
     return syntax.get()
     
