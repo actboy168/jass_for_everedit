@@ -1,2 +1,5 @@
 *.pyc
 jass.ezip
+/.vs/slnx.sqlite
+/.vs/slnx.sqlite
+*.sqlite
