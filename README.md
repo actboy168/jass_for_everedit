@@ -22,7 +22,7 @@ jass for everedit
 将jass.ezip拖到*EverEdit*上,然后新建一个叫"jass"的模式（模式文件保存于安装目录的mode文件夹，所有以esm结尾的文件都是模式文件）。  
 示例如下：  
 
-```ini
+```
 [Menu]
 Title=Jass
 [Menu0]
