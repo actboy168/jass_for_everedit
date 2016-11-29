@@ -21,7 +21,6 @@ jass for everedit
 
 将jass.ezip拖到*EverEdit*上,然后新建一个叫"jass"的模式（模式文件保存于安装目录的mode文件夹，所有以esm结尾的文件都是模式文件）。  
 示例如下：  
-
 ```
 [Menu]
 Title=Jass
@@ -31,7 +30,7 @@ Command0=3,JassHelper 编译,${AppPath}\mode\Jass\jasshelper_compile.mac
 [Menu1]
 Key=CS+V
 Command0=3,JassHelper 检查语法,${AppPath}\mode\Jass\jasshelper_check.mac
-```  
+```
 然后在 主菜单→工具→设置→语法着色，选定"jass.mac"语法文件，点击高级，绑定即可。
 
 * For EverEdit 3.2 ~3.7
