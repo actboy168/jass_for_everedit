@@ -3,3 +3,5 @@ jass.ezip
 /.vs/slnx.sqlite
 /.vs/slnx.sqlite
 *.sqlite
+/.vscode/launch.json
+/jass_for_everedit/jasshelper/zincmanual.html
